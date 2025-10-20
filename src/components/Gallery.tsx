@@ -7,12 +7,14 @@ import {
 } from "@/components/ui/carousel";
 import { Card } from "@/components/ui/card";
 
+import galleryImage from "@/assets/first-gathering.jpg";
+
 const GALLERY_ITEMS = [
   {
     id: 1,
-    caption: "First Friday Gathering",
-    description: "Our inaugural gathering at Parivartan backstage",
-    image: "/src/assets/gallery-1.jpg",
+    caption: "First Friday Gathering - 17 Oct 2025",
+    description: "Our first ever gathering at Parivartan backstage",
+    image: galleryImage,
   },
 ];
 

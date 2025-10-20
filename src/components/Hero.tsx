@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart } from "lucide-react";
-import heroImage from "@/assets/hero-background.jpg";
+import heroImage from "@/assets/first-gathering.jpg";
 interface HeroProps {
   onJoinClick: () => void;
   onStoryClick: () => void;
