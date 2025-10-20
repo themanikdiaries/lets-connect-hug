@@ -14,9 +14,9 @@ export const FounderStory = () => {
     description: "Students gathered for the first time together",
     year: "17 Oct 2025"
   }];
-  return <section id="movement" className="py-32 bg-gradient-sunset">
+  return <section id="movement" className="py-16 bg-gradient-sunset">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto space-y-20">
+        <div className="max-w-4xl mx-auto space-y-16">
           {/* Section header */}
           <div className="text-center space-y-4">
             <img src={bridgeIcon} alt="Bridge" className="w-16 h-16 mx-auto opacity-80" />
@@ -61,18 +61,20 @@ export const FounderStory = () => {
                   </div>
                   {index < timelineSteps.length - 1 && <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30" />}
                 </div>)}
+              
+              {/* Future Vision - Adjacent to timeline */}
+              <div className="relative group">
+                <div className="bg-card rounded-2xl p-6 h-full shadow-card hover:shadow-hover transition-smooth hover-lift">
+                  <div className="text-4xl font-display font-bold text-primary mb-3">
+                    →
+                  </div>
+                  <h4 className="font-semibold mb-2">The Future</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    A place where every student get the guidance and help selflessly
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-
-          {/* Future Vision */}
-          <div className="text-center space-y-4 pt-8">
-            <div className="text-4xl font-display font-bold text-primary mb-3">
-              →
-            </div>
-            <h4 className="text-2xl font-semibold">The Future</h4>
-            <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              A trusted circle for every student, across every campus
-            </p>
           </div>
         </div>
       </div>

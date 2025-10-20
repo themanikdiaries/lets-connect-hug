@@ -11,15 +11,16 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/mrmanik/",
       twitter: "https://x.com/themanikdiaries",
       instagram: "https://www.instagram.com/manik.3000/",
-      skills: [],
+      skills: "Community Building & Public Speaking",
+      remarkable: "I am supporting women in tech with the help of Girls Leading Tech, a Pan India community.",
       imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQFFRI1-_yIGEg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721867786956?e=1762387200&v=beta&t=mRoPXoweuENeXuG8jzKzKDblbq2KUTqgNFmlNTcMbkg"
     }
   ];
 
   return (
-    <section id="members" className="py-32 bg-gradient-sunset">
+    <section id="members" className="py-16 bg-gradient-sunset">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto space-y-16">
+        <div className="max-w-6xl mx-auto space-y-12">
           {/* Section header */}
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-display font-bold">
@@ -48,7 +49,7 @@ export const WallOfMembers = () => {
                   </div>
 
                   {/* Member details */}
-                  <div className="text-center space-y-2">
+                  <div className="text-center space-y-3">
                     <h3 className="text-2xl font-display font-semibold">
                       {member.name}
                     </h3>
@@ -57,6 +58,18 @@ export const WallOfMembers = () => {
                       <p>Graduation: {member.graduationYear}</p>
                       <p>Block: {member.block}</p>
                     </div>
+                    {member.skills && (
+                      <div className="pt-2">
+                        <p className="text-sm font-semibold text-foreground">Skills</p>
+                        <p className="text-sm text-muted-foreground">{member.skills}</p>
+                      </div>
+                    )}
+                    {member.remarkable && (
+                      <div className="pt-2">
+                        <p className="text-sm font-semibold text-foreground">I'm Remarkable Because</p>
+                        <p className="text-sm text-muted-foreground italic">{member.remarkable}</p>
+                      </div>
+                    )}
                   </div>
 
                   {/* Social links */}

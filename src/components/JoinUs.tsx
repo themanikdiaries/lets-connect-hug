@@ -30,9 +30,9 @@ export const JoinUs = () => {
   ];
 
   return (
-    <section id="join" className="py-32 bg-gradient-sunset">
+    <section id="join" className="py-16 bg-gradient-sunset">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto space-y-16">
+        <div className="max-w-4xl mx-auto space-y-12">
           {/* Section header */}
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-display font-bold">
