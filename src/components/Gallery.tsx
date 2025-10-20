@@ -20,9 +20,9 @@ const GALLERY_ITEMS = [
 
 export const Gallery = () => {
   return (
-    <section id="gallery" className="py-24">
+    <section id="gallery" className="py-32">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-16">
           {/* Header */}
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-display font-bold">

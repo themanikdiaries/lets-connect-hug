@@ -14,9 +14,9 @@ export const FounderStory = () => {
     description: "Students gathered for the first time together",
     year: "17 Oct 2025"
   }];
-  return <section id="movement" className="py-24 bg-gradient-sunset">
+  return <section id="movement" className="py-32 bg-gradient-sunset">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto space-y-16">
+        <div className="max-w-4xl mx-auto space-y-20">
           {/* Section header */}
           <div className="text-center space-y-4">
             <img src={bridgeIcon} alt="Bridge" className="w-16 h-16 mx-auto opacity-80" />
