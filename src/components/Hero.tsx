@@ -42,7 +42,7 @@ export const Hero = ({
               Join Us
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" onClick={onStoryClick} className="text-lg px-8 py-6 rounded-2xl border-2 hover:bg-card transition-smooth">
+            <Button size="lg" variant="outline" onClick={onStoryClick} className="text-lg px-8 py-6 rounded-2xl border-2 hover:bg-primary/10 hover:border-primary transition-smooth">
               Read the Story
             </Button>
           </div>

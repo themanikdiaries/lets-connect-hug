@@ -61,12 +61,12 @@ export const Testimonials = () => {
             </p>
           </div>
 
-          {/* Testimonials */}
-          <div className="space-y-6">
+          {/* Testimonials - Masonry Grid */}
+          <div className="columns-1 md:columns-2 gap-6 space-y-6">
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
-                className="animate-card relative bg-card rounded-3xl p-8 md:p-12 shadow-card hover:shadow-hover transition-smooth"
+                className="animate-card relative bg-card rounded-3xl p-8 md:p-12 shadow-card hover:shadow-hover transition-smooth break-inside-avoid mb-6"
               >
                 <Quote className="absolute top-6 left-6 w-12 h-12 text-primary/20" />
                 <div className="relative space-y-6">
