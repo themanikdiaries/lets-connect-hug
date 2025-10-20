@@ -44,7 +44,7 @@ export const Gallery = () => {
                       <img 
                         src={item.image} 
                         alt={item.caption}
-                        className="aspect-square object-cover w-full"
+                        className="w-full h-auto object-contain"
                       />
                     ) : (
                       <div className="aspect-square bg-gradient-warm" />
@@ -65,21 +65,6 @@ export const Gallery = () => {
             <CarouselNext />
           </Carousel>
 
-          {/* Video placeholder */}
-          <div className="max-w-3xl mx-auto">
-            <Card className="overflow-hidden rounded-3xl shadow-card">
-              <div className="aspect-video bg-gradient-campus flex items-center justify-center">
-                <div className="text-center space-y-2">
-                  <div className="w-16 h-16 mx-auto rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
-                    <div className="w-0 h-0 border-l-8 border-t-6 border-b-6 border-l-white border-t-transparent border-b-transparent ml-1" />
-                  </div>
-                  <p className="text-white font-medium">
-                    Watch our community story (30s)
-                  </p>
-                </div>
-              </div>
-            </Card>
-          </div>
         </div>
       </div>
     </section>

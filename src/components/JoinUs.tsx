@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { MessageCircle, Users, FileText, CheckCircle, AlertTriangle } from "lucide-react";
 
 export const JoinUs = () => {
@@ -71,6 +72,20 @@ export const JoinUs = () => {
                       <p className="text-muted-foreground leading-relaxed">
                         {step.description}
                       </p>
+                      {index === 0 && (
+                        <Button 
+                          asChild 
+                          className="mt-4"
+                        >
+                          <a 
+                            href="https://chat.whatsapp.com/Kk66jdyr6RI4zlRhgqcnbe?mode=wwt" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            Join WhatsApp Group
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
 
