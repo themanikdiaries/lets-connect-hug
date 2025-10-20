@@ -4,19 +4,15 @@ export const FounderStory = () => {
   const timelineSteps = [{
     title: "The Interview",
     description: "Met a first-year with honesty and loyalty, but no guidance",
-    year: "2023"
+    year: "22 Aug 2025"
+  }, {
+    title: "The Planning",
+    description: "Started planning informal gatherings to help students connect",
+    year: "Sept 2025"
   }, {
     title: "First Meetup",
-    description: "Started informal coffee chats to help students connect",
-    year: "2023"
-  }, {
-    title: "First Project",
-    description: "Students collaborated on their first real project together",
-    year: "2024"
-  }, {
-    title: "The Future",
-    description: "A trusted circle for every student, across every campus",
-    year: "→"
+    description: "Students gathered for the first time together",
+    year: "17 Oct 2025"
   }];
   return <section id="movement" className="py-24 bg-gradient-sunset">
       <div className="container mx-auto px-6">
@@ -41,7 +37,7 @@ export const FounderStory = () => {
                 <div className="w-12 h-12 rounded-full bg-gradient-warm" />
                 <div>
                   <div className="font-semibold text-foreground">Manik</div>
-                  <div className="text-sm text-muted-foreground">Founder, Letz Connect</div>
+                  <div className="text-sm text-muted-foreground">Builder, Letz Connect</div>
                 </div>
               </footer>
             </blockquote>
@@ -66,6 +62,17 @@ export const FounderStory = () => {
                   {index < timelineSteps.length - 1 && <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30" />}
                 </div>)}
             </div>
+          </div>
+
+          {/* Future Vision */}
+          <div className="text-center space-y-4 pt-8">
+            <div className="text-4xl font-display font-bold text-primary mb-3">
+              →
+            </div>
+            <h4 className="text-2xl font-semibold">The Future</h4>
+            <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              A trusted circle for every student, across every campus
+            </p>
           </div>
         </div>
       </div>

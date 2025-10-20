@@ -31,8 +31,10 @@ export const Navigation = ({ onJoinClick }: NavigationProps) => {
     { label: "Home", id: "hero" },
     { label: "The Movement", id: "movement" },
     { label: "How We Connect", id: "formats" },
-    { label: "Wall of Stories", id: "stories" },
+    { label: "Join Us", id: "join" },
+    { label: "Members", id: "members" },
     { label: "Gallery", id: "gallery" },
+    { label: "Code of Conduct", id: "conduct" },
   ];
 
   return (
@@ -70,7 +72,7 @@ export const Navigation = ({ onJoinClick }: NavigationProps) => {
               size="sm"
               className="rounded-full shadow-warm"
             >
-              Join a Connect
+              Join Us
             </Button>
           </div>
 
@@ -100,7 +102,7 @@ export const Navigation = ({ onJoinClick }: NavigationProps) => {
               </button>
             ))}
             <Button onClick={onJoinClick} className="w-full rounded-full">
-              Join a Connect
+              Join Us
             </Button>
           </div>
         )}

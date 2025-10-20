@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart } from "lucide-react";
-import heroImage from "@/assets/hero-campus.jpg";
+import heroImage from "@/assets/hero-background.jpg";
 interface HeroProps {
   onJoinClick: () => void;
   onStoryClick: () => void;
@@ -39,7 +39,7 @@ export const Hero = ({
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
             <Button size="lg" onClick={onJoinClick} className="text-lg px-8 py-6 pulse-glow rounded-2xl shadow-warm hover:shadow-hover transition-smooth group">
-              Join a Connect
+              Join Us
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button size="lg" variant="outline" onClick={onStoryClick} className="text-lg px-8 py-6 rounded-2xl border-2 hover:bg-card transition-smooth">

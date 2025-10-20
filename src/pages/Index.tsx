@@ -1,16 +1,15 @@
-import { useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { FounderStory } from "@/components/FounderStory";
 import { ConnectFormats } from "@/components/ConnectFormats";
-import { JoinModal } from "@/components/JoinModal";
-import { WallOfStories } from "@/components/WallOfStories";
+import { JoinUs } from "@/components/JoinUs";
+import { WallOfMembers } from "@/components/WallOfMembers";
+import { Testimonials } from "@/components/Testimonials";
 import { Gallery } from "@/components/Gallery";
+import { CodeOfConduct } from "@/components/CodeOfConduct";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
-  const [isJoinModalOpen, setIsJoinModalOpen] = useState(false);
-
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -20,31 +19,32 @@ const Index = () => {
 
   return (
     <div className="smooth-scroll">
-      <Navigation onJoinClick={() => setIsJoinModalOpen(true)} />
+      <Navigation onJoinClick={() => scrollToSection("join")} />
       
       <main>
         <div id="hero">
           <Hero
-            onJoinClick={() => setIsJoinModalOpen(true)}
+            onJoinClick={() => scrollToSection("join")}
             onStoryClick={() => scrollToSection("movement")}
           />
         </div>
         
         <FounderStory />
         
-        <ConnectFormats onJoinClick={() => setIsJoinModalOpen(true)} />
+        <ConnectFormats onJoinClick={() => scrollToSection("join")} />
         
-        <WallOfStories />
+        <JoinUs />
+        
+        <WallOfMembers />
+        
+        <Testimonials />
         
         <Gallery />
+        
+        <CodeOfConduct />
       </main>
       
       <Footer />
-      
-      <JoinModal
-        open={isJoinModalOpen}
-        onOpenChange={setIsJoinModalOpen}
-      />
     </div>
   );
 };

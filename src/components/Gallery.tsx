@@ -10,28 +10,9 @@ import { Card } from "@/components/ui/card";
 const GALLERY_ITEMS = [
   {
     id: 1,
-    caption: "Unfiltered Friday — chai, stories, and laughter",
-    description: "Weekly casual hangout at the campus café",
-  },
-  {
-    id: 2,
-    caption: "First Build Sprint completion",
-    description: "Team celebrating their first shipped project",
-  },
-  {
-    id: 3,
-    caption: "Coffee Connect in action",
-    description: "A junior and senior chatting over coffee",
-  },
-  {
-    id: 4,
-    caption: "Micro Mentorship Circle meetup",
-    description: "Small group deep conversation session",
-  },
-  {
-    id: 5,
-    caption: "Community gathering",
-    description: "Monthly all-hands meetup with the whole community",
+    caption: "First Friday Gathering",
+    description: "Our inaugural gathering at Parivartan backstage",
+    image: "/src/assets/gallery-1.jpg",
   },
 ];
 
@@ -56,8 +37,16 @@ export const Gallery = () => {
               {GALLERY_ITEMS.map((item) => (
                 <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
                   <Card className="overflow-hidden rounded-2xl shadow-card hover:shadow-hover transition-smooth">
-                    {/* Placeholder for image */}
-                    <div className="aspect-square bg-gradient-warm" />
+                    {/* Image */}
+                    {item.image ? (
+                      <img 
+                        src={item.image} 
+                        alt={item.caption}
+                        className="aspect-square object-cover w-full"
+                      />
+                    ) : (
+                      <div className="aspect-square bg-gradient-warm" />
+                    )}
                     
                     {/* Caption */}
                     <div className="p-4 space-y-1">
