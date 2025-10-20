@@ -1,41 +1,29 @@
 import { Quote } from "lucide-react";
 import bridgeIcon from "@/assets/icon-bridge.png";
-
 export const FounderStory = () => {
-  const timelineSteps = [
-    {
-      title: "The Interview",
-      description: "Met a first-year with honesty and loyalty, but no guidance",
-      year: "2023",
-    },
-    {
-      title: "First Meetup",
-      description: "Started informal coffee chats to help students connect",
-      year: "2023",
-    },
-    {
-      title: "First Project",
-      description: "Students collaborated on their first real project together",
-      year: "2024",
-    },
-    {
-      title: "The Future",
-      description: "A trusted circle for every student, across every campus",
-      year: "→",
-    },
-  ];
-
-  return (
-    <section id="movement" className="py-24 bg-gradient-sunset">
+  const timelineSteps = [{
+    title: "The Interview",
+    description: "Met a first-year with honesty and loyalty, but no guidance",
+    year: "2023"
+  }, {
+    title: "First Meetup",
+    description: "Started informal coffee chats to help students connect",
+    year: "2023"
+  }, {
+    title: "First Project",
+    description: "Students collaborated on their first real project together",
+    year: "2024"
+  }, {
+    title: "The Future",
+    description: "A trusted circle for every student, across every campus",
+    year: "→"
+  }];
+  return <section id="movement" className="py-24 bg-gradient-sunset">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto space-y-16">
           {/* Section header */}
           <div className="text-center space-y-4">
-            <img
-              src={bridgeIcon}
-              alt="Bridge"
-              className="w-16 h-16 mx-auto opacity-80"
-            />
+            <img src={bridgeIcon} alt="Bridge" className="w-16 h-16 mx-auto opacity-80" />
             <h2 className="text-4xl md:text-5xl font-display font-bold">
               How it started
             </h2>
@@ -48,13 +36,7 @@ export const FounderStory = () => {
           <div className="relative bg-card rounded-3xl p-8 md:p-12 shadow-card">
             <Quote className="absolute top-6 left-6 w-12 h-12 text-primary/20" />
             <blockquote className="relative space-y-6">
-              <p className="text-xl md:text-2xl leading-relaxed text-foreground/90 font-light">
-                "One day I interviewed a hopeful first-year. She had honesty and
-                loyalty written all over her smile, but she'd never been guided
-                into events or leadership — she didn't even know they mattered.
-                That moment stayed with me. I started Letz Connect so no student
-                starts alone."
-              </p>
+              <p className="text-xl md:text-2xl leading-relaxed text-foreground/90 font-light">"One day I interviewed a hopeful third-year girl. She had honesty and loyalty written all over her smile, but she'd never been guided into events or leadership — she didn't even know they mattered. That moment stayed with me. I started Letz Connect so no student starts alone."</p>
               <footer className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-warm" />
                 <div>
@@ -71,11 +53,7 @@ export const FounderStory = () => {
               The Journey
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              {timelineSteps.map((step, index) => (
-                <div
-                  key={index}
-                  className="relative group"
-                >
+              {timelineSteps.map((step, index) => <div key={index} className="relative group">
                   <div className="bg-card rounded-2xl p-6 h-full shadow-card hover:shadow-hover transition-smooth hover-lift cursor-pointer">
                     <div className="text-4xl font-display font-bold text-primary mb-3">
                       {step.year}
@@ -85,15 +63,11 @@ export const FounderStory = () => {
                       {step.description}
                     </p>
                   </div>
-                  {index < timelineSteps.length - 1 && (
-                    <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30" />
-                  )}
-                </div>
-              ))}
+                  {index < timelineSteps.length - 1 && <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30" />}
+                </div>)}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

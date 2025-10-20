@@ -1,20 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart } from "lucide-react";
 import heroImage from "@/assets/hero-campus.jpg";
-
 interface HeroProps {
   onJoinClick: () => void;
   onStoryClick: () => void;
 }
-
-export const Hero = ({ onJoinClick, onStoryClick }: HeroProps) => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+export const Hero = ({
+  onJoinClick,
+  onStoryClick
+}: HeroProps) => {
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image with overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center" style={{
+      backgroundImage: `url(${heroImage})`
+    }}>
         <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/85 to-background/70" />
       </div>
 
@@ -22,10 +21,7 @@ export const Hero = ({ onJoinClick, onStoryClick }: HeroProps) => {
       <div className="relative z-10 container mx-auto px-6 py-20 text-center">
         <div className="max-w-4xl mx-auto space-y-8 fade-in-up">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-            <Heart className="w-4 h-4 text-primary" fill="currentColor" />
-            <span className="text-sm font-medium text-foreground">Student-led community</span>
-          </div>
+          
 
           {/* Headline */}
           <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight">
@@ -42,20 +38,11 @@ export const Hero = ({ onJoinClick, onStoryClick }: HeroProps) => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
-            <Button
-              size="lg"
-              onClick={onJoinClick}
-              className="text-lg px-8 py-6 pulse-glow rounded-2xl shadow-warm hover:shadow-hover transition-smooth group"
-            >
+            <Button size="lg" onClick={onJoinClick} className="text-lg px-8 py-6 pulse-glow rounded-2xl shadow-warm hover:shadow-hover transition-smooth group">
               Join a Connect
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={onStoryClick}
-              className="text-lg px-8 py-6 rounded-2xl border-2 hover:bg-card transition-smooth"
-            >
+            <Button size="lg" variant="outline" onClick={onStoryClick} className="text-lg px-8 py-6 rounded-2xl border-2 hover:bg-card transition-smooth">
               Read the Story
             </Button>
           </div>
@@ -64,16 +51,11 @@ export const Hero = ({ onJoinClick, onStoryClick }: HeroProps) => {
           <div className="pt-12 flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="w-8 h-8 rounded-full bg-gradient-warm border-2 border-background"
-                  />
-                ))}
+                {[1, 2, 3, 4].map(i => <div key={i} className="w-8 h-8 rounded-full bg-gradient-warm border-2 border-background" />)}
               </div>
-              <span>100+ students connected</span>
+              <span>20+ students connected</span>
             </div>
-            <div>✨ 50+ Coffee Connects held</div>
+            <div>✨ 1 gathering held</div>
             <div>🎯 Weekly meetups</div>
           </div>
         </div>
@@ -85,6 +67,5 @@ export const Hero = ({ onJoinClick, onStoryClick }: HeroProps) => {
           <div className="w-1.5 h-3 bg-primary rounded-full" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
