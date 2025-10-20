@@ -40,7 +40,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/ishika.0412?igsh=emJta3hqbHB4MHpy",
       skills: "C, C++, DSA, basics of python and HTML | good communication skills, positive and adaptable mindset, self motivated and responsible",
       remarkable: "I am curious and very confident.",
-      imageUrl: "https://v5.airtableusercontent.com/v3/u/46/46/1760961600000/9VxOFqHKbSzSCVUsCj4NKQ/HiKLcUoI11seydzE7C7DD4BD2r1qGYgxN0L30cUT7EwU9_fOJDe2TQ4Whklj_8ncJ33LK1eEXCYV13OIbVugjyR41CJoEpuoQjhg2oOK84446IRPnjgzQt7mwvBm4CPs1yhxM3ktUx7GnKQMOJ128Q/rusOAeVfxK-zSq0u7fSTVlvY4vWUglV-52r96QmvK8"
+      imageUrl: "https://media.licdn.com/dms/image/v2/D4E03AQHocS6uGNH5ZA/profile-displayphoto-scale_400_400/B4EZm4jRhsHcAg-/0/1759737882181?e=1762387200&v=beta&t=eZF5nrNYqk4d9w5VbST_L4Ci5AlOIEf6qSJ971rKeMY"
     },
     {
       name: "Prabhjot Kaur",
@@ -170,7 +170,7 @@ export const WallOfMembers = () => {
             {filteredMembers.map((member, index) => (
               <Card
                 key={index}
-                className="group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card"
+                className="animate-card group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card"
               >
                 <div className="p-6 space-y-4">
                   {/* Profile image */}

@@ -38,7 +38,7 @@ export const Gallery = () => {
             <CarouselContent>
               {GALLERY_ITEMS.map((item) => (
                 <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
-                  <Card className="overflow-hidden rounded-2xl shadow-card hover:shadow-hover transition-smooth">
+                  <Card className="animate-card overflow-hidden rounded-2xl shadow-card hover:shadow-hover transition-smooth">
                     {/* Image */}
                     {item.image ? (
                       <img 

@@ -8,8 +8,10 @@ import { Testimonials } from "@/components/Testimonials";
 import { Gallery } from "@/components/Gallery";
 import { CodeOfConduct } from "@/components/CodeOfConduct";
 import { Footer } from "@/components/Footer";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Index = () => {
+  useScrollAnimation();
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {

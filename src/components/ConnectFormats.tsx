@@ -37,7 +37,7 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
               return (
                 <Card
                   key={index}
-                  className="group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift cursor-pointer shadow-card bg-card"
+                  className="animate-card group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift cursor-pointer shadow-card bg-card"
                 >
                   <div className="p-8 space-y-4">
                     {/* Icon */}

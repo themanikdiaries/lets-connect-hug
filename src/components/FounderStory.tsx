@@ -49,7 +49,7 @@ export const FounderStory = () => {
               The Journey
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              {timelineSteps.map((step, index) => <div key={index} className="relative group">
+              {timelineSteps.map((step, index) => <div key={index} className="animate-card relative group">
                   <div className="bg-card rounded-2xl p-6 h-full shadow-card hover:shadow-hover transition-smooth hover-lift cursor-pointer">
                     <div className="text-4xl font-display font-bold text-primary mb-3">
                       {step.year}
@@ -63,7 +63,7 @@ export const FounderStory = () => {
                 </div>)}
               
               {/* Future Vision - Adjacent to timeline */}
-              <div className="relative group">
+              <div className="animate-card relative group">
                 <div className="bg-card rounded-2xl p-6 h-full shadow-card hover:shadow-hover transition-smooth hover-lift">
                   <div className="text-4xl font-display font-bold text-primary mb-3">
                     →

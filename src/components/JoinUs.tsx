@@ -51,7 +51,7 @@ export const JoinUs = () => {
               return (
                 <Card
                   key={index}
-                  className="group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card"
+                  className="animate-card group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card"
                 >
                   <div className="p-6 md:p-8 flex items-start gap-6">
                     {/* Step number and icon */}
