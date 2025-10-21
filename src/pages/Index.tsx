@@ -33,6 +33,8 @@ const Index = () => {
         
         <FounderStory />
         
+        <Gallery />
+        
         <ConnectFormats onJoinClick={() => scrollToSection("join")} />
         
         <JoinUs />
@@ -40,8 +42,6 @@ const Index = () => {
         <WallOfMembers />
         
         <Testimonials />
-        
-        <Gallery />
         
         <CodeOfConduct />
       </main>

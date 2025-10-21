@@ -45,13 +45,13 @@ export const JoinUs = () => {
           </div>
 
           {/* Steps - Horizontal Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
                 <Card
                   key={index}
-                  className="animate-card group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card flex flex-col"
+                  className="animate-card group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card flex flex-col aspect-square"
                 >
                   <div className="p-6 flex flex-col items-center text-center space-y-4 flex-1">
                     {/* Step number */}
@@ -78,7 +78,7 @@ export const JoinUs = () => {
                     {index === 0 && (
                       <Button 
                         asChild 
-                        className="w-full mt-auto"
+                        className="w-full mt-auto bg-green-600 hover:bg-green-700 text-white"
                         size="sm"
                       >
                         <a 

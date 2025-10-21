@@ -19,7 +19,6 @@ export const FounderStory = () => {
         <div className="max-w-4xl mx-auto space-y-16">
           {/* Section header */}
           <div className="text-center space-y-4">
-            <img src={bridgeIcon} alt="Bridge" className="w-16 h-16 mx-auto opacity-80" />
             <h2 className="text-4xl md:text-5xl font-display font-bold">
               How it started
             </h2>
