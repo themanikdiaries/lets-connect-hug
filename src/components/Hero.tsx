@@ -14,7 +14,7 @@ export const Hero = ({
       <div className="absolute inset-0 bg-cover bg-center" style={{
       backgroundImage: `url(${heroImage})`
     }}>
-        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/85 to-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/40 via-background/50 to-background/60" />
       </div>
 
       {/* Content */}
@@ -24,15 +24,15 @@ export const Hero = ({
           
 
           {/* Headline */}
-          <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight">
+          <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight text-white drop-shadow-lg">
             Bridges between juniors and seniors — where{" "}
-            <span className="text-primary">friendships</span>,{" "}
-            <span className="text-secondary">guidance</span>, and{" "}
-            <span className="text-accent">projects</span> begin.
+            <span className="text-primary drop-shadow-lg">friendships</span>,{" "}
+            <span className="text-secondary drop-shadow-lg">guidance</span>, and{" "}
+            <span className="text-accent drop-shadow-lg">projects</span> begin.
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
             A student-led space to belong, learn, and build together.
           </p>
 

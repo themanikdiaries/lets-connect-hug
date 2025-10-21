@@ -51,6 +51,7 @@ export const WallOfMembers = () => {
       twitter: "https://x.com/Prabhjot1607",
       instagram: "https://www.instagram.com/prabhi_kaur786",
       skills: "C++ programming, Basic DSA | positive attitude, Good Listener and communicator, Best adviser, hardworking",
+      remarkable: "I am a sweet and positive person.",
       imageUrl: "https://v5.airtableusercontent.com/v3/u/46/46/1760961600000/YcyoQxrD0-4tS5_BsmSidw/Wf0iC2DCKUbe903VUQ_7nerY3_F3dbTgbeExD73DFb6JGof7wJpwEV3dRmfzgUYfr9kEphi30gEdMS9qgxRtDsNtl4LjOvCS4-O0DAvWcRhij4u6hvgmILlw-zwfl-2PQeq4NqGb2fnsRxGIlfIIPQ/2ZjvBmH282G4-JkOTgYgAgYWZm3acPiFHYjonL_S2Xo"
     },
     {
@@ -179,6 +180,10 @@ export const WallOfMembers = () => {
                       src={member.imageUrl}
                       alt={member.name}
                       className="w-32 h-32 rounded-full object-cover border-4 border-primary/20"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = 'https://via.placeholder.com/150/6366f1/ffffff?text=' + member.name.charAt(0);
+                      }}
                     />
                   </div>
 

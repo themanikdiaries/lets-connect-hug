@@ -33,37 +33,31 @@ export const Gallery = () => {
             </p>
           </div>
 
-          {/* Carousel */}
-          <Carousel className="w-full max-w-5xl mx-auto">
-            <CarouselContent>
-              {GALLERY_ITEMS.map((item) => (
-                <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
-                  <Card className="animate-card overflow-hidden rounded-2xl shadow-card hover:shadow-hover transition-smooth">
-                    {/* Image */}
-                    {item.image ? (
-                      <img 
-                        src={item.image} 
-                        alt={item.caption}
-                        className="w-full h-auto object-contain"
-                      />
-                    ) : (
-                      <div className="aspect-square bg-gradient-warm" />
-                    )}
-                    
-                    {/* Caption */}
-                    <div className="p-4 space-y-1">
-                      <h3 className="font-semibold">{item.caption}</h3>
-                      <p className="text-sm text-muted-foreground">
-                        {item.description}
-                      </p>
-                    </div>
-                  </Card>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+          {/* Single Image Display */}
+          <div className="max-w-4xl mx-auto">
+            {GALLERY_ITEMS.map((item) => (
+              <Card key={item.id} className="animate-card overflow-hidden rounded-2xl shadow-card hover:shadow-hover transition-smooth">
+                {/* Image */}
+                {item.image ? (
+                  <img 
+                    src={item.image} 
+                    alt={item.caption}
+                    className="w-full h-auto object-cover rounded-t-2xl"
+                  />
+                ) : (
+                  <div className="aspect-video bg-gradient-warm" />
+                )}
+                
+                {/* Caption */}
+                <div className="p-6 space-y-2">
+                  <h3 className="text-xl font-semibold">{item.caption}</h3>
+                  <p className="text-base text-muted-foreground">
+                    {item.description}
+                  </p>
+                </div>
+              </Card>
+            ))}
+          </div>
 
         </div>
       </div>

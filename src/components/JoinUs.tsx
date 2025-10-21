@@ -44,49 +44,52 @@ export const JoinUs = () => {
             </p>
           </div>
 
-          {/* Steps */}
-          <div className="space-y-6">
+          {/* Steps - Horizontal Layout */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
                 <Card
                   key={index}
-                  className="animate-card group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card"
+                  className="animate-card group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card flex flex-col"
                 >
-                  <div className="p-6 md:p-8 flex items-start gap-6">
-                    {/* Step number and icon */}
-                    <div className="flex-shrink-0">
-                      <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
-                        <Icon className="w-8 h-8 text-primary" />
-                      </div>
+                  <div className="p-6 flex flex-col items-center text-center space-y-4 flex-1">
+                    {/* Step number */}
+                    <div className="text-sm font-bold text-primary">
+                      {step.step}
+                    </div>
+                    
+                    {/* Icon */}
+                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
+                      <Icon className="w-8 h-8 text-primary" />
                     </div>
 
                     {/* Content */}
-                    <div className="flex-1 space-y-2">
-                      <div className="text-sm font-semibold text-primary">
-                        {step.step}
-                      </div>
-                      <h3 className="text-xl md:text-2xl font-display font-semibold">
+                    <div className="space-y-3 flex-1">
+                      <h3 className="text-lg font-display font-semibold">
                         {step.title}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-sm text-muted-foreground leading-relaxed">
                         {step.description}
                       </p>
-                      {index === 0 && (
-                        <Button 
-                          asChild 
-                          className="mt-4"
-                        >
-                          <a 
-                            href="https://chat.whatsapp.com/Kk66jdyr6RI4zlRhgqcnbe?mode=wwt" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                          >
-                            Join WhatsApp Group
-                          </a>
-                        </Button>
-                      )}
                     </div>
+                    
+                    {/* WhatsApp button for Step 1 */}
+                    {index === 0 && (
+                      <Button 
+                        asChild 
+                        className="w-full mt-auto"
+                        size="sm"
+                      >
+                        <a 
+                          href="https://chat.whatsapp.com/Kk66jdyr6RI4zlRhgqcnbe?mode=wwt" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          Join WhatsApp Group
+                        </a>
+                      </Button>
+                    )}
                   </div>
 
                   {/* Decorative gradient */}

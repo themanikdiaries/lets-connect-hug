@@ -78,6 +78,10 @@ export const Testimonials = () => {
                       src={testimonial.imageUrl}
                       alt={testimonial.name}
                       className="w-16 h-16 rounded-full object-cover border-2 border-primary/20"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = 'https://via.placeholder.com/150/6366f1/ffffff?text=' + testimonial.name.charAt(0);
+                      }}
                     />
                     <div className="flex-1">
                       <div className="font-semibold text-foreground text-lg">
