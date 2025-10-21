@@ -33,7 +33,7 @@ export const JoinUs = () => {
   return (
     <section id="join" className="py-16 bg-gradient-sunset">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="space-y-12">
           {/* Section header */}
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-display font-bold">
@@ -45,7 +45,7 @@ export const JoinUs = () => {
           </div>
 
           {/* Steps - Horizontal Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
@@ -53,7 +53,7 @@ export const JoinUs = () => {
                   key={index}
                   className="animate-card group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card flex flex-col aspect-square"
                 >
-                  <div className="p-6 flex flex-col items-center text-center space-y-4 flex-1">
+                  <div className="p-4 md:p-6 flex flex-col items-center text-center space-y-3 flex-1">
                     {/* Step number */}
                     <div className="text-sm font-bold text-primary">
                       {step.step}
@@ -65,11 +65,11 @@ export const JoinUs = () => {
                     </div>
 
                     {/* Content */}
-                    <div className="space-y-3 flex-1">
-                      <h3 className="text-lg font-display font-semibold">
+                    <div className="space-y-2 flex-1">
+                      <h3 className="text-base md:text-lg font-display font-semibold">
                         {step.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                      <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
                         {step.description}
                       </p>
                     </div>

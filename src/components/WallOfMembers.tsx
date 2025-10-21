@@ -17,7 +17,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/manik.3000/",
       skills: "Community Building & Public Speaking",
       remarkable: "I am supporting women in tech with the help of Girls Leading Tech, a Pan India community.",
-      imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQFFRI1-_yIGEg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721867786956?e=1762387200&v=beta&t=mRoPXoweuENeXuG8jzKzKDblbq2KUTqgNFmlNTcMbkg"
+      imageUrl: "https://drive.google.com/uc?export=view&id=1sHV7dTd4L0ZA8ayoFxrfJyUX2otQbRRo"
     },
     {
       name: "Shree Sharma",
@@ -29,7 +29,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/shreesharma8937",
       skills: "Python | HTML | CSS | JavaScript | C programming | C++ | Communication",
       remarkable: "I am Honest, positive and a very cheerful person.",
-      imageUrl: "https://v5.airtableusercontent.com/v3/u/46/46/1760961600000/jHPpr9aBHNmmUS5Df-XRIg/7Su_NlT2oslewLA3QoPzuAtIUgUm9FvO4lAJy3m8ZmsJz_1T2rl-CS5ysIvXvADfS-YdSjZhexpghlLEDPo2j4DFPKriFSD0AQsvMLcvPSR-mSkUyib_luEyvF6TLijMiypifBtFtVFvf1B_qDVbRA/z4erqO94Wt_eNAVNXd6tL4WPW_5A9g2hFFBVFZG5ffI"
+      imageUrl: "https://drive.google.com/uc?export=view&id=1C4edw3K_DMzQTjKl7HQnuwpRTpyhie68"
     },
     {
       name: "Ishika Bains",
@@ -40,7 +40,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/ishika.0412?igsh=emJta3hqbHB4MHpy",
       skills: "C, C++, DSA, basics of python and HTML | good communication skills, positive and adaptable mindset, self motivated and responsible",
       remarkable: "I am curious and very confident.",
-      imageUrl: "https://media.licdn.com/dms/image/v2/D4E03AQHocS6uGNH5ZA/profile-displayphoto-scale_400_400/B4EZm4jRhsHcAg-/0/1759737882181?e=1762387200&v=beta&t=eZF5nrNYqk4d9w5VbST_L4Ci5AlOIEf6qSJ971rKeMY"
+      imageUrl: "https://drive.google.com/uc?export=view&id=12yZ8Yr23Yg1nAf1UKqIcGNusHCnyNN4k"
     },
     {
       name: "Prabhjot Kaur",
@@ -52,7 +52,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/prabhi_kaur786",
       skills: "C++ programming, Basic DSA | positive attitude, Good Listener and communicator, Best adviser, hardworking",
       remarkable: "I am a sweet and positive person.",
-      imageUrl: "https://v5.airtableusercontent.com/v3/u/46/46/1760961600000/YcyoQxrD0-4tS5_BsmSidw/Wf0iC2DCKUbe903VUQ_7nerY3_F3dbTgbeExD73DFb6JGof7wJpwEV3dRmfzgUYfr9kEphi30gEdMS9qgxRtDsNtl4LjOvCS4-O0DAvWcRhij4u6hvgmILlw-zwfl-2PQeq4NqGb2fnsRxGIlfIIPQ/2ZjvBmH282G4-JkOTgYgAgYWZm3acPiFHYjonL_S2Xo"
+      imageUrl: "https://drive.google.com/uc?export=view&id=1LZevoHDE2Q7gqOGaf_GDwipDu1WgI4sr"
     },
     {
       name: "Shourya",
@@ -63,7 +63,7 @@ export const WallOfMembers = () => {
       twitter: "https://x.com/Shouryakhatiyan",
       skills: "data analysis, model training",
       remarkable: "I am a ML Developer",
-      imageUrl: "https://v5.airtableusercontent.com/v3/u/46/46/1760961600000/AsuJAzPHeziO6Z9N4iM27Q/1KbniN82Ml_qNyi4eNGC__c516y_0XqYa9XRn7vByCmA1CARthDZtu62uze_A4jUNIwZ1cIWscW1nQUhsjOfICGx5YVH1fC2GdTRFneesjxTOAJo4f2vhvV_2JE6kmOfKb9SCr3BmHDsQpYOQp6tBA/7_yT_9B6IJJgHQ7B5tDut0zVcxAOtMDl4cieWDdNJ74"
+      imageUrl: "https://drive.google.com/uc?export=view&id=1OxEys3ctFMNE8wY92kZpKDMdwsse3dpY"
     },
     {
       name: "Shinu Verma",
@@ -75,7 +75,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/shinuverma___",
       skills: "Blockchain Developer",
       remarkable: "I love to Explore",
-      imageUrl: "https://v5.airtableusercontent.com/v3/u/46/46/1760961600000/6EglZpct5CaEBCtVR1c0yA/JfBqQ9MPx9o3F49U3-OvXR5QRPFnjIxIqwbwwkVhCq1bU5bkVr0p7DeoThF1qhnPCjkrbnie_9G-_iHxrO5EsOxaKI6pm6k_zu5DnjawJpWYFzceaB1olunHmHRbk7-dzciWfIsWH9Dt1v_aAAUbog/WxHxltf3K2OxkIiJnf8ITTtLIEfiO41-66DwBXe9pl8"
+      imageUrl: "https://drive.google.com/uc?export=view&id=1kBnG_kBSf8vPikVilSaJ5m9nP4DmHaO-"
     },
     {
       name: "Gulam Haider Ali",
@@ -87,7 +87,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/haideralyy__?igsh=MXFzNzNuamVqczM2bQ==",
       skills: "Coding and Management",
       remarkable: "I know how to lead teams.",
-      imageUrl: "https://v5.airtableusercontent.com/v3/u/46/46/1760961600000/jua2NZ9WWdyeiHzUy1TA-w/hFMujD3NGtt3UWEA3aVFwyMzG6LvVo2PzQJErOt19R5F2G0xhJQ-5vsbBo_EHVJkirHMewEc6QWqk_Vh1cGxz66B1DfpU9zk80hzF6FjSFfprUVDPvBq0lZb1pi6avftrml4_Ljcl1OeNr3zjv4Uaw/LQGCaF3i6k0ZjSvH3AIxSP7BrP_KqZrA1Mp_ZdhfmJ4"
+      imageUrl: "https://drive.google.com/uc?export=view&id=1KYDEqca45rrUeW-JIX_l-YoELDFVNupk"
     },
     {
       name: "Meenu Rani",
@@ -97,7 +97,7 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/meenu-rani-9894a4327",
       skills: "DSA in JAVA",
       remarkable: "I am a public speaker",
-      imageUrl: "https://v5.airtableusercontent.com/v3/u/46/46/1760961600000/NoZACMhmFucelUe4Tu-AXA/E3DyF_SqMt2huPEbGmt3lvUpbidFmefeQcFt3et1UQxZUIECCS3ZHVkcU-A-6E1vfQ5cvtsNLq32A5zQPPFlGkVMcejcQrtHHu58-UhgS_JJSd8UOf1QkP8MBUbrZU54hmVleriM_cJ41FoCGSi42g/W20QpJLJDh1Wmb4bPvuyJzyktggxwy0NrGp7ep-QNPg"
+      imageUrl: "https://drive.google.com/uc?export=view&id=1wzHVO7GOjt3EfqNuIZnGdNKgI8oAAKRr"
     },
     {
       name: "Harpreet Kaur",
@@ -107,7 +107,7 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/harpreet-kaur-28a25735a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       skills: "Communication",
       remarkable: "I am a fast leaner",
-      imageUrl: "https://v5.airtableusercontent.com/v3/u/46/46/1760961600000/PFWnMxCrYjfVDRBAeCYrNA/xfXXf0s2rNuJllb1vp1g-3DUUWft7CW62kg-2pq_mkl6-h2qxdEX0Hsk3PUFJS6MD_grbmjbOf5vN200bz9Dpfr_31AGgZv8u93-ihWjxegGLSXfgOaZGdtIkgNEj-TWcYhHAD6FEJgbcR2un3yXFg/aSxjb6CNVB331YhBtdJCS235U_uDel1rUKt8inL15k0"
+      imageUrl: "https://drive.google.com/uc?export=view&id=1b5aYkNDj5d6MUgnUnf1Tzj21DVCPcJ5P"
     },
     {
       name: "Ayush Rawat",
@@ -118,7 +118,7 @@ export const WallOfMembers = () => {
       twitter: "https://x.com/Ayushrwt_04",
       skills: "Web Developer",
       remarkable: "I am a very good frontend developer.",
-      imageUrl: "https://v5.airtableusercontent.com/v3/u/46/46/1760961600000/ujtVBIPe_Da_D6mqWeUtOA/JkrpP7RmLfn8mre2TMIMGMIuTO7vjsCNuJFNVCumY-POEPvDEJrVvzGUngWurfYgfYzGFy3D5IPe-eqR-GjlFoA3af5-zcSMqhQB2OVzC7zd9SvIj8zOJX0r_YDf5bySf8nMHeKDN2NqpdBKPExgnw/B38GQ5A1TvM66obEa6xHU1-re9jY7HNTm6FO2b-L1ew"
+      imageUrl: "https://drive.google.com/uc?export=view&id=1xOw_8NMmy6gxlgG9LMZGlTfHNtLjeEuc"
     },
     {
       name: "Ayush Chugh",
@@ -130,7 +130,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/aayushchugh",
       skills: "Web Development, MERN Stack",
       remarkable: "I have 5000 followers on twitter.",
-      imageUrl: "https://v5.airtableusercontent.com/v3/u/46/46/1760961600000/c_k04VZTl_JS4Bye7fHcIQ/iMndrPCJ89IHkgIIQSb7amTMSAsWpsIC_ENplnk50Tz6NkFS8FmrdMKRd7WdIK_IIf4zXW66n0-tW8VRKuA11BieJ2efB0lCr9YOn6aV3QylALD5371tgCsf9sBpoPS3C-oWAlK7shB91Ux9-aZQTA/R2mNSxaoBp3bWEKYxM0wZ9wXNES8ld-4uQxJL7jWj10"
+      imageUrl: "https://drive.google.com/uc?export=view&id=1DOKsYK1PkzdwzeoaBDjqc7sphiwufiSw"
     }
   ];
 
