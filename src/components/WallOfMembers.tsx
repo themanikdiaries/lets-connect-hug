@@ -2,6 +2,22 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Linkedin, Twitter, Instagram, Search } from "lucide-react";
+import manikImg from "@/assets/members/manik.jpg";
+import ayushImg from "@/assets/members/ayush.jpg";
+import aryanImg from "@/assets/members/aryan.jpg";
+import aashiImg from "@/assets/members/aashi.jpg";
+import himanshiImg from "@/assets/members/himanshi.jpg";
+import guneetImg from "@/assets/members/guneet.jpg";
+import divyanshuImg from "@/assets/members/divyanshu.jpg";
+import mannatImg from "@/assets/members/mannat.jpg";
+import avneetImg from "@/assets/members/avneet.jpg";
+import akshatImg from "@/assets/members/akshat.jpg";
+import mayankImg from "@/assets/members/mayank.jpg";
+import ranvirImg from "@/assets/members/ranvir.jpg";
+import shreyaImg from "@/assets/members/shreya.jpg";
+import adityaImg from "@/assets/members/aditya.jpg";
+import rahulImg from "@/assets/members/rahul.jpg";
+import mishtiImg from "@/assets/members/mishti.jpg";
 
 export const WallOfMembers = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -17,7 +33,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/manik.3000/",
       skills: "Community Building & Public Speaking",
       remarkable: "I am supporting women in tech with the help of Girls Leading Tech, a Pan India community.",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1sHV7dTd4L0ZA8ayoFxrfJyUX2otQbRRo"
+      imageUrl: manikImg
     },
     {
       name: "Shree Sharma",
@@ -29,7 +45,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/shreesharma8937",
       skills: "Python | HTML | CSS | JavaScript | C programming | C++ | Communication",
       remarkable: "I am Honest, positive and a very cheerful person.",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1C4edw3K_DMzQTjKl7HQnuwpRTpyhie68"
+      imageUrl: ayushImg
     },
     {
       name: "Ishika Bains",
@@ -40,7 +56,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/ishika.0412?igsh=emJta3hqbHB4MHpy",
       skills: "C, C++, DSA, basics of python and HTML | good communication skills, positive and adaptable mindset, self motivated and responsible",
       remarkable: "I am curious and very confident.",
-      imageUrl: "https://drive.google.com/uc?export=view&id=12yZ8Yr23Yg1nAf1UKqIcGNusHCnyNN4k"
+      imageUrl: aryanImg
     },
     {
       name: "Prabhjot Kaur",
@@ -52,7 +68,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/prabhi_kaur786",
       skills: "C++ programming, Basic DSA | positive attitude, Good Listener and communicator, Best adviser, hardworking",
       remarkable: "I am a sweet and positive person.",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1LZevoHDE2Q7gqOGaf_GDwipDu1WgI4sr"
+      imageUrl: aashiImg
     },
     {
       name: "Shourya",
@@ -63,7 +79,7 @@ export const WallOfMembers = () => {
       twitter: "https://x.com/Shouryakhatiyan",
       skills: "data analysis, model training",
       remarkable: "I am a ML Developer",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1OxEys3ctFMNE8wY92kZpKDMdwsse3dpY"
+      imageUrl: himanshiImg
     },
     {
       name: "Shinu Verma",
@@ -75,7 +91,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/shinuverma___",
       skills: "Blockchain Developer",
       remarkable: "I love to Explore",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1kBnG_kBSf8vPikVilSaJ5m9nP4DmHaO-"
+      imageUrl: guneetImg
     },
     {
       name: "Gulam Haider Ali",
@@ -87,7 +103,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/haideralyy__?igsh=MXFzNzNuamVqczM2bQ==",
       skills: "Coding and Management",
       remarkable: "I know how to lead teams.",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1KYDEqca45rrUeW-JIX_l-YoELDFVNupk"
+      imageUrl: divyanshuImg
     },
     {
       name: "Meenu Rani",
@@ -97,7 +113,7 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/meenu-rani-9894a4327",
       skills: "DSA in JAVA",
       remarkable: "I am a public speaker",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1wzHVO7GOjt3EfqNuIZnGdNKgI8oAAKRr"
+      imageUrl: mannatImg
     },
     {
       name: "Harpreet Kaur",
@@ -107,7 +123,7 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/harpreet-kaur-28a25735a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       skills: "Communication",
       remarkable: "I am a fast leaner",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1b5aYkNDj5d6MUgnUnf1Tzj21DVCPcJ5P"
+      imageUrl: avneetImg
     },
     {
       name: "Ayush Rawat",
@@ -118,7 +134,7 @@ export const WallOfMembers = () => {
       twitter: "https://x.com/Ayushrwt_04",
       skills: "Web Developer",
       remarkable: "I am a very good frontend developer.",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1xOw_8NMmy6gxlgG9LMZGlTfHNtLjeEuc"
+      imageUrl: akshatImg
     },
     {
       name: "Ayush Chugh",
@@ -130,7 +146,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/aayushchugh",
       skills: "Web Development, MERN Stack",
       remarkable: "I have 5000 followers on twitter.",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1DOKsYK1PkzdwzeoaBDjqc7sphiwufiSw"
+      imageUrl: mayankImg
     },
     {
       name: "Ranvir Singh",
@@ -141,7 +157,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/ranvir_singh_sodhi",
       skills: "Full Stack Development, AI, ML",
       remarkable: "I have lead teams as a CTO.",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1h4E1DIYzsRytVug7F8Pm1hsrtFKGXQg7"
+      imageUrl: ranvirImg
     },
     {
       name: "Shreya",
@@ -153,7 +169,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/shreya27chachra",
       skills: "Public Speaking, Management",
       remarkable: "I am a very confident Person.",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1ct1x6Rsm8K_4xdZk4AEgPiJ90YFa7Jne"
+      imageUrl: shreyaImg
     },
     {
       name: "Aditya Pant",
@@ -165,7 +181,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/adityapant_",
       skills: "Web Development",
       remarkable: "I am curios and love coding.",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1x7ue7esghIxzyWu7Z03JXY-wRE-W-tth"
+      imageUrl: adityaImg
     },
     {
       name: "Rahul",
@@ -176,7 +192,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/_rahul._.chhabra_",
       skills: "Problem Solving",
       remarkable: "I founded Devantra Community",
-      imageUrl: "https://drive.google.com/uc?export=view&id=1Klp7hAeB9_0mg3eyOCOahguhsfV4hBwH"
+      imageUrl: rahulImg
     },
     {
       name: "Mishti Bansal",
@@ -187,7 +203,7 @@ export const WallOfMembers = () => {
       instagram: "https://www.instagram.com/mishti_mithu_",
       skills: "Python, HTML, Currently working on Java",
       remarkable: "I am good in communication and have a growth mindset.",
-      imageUrl: "https://drive.google.com/uc?export=view&id=13CKuhm83NCFTMicoXheaASTPwYW477PB"
+      imageUrl: mishtiImg
     }
   ];
 
