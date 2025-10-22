@@ -86,7 +86,7 @@ export const Testimonials = () => {
           </div>
 
           {/* Testimonials - Masonry Grid */}
-          <div className="columns-1 md:columns-2 gap-6 space-y-6">
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
