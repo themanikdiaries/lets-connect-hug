@@ -44,6 +44,30 @@ export const Testimonials = () => {
       quote: "Loved connecting with everyone . It was a short but amazing meetup  . Would love to attend more such meetups. Hope to see more people coming next time and sharing their thoughts openly .",
       linkedin: "https://www.linkedin.com/in/shree-sharma-08b540334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       imageUrl: "https://drive.google.com/uc?export=view&id=1C4edw3K_DMzQTjKl7HQnuwpRTpyhie68"
+    },
+    {
+      name: "Mishti Bansal",
+      quote: "Meetup was amazing. It will really help students a lot . I want the next meetup so that ,with multiple meetup's the students can be able to connect and upgrade themselves, learn something new. I love the interactions in last meetup we had done.",
+      linkedin: "https://www.linkedin.com/in/mishti-bansal-246a60344",
+      imageUrl: "https://drive.google.com/uc?export=view&id=13CKuhm83NCFTMicoXheaASTPwYW477PB"
+    },
+    {
+      name: "Ranvir Singh",
+      quote: "My first meetup was great,got to make a lot of new friends who have similar interests.In next meetups too we will have many new members that i recommended to join.So,the introduction may take some time.If we get time we can just sit and discuss our interests ,hobbies or plan a game",
+      linkedin: "https://www.linkedin.com/in/ranvir-singh-5ba59736b",
+      imageUrl: "https://drive.google.com/uc?export=view&id=1h4E1DIYzsRytVug7F8Pm1hsrtFKGXQg7"
+    },
+    {
+      name: "Shreya",
+      quote: "Till now I have only attended one, but I would love to attend more, i literally liked meeting new people and learning about them and learning new things from them",
+      linkedin: "https://www.linkedin.com/in/shreya-chachra-2a5749322",
+      imageUrl: "https://drive.google.com/uc?export=view&id=1ct1x6Rsm8K_4xdZk4AEgPiJ90YFa7Jne"
+    },
+    {
+      name: "Aditya Pant",
+      quote: "It was nice meetup excited to attend more",
+      linkedin: "https://www.linkedin.com/in/adityaapant",
+      imageUrl: "https://drive.google.com/uc?export=view&id=1x7ue7esghIxzyWu7Z03JXY-wRE-W-tth"
     }
   ];
 
@@ -70,7 +94,7 @@ export const Testimonials = () => {
               >
                 <Quote className="absolute top-6 left-6 w-12 h-12 text-primary/20" />
                 <div className="relative space-y-6">
-                  <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
+                  <p className="text-base md:text-lg leading-relaxed text-foreground/90">
                     "{testimonial.quote}"
                   </p>
                   <div className="flex items-center gap-4">

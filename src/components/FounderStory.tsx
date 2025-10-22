@@ -31,8 +31,16 @@ export const FounderStory = () => {
           <div className="relative bg-card rounded-3xl p-8 md:p-12 shadow-card">
             <Quote className="absolute top-6 left-6 w-12 h-12 text-primary/20" />
             <blockquote className="relative space-y-6">
-              <p className="text-xl md:text-2xl leading-relaxed text-foreground/90 font-light">"One day I interviewed a hopeful third-year girl. She had honesty and loyalty written all over her smile, but she'd never been guided into events or leadership — she didn't even know they mattered. That moment stayed with me. I started Letz Connect so no student starts alone."</p>
-              <footer className="flex items-center gap-4">
+              <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
+                I was invited to conduct interviews for a new club being opened in another department, alongside Aashi, a friend of mine who is both talented and kind. There were several students, and we interviewed them one by one. When a girl's turn came, I can't recall her name or her college year, but what I do remember — and can't forget — was her innocent face, her pure smile, that spark of hope about being selected, and her honesty. I asked about her experience in management. She said she didn't have any. Then I asked about her strengths, and she replied, "Honesty and loyalty." It was one of the rarest answers I heard that day. I told her, "You don't have enough experience or skills that would make you a strong candidate for this role. There are already many candidates with more experience and a stronger skill set." Then I asked, "Why haven't you taken part in any event previously, and why do you want to join this club now?"
+              </p>
+              <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
+                She said she didn't know that events are important for building confidence and leadership skills, which are valuable later during interviews. No one had been there to guide her in the first place, and maybe she wasn't brave enough to seek guidance herself. I knew she wasn't the best candidate for the role, but she was a wonderful human being. That smile she gave when we concluded the interview stayed with me for a long time. I couldn't get over it. I thought, what if there was something that could help first-year students from the beginning — a place where people could connect, learn, and maybe build something together while making friends?
+              </p>
+              <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
+                And that's how it was born. Let's see how it goes.
+              </p>
+              <footer className="flex items-center gap-4 mt-8">
                 <div className="w-12 h-12 rounded-full bg-gradient-warm" />
                 <div>
                   <div className="font-semibold text-foreground">Manik</div>

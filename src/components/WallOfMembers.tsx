@@ -131,6 +131,63 @@ export const WallOfMembers = () => {
       skills: "Web Development, MERN Stack",
       remarkable: "I have 5000 followers on twitter.",
       imageUrl: "https://drive.google.com/uc?export=view&id=1DOKsYK1PkzdwzeoaBDjqc7sphiwufiSw"
+    },
+    {
+      name: "Ranvir Singh",
+      graduationYear: "2028",
+      branch: "B.Tech CSE - IOT",
+      block: "2",
+      linkedin: "https://www.linkedin.com/in/ranvir-singh-5ba59736b",
+      instagram: "https://www.instagram.com/ranvir_singh_sodhi",
+      skills: "Full Stack Development, AI, ML",
+      remarkable: "I have lead teams as a CTO.",
+      imageUrl: "https://drive.google.com/uc?export=view&id=1h4E1DIYzsRytVug7F8Pm1hsrtFKGXQg7"
+    },
+    {
+      name: "Shreya",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "3 - CEC",
+      linkedin: "https://www.linkedin.com/in/shreya-chachra-2a5749322",
+      twitter: "https://x.com/shreya27chachra",
+      instagram: "https://www.instagram.com/shreya27chachra",
+      skills: "Public Speaking, Management",
+      remarkable: "I am a very confident Person.",
+      imageUrl: "https://drive.google.com/uc?export=view&id=1ct1x6Rsm8K_4xdZk4AEgPiJ90YFa7Jne"
+    },
+    {
+      name: "Aditya Pant",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "3 - CEC",
+      linkedin: "https://www.linkedin.com/in/adityaapant",
+      twitter: "https://x.com/adityapant_",
+      instagram: "https://www.instagram.com/adityapant_",
+      skills: "Web Development",
+      remarkable: "I am curios and love coding.",
+      imageUrl: "https://drive.google.com/uc?export=view&id=1x7ue7esghIxzyWu7Z03JXY-wRE-W-tth"
+    },
+    {
+      name: "Rahul",
+      graduationYear: "2027",
+      branch: "B.Tech CSE",
+      block: "3 - CEC",
+      linkedin: "https://www.linkedin.com/in/rahul-chhabra-336080296",
+      instagram: "https://www.instagram.com/_rahul._.chhabra_",
+      skills: "Problem Solving",
+      remarkable: "I founded Devantra Community",
+      imageUrl: "https://drive.google.com/uc?export=view&id=1Klp7hAeB9_0mg3eyOCOahguhsfV4hBwH"
+    },
+    {
+      name: "Mishti Bansal",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/mishti-bansal-246a60344",
+      instagram: "https://www.instagram.com/mishti_mithu_",
+      skills: "Python, HTML, Currently working on Java",
+      remarkable: "I am good in communication and have a growth mindset.",
+      imageUrl: "https://drive.google.com/uc?export=view&id=13CKuhm83NCFTMicoXheaASTPwYW477PB"
     }
   ];
 
