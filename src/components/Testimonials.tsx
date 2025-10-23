@@ -161,7 +161,11 @@ export const Testimonials = () => {
                     <img
                       src={testimonial.imageUrl}
                       alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover object-top border-2 border-primary/20"
+                      className={`w-16 h-16 rounded-full object-cover border-2 border-primary/20 ${
+                        testimonial.name === "Sampark" 
+                          ? "object-[center_20%]" 
+                          : "object-top"
+                      }`}
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = 'https://via.placeholder.com/150/6366f1/ffffff?text=' + testimonial.name.charAt(0);

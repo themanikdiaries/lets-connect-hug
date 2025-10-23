@@ -11,6 +11,7 @@ import guneetImg from "@/assets/members/guneet.jpg";
 import divyanshuImg from "@/assets/members/divyanshu.jpg";
 import mannatImg from "@/assets/members/mannat.jpg";
 import avneetImg from "@/assets/members/avneet.jpg";
+import harpreetImg from "@/assets/members/harpreet.jpg";
 import akshatImg from "@/assets/members/akshat.jpg";
 import mayankImg from "@/assets/members/mayank.jpg";
 import ranvirImg from "@/assets/members/ranvir.jpg";
@@ -130,7 +131,7 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/harpreet-kaur-28a25735a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       skills: "Communication",
       remarkable: "I am a fast leaner",
-      imageUrl: avneetImg
+      imageUrl: harpreetImg
     },
     {
       name: "Ayush Rawat",
@@ -338,7 +339,11 @@ export const WallOfMembers = () => {
                     <img
                       src={member.imageUrl}
                       alt={member.name}
-                      className="w-32 h-32 rounded-full object-cover object-top border-4 border-primary/20"
+                      className={`w-32 h-32 rounded-full object-cover border-4 border-primary/20 ${
+                        member.name === "Mishti Bansal" || member.name === "Sampark" 
+                          ? "object-[center_20%]" 
+                          : "object-top"
+                      }`}
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = 'https://via.placeholder.com/150/6366f1/ffffff?text=' + member.name.charAt(0);
