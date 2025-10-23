@@ -11,6 +11,13 @@ import mishtiImg from "@/assets/members/mishti.jpg";
 import ranvirImg from "@/assets/members/ranvir.jpg";
 import shreyaImg from "@/assets/members/shreya.jpg";
 import adityaImg from "@/assets/members/aditya.jpg";
+import swagitaImg from "@/assets/members/swagita.jpg";
+import vinayakImg from "@/assets/members/vinayak.jpg";
+import manmohanImg from "@/assets/members/manmohan.jpg";
+import sharanImg from "@/assets/members/sharan.jpg";
+import samparkImg from "@/assets/members/sampark.jpg";
+import heenaImg from "@/assets/members/heena.jpg";
+import himanshi2Img from "@/assets/members/himanshi2.jpg";
 
 export const Testimonials = () => {
   const testimonials = [
@@ -79,6 +86,48 @@ export const Testimonials = () => {
       quote: "It was nice meetup excited to attend more",
       linkedin: "https://www.linkedin.com/in/adityaapant",
       imageUrl: adityaImg
+    },
+    {
+      name: "Swagita",
+      quote: "I really enjoyed attending the first \"Let's Connect\" meetup. It was great to see people from our college coming together to share what they are doing and learn from each other. I liked the idea of everyone introducing themselves, it gave a sense of connection, even though many were a bit nervous while speaking. Since we joined a bit late, we couldn't listen to everyone's introductions, but whatever we heard was inspiring",
+      linkedin: "https://www.linkedin.com/in/swagita-parida-876b54303",
+      imageUrl: swagitaImg
+    },
+    {
+      name: "Vinayak Bansal",
+      quote: "It is very informative",
+      linkedin: "https://www.linkedin.com/in/vinayak-bansal-4a609238a",
+      imageUrl: vinayakImg
+    },
+    {
+      name: "Manmohan Singh",
+      quote: "It's was good.",
+      linkedin: "https://www.linkedin.com/in/manmohan197814",
+      imageUrl: manmohanImg
+    },
+    {
+      name: "Sharan",
+      quote: "The meeting was good we had interactions with each other. The one we don't know but can help us grow with their skills and all.",
+      linkedin: "https://www.linkedin.com/in/sharan-arora-2020b3363",
+      imageUrl: sharanImg
+    },
+    {
+      name: "Sampark",
+      quote: "Love the crowd, super chill, super fun!",
+      linkedin: "https://www.linkedin.com/in/sampark-sharma-9b0923335",
+      imageUrl: samparkImg
+    },
+    {
+      name: "Heena",
+      quote: "It was a nice and interactive meetup. I liked the introduction session; it helped me learn how to introduce myself confidently.",
+      linkedin: "https://www.linkedin.com/in/heena-batra-35a8bb346",
+      imageUrl: heenaImg
+    },
+    {
+      name: "Himanshi",
+      quote: "That's amazing interactive meetup, where we came to know about each other's skills , prospective and also what ann opportunity to convey my prospective to other",
+      linkedin: "https://www.linkedin.com/in/himanshi-sardana-1842b1370",
+      imageUrl: himanshi2Img
     }
   ];
 
@@ -112,7 +161,7 @@ export const Testimonials = () => {
                     <img
                       src={testimonial.imageUrl}
                       alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover border-2 border-primary/20"
+                      className="w-16 h-16 rounded-full object-cover object-top border-2 border-primary/20"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = 'https://via.placeholder.com/150/6366f1/ffffff?text=' + testimonial.name.charAt(0);

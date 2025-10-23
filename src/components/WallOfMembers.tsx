@@ -18,6 +18,13 @@ import shreyaImg from "@/assets/members/shreya.jpg";
 import adityaImg from "@/assets/members/aditya.jpg";
 import rahulImg from "@/assets/members/rahul.jpg";
 import mishtiImg from "@/assets/members/mishti.jpg";
+import swagitaImg from "@/assets/members/swagita.jpg";
+import vinayakImg from "@/assets/members/vinayak.jpg";
+import manmohanImg from "@/assets/members/manmohan.jpg";
+import sharanImg from "@/assets/members/sharan.jpg";
+import samparkImg from "@/assets/members/sampark.jpg";
+import heenaImg from "@/assets/members/heena.jpg";
+import himanshi2Img from "@/assets/members/himanshi2.jpg";
 
 export const WallOfMembers = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -204,6 +211,85 @@ export const WallOfMembers = () => {
       skills: "Python, HTML, Currently working on Java",
       remarkable: "I am good in communication and have a growth mindset.",
       imageUrl: mishtiImg
+    },
+    {
+      name: "Swagita",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "3 - CEC",
+      linkedin: "https://www.linkedin.com/in/swagita-parida-876b54303",
+      twitter: "https://twitter.com/Swag_with_techX",
+      skills: "Web Development",
+      remarkable: "I am reflective and observant.",
+      imageUrl: swagitaImg
+    },
+    {
+      name: "Vinayak Bansal",
+      graduationYear: "2029",
+      branch: "B.Tech IT",
+      block: "9 - CEC",
+      linkedin: "https://www.linkedin.com/in/vinayak-bansal-4a609238a",
+      instagram: "https://www.instagram.com/vinayak._.bansall",
+      skills: "Management",
+      remarkable: "I know how to manage people and events.",
+      imageUrl: vinayakImg
+    },
+    {
+      name: "Manmohan Singh",
+      graduationYear: "2027",
+      branch: "B.Tech CSE",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/manmohan197814",
+      twitter: "https://x.com/Manmohan197814",
+      instagram: "https://www.instagram.com/manmohan141414",
+      skills: "Blockchain Development, MERN Stack",
+      remarkable: "I helps everyone so that we can grow together.",
+      imageUrl: manmohanImg
+    },
+    {
+      name: "Sharan",
+      graduationYear: "2028",
+      branch: "B.Tech CSE IOT",
+      block: "2",
+      linkedin: "https://www.linkedin.com/in/sharan-arora-2020b3363",
+      instagram: "https://www.instagram.com/not.ursam",
+      skills: "Designing, Drawing",
+      remarkable: "I love Reading",
+      imageUrl: sharanImg
+    },
+    {
+      name: "Sampark",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/sampark-sharma-9b0923335",
+      twitter: "https://x.com/_sampark_",
+      instagram: "https://www.instagram.com/",
+      skills: "Social media management, Technology",
+      remarkable: "I am in love with computers and tech",
+      imageUrl: samparkImg
+    },
+    {
+      name: "Heena",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "3 - CEC",
+      linkedin: "https://www.linkedin.com/in/heena-batra-35a8bb346",
+      twitter: "https://x.com/H242119619446",
+      skills: "Time Management, Adaptability",
+      remarkable: "I am responsible and dedicated.",
+      imageUrl: heenaImg
+    },
+    {
+      name: "Himanshi Sardana",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "3 - CEC",
+      linkedin: "https://www.linkedin.com/in/himanshi-sardana-1842b1370",
+      twitter: "https://x.com/HimanshiS786",
+      skills: "Development",
+      remarkable: "I am optimistic and Creative",
+      imageUrl: himanshi2Img
     }
   ];
 
@@ -252,7 +338,7 @@ export const WallOfMembers = () => {
                     <img
                       src={member.imageUrl}
                       alt={member.name}
-                      className="w-32 h-32 rounded-full object-cover border-4 border-primary/20"
+                      className="w-32 h-32 rounded-full object-cover object-top border-4 border-primary/20"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = 'https://via.placeholder.com/150/6366f1/ffffff?text=' + member.name.charAt(0);
