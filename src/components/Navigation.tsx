@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 interface NavigationProps {
   onJoinClick: () => void;
@@ -66,6 +67,7 @@ export const Navigation = ({ onJoinClick }: NavigationProps) => {
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
               </button>
             ))}
+            <ThemeToggle />
             <Button
               onClick={onJoinClick}
               size="sm"

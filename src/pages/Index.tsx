@@ -8,6 +8,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { Gallery } from "@/components/Gallery";
 import { CodeOfConduct } from "@/components/CodeOfConduct";
 import { Footer } from "@/components/Footer";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Index = () => {
@@ -47,6 +48,7 @@ const Index = () => {
       </main>
       
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
