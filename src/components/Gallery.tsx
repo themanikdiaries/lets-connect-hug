@@ -8,6 +8,7 @@ import {
 import { Card } from "@/components/ui/card";
 
 import firstGathering from "@/assets/first-gathering.jpg";
+import meetup2 from "@/assets/meetup-2.jpg";
 import meetup3 from "@/assets/meetup-3.jpg";
 
 const GALLERY_ITEMS = [
@@ -16,6 +17,12 @@ const GALLERY_ITEMS = [
     caption: "First Friday Gathering - 17 Oct 2025",
     description: "Our first ever gathering at Parivartan backstage",
     image: firstGathering,
+  },
+  {
+    id: 2,
+    caption: "Second Friday Gathering - 27 Oct 2025",
+    description: "Building connections and sharing experiences",
+    image: meetup2,
   },
   {
     id: 3,
