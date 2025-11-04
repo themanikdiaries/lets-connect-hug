@@ -7,14 +7,27 @@ import {
 } from "@/components/ui/carousel";
 import { Card } from "@/components/ui/card";
 
-import galleryImage from "@/assets/first-gathering.jpg";
+import firstGathering from "@/assets/first-gathering.jpg";
+import meetup3 from "@/assets/meetup-3.jpg";
 
 const GALLERY_ITEMS = [
   {
     id: 1,
     caption: "First Friday Gathering - 17 Oct 2025",
     description: "Our first ever gathering at Parivartan backstage",
-    image: galleryImage,
+    image: firstGathering,
+  },
+  {
+    id: 3,
+    caption: "Third Friday Gathering - 31 Oct 2025",
+    description: "Growing together as a community",
+    image: meetup3,
+  },
+  {
+    id: 4,
+    caption: "Fourth Friday Gathering - 3 Nov 2025",
+    description: "Continuing our journey of connection and growth",
+    image: meetup3,
   },
 ];
 
@@ -33,8 +46,8 @@ export const Gallery = () => {
             </p>
           </div>
 
-          {/* Single Image Display */}
-          <div className="max-w-4xl mx-auto">
+          {/* Gallery Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {GALLERY_ITEMS.map((item) => (
               <Card key={item.id} className="animate-card overflow-hidden rounded-2xl shadow-card hover:shadow-hover transition-smooth">
                 {/* Image */}
@@ -42,7 +55,7 @@ export const Gallery = () => {
                   <img 
                     src={item.image} 
                     alt={item.caption}
-                    className="w-full h-auto object-cover rounded-t-2xl"
+                    className="w-full h-64 object-cover"
                   />
                 ) : (
                   <div className="aspect-video bg-gradient-warm" />
