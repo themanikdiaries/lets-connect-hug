@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Twitter, Instagram, ArrowRight } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import manikImg from "@/assets/members/manik.jpg";
 import ayushImg from "@/assets/members/ayush.jpg";
@@ -18,7 +18,6 @@ const previewMembers = [
     twitter: "https://x.com/themanikdiaries",
     instagram: "https://www.instagram.com/manik.3000/",
     skills: "Community Building & Public Speaking",
-    remarkable: "I am supporting women in tech with the help of Girls Leading Tech, a Pan India community.",
     imageUrl: manikImg
   },
   {
@@ -29,8 +28,7 @@ const previewMembers = [
     linkedin: "https://www.linkedin.com/in/shree-sharma-08b540334",
     twitter: "https://x.com/shr14930?s=21",
     instagram: "https://www.instagram.com/shreesharma8937",
-    skills: "Python | HTML | CSS | JavaScript | C programming | C++",
-    remarkable: "I am Honest, positive and a very cheerful person.",
+    skills: "Python | HTML | CSS | JavaScript | C++",
     imageUrl: ayushImg
   },
   {
@@ -40,8 +38,7 @@ const previewMembers = [
     block: "10 - COE",
     linkedin: "https://www.linkedin.com/in/ishika-bains-699301378",
     instagram: "https://www.instagram.com/ishika.0412",
-    skills: "C, C++, DSA, basics of python and HTML",
-    remarkable: "I am curious and very confident.",
+    skills: "C, C++, DSA, Python, HTML",
     imageUrl: aryanImg
   },
   {
@@ -53,19 +50,11 @@ const previewMembers = [
     twitter: "https://x.com/Prabhjot1607",
     instagram: "https://www.instagram.com/prabhi_kaur786",
     skills: "C++ programming, Basic DSA",
-    remarkable: "I am a sweet and positive person.",
     imageUrl: aashiImg
   }
 ];
 
 export const MembersPreview = () => {
-  const scrollToMembers = () => {
-    const element = document.getElementById("members");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section className="py-16 bg-gradient-sunset">
       <div className="container mx-auto px-6">
@@ -145,11 +134,13 @@ export const MembersPreview = () => {
 
           <div className="text-center">
             <Button
-              onClick={scrollToMembers}
+              asChild
               className="rounded-full gap-2"
             >
-              See All Members
-              <ArrowRight className="w-4 h-4" />
+              <Link to="/members">
+                See All Members
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </Button>
           </div>
         </div>

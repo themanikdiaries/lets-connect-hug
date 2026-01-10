@@ -3,9 +3,6 @@ import { Hero } from "@/components/Hero";
 import { FounderStory } from "@/components/FounderStory";
 import { ConnectFormats } from "@/components/ConnectFormats";
 import { JoinUs } from "@/components/JoinUs";
-import { WallOfMembers } from "@/components/WallOfMembers";
-import { Testimonials } from "@/components/Testimonials";
-import { Gallery } from "@/components/Gallery";
 import { CodeOfConduct } from "@/components/CodeOfConduct";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
@@ -25,7 +22,7 @@ const Index = () => {
 
   return (
     <div className="smooth-scroll">
-      <Navigation onJoinClick={() => scrollToSection("join")} />
+      <Navigation />
       
       <main>
         <div id="hero">
@@ -42,20 +39,15 @@ const Index = () => {
         
         <ConnectFormats onJoinClick={() => scrollToSection("join")} />
         
-        <JoinUs />
+        <div id="join">
+          <JoinUs />
+        </div>
         
         {/* Members Preview (4 members) on Homepage */}
         <MembersPreview />
         
         {/* Testimonials Carousel on Homepage */}
         <TestimonialsCarousel />
-        
-        {/* Full Sections */}
-        <WallOfMembers />
-        
-        <Testimonials />
-        
-        <Gallery />
         
         <CodeOfConduct />
       </main>

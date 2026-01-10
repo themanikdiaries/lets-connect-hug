@@ -13,7 +13,7 @@ export const Testimonials = () => {
               Community Voices
             </h2>
             <p className="text-lg text-muted-foreground">
-              All testimonials from our amazing community members
+              All {testimonials.length} testimonials from our amazing community members
             </p>
           </div>
 
@@ -48,14 +48,16 @@ export const Testimonials = () => {
                         {testimonial.name}
                       </div>
                     </div>
-                    <a
-                      href={testimonial.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                    </a>
+                    {testimonial.linkedin && (
+                      <a
+                        href={testimonial.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth"
+                      >
+                        <Linkedin className="w-5 h-5" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </Card>

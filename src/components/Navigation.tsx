@@ -2,14 +2,13 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
-interface NavigationProps {
-  onJoinClick: () => void;
-}
-
-export const Navigation = ({ onJoinClick }: NavigationProps) => {
+export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,22 +19,23 @@ export const Navigation = ({ onJoinClick }: NavigationProps) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMobileMenuOpen(false);
+  const handleJoinClick = () => {
+    if (location.pathname === "/") {
+      const element = document.getElementById("join");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate("/#join");
     }
+    setIsMobileMenuOpen(false);
   };
 
   const navLinks = [
-    { label: "Home", id: "hero" },
-    { label: "The Movement", id: "movement" },
-    { label: "How We Connect", id: "formats" },
-    { label: "Members", id: "members" },
-    { label: "Voices", id: "testimonials" },
-    { label: "Gallery", id: "gallery" },
-    { label: "Code of Conduct", id: "conduct" },
+    { label: "Home", path: "/" },
+    { label: "Members", path: "/members" },
+    { label: "Gallery", path: "/gallery" },
+    { label: "Voices", path: "/voices" },
   ];
 
   return (
@@ -49,28 +49,34 @@ export const Navigation = ({ onJoinClick }: NavigationProps) => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <button
-            onClick={() => scrollToSection("hero")}
+          <Link
+            to="/"
             className="text-2xl font-display font-bold text-foreground hover:text-primary transition-colors"
           >
             Letz Connect
-          </button>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollToSection(link.id)}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`text-sm font-medium transition-colors relative group ${
+                  location.pathname === link.path
+                    ? "text-foreground"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
-              </button>
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-primary transition-all ${
+                  location.pathname === link.path ? "w-full" : "w-0 group-hover:w-full"
+                }`} />
+              </Link>
             ))}
             <ThemeToggle />
             <Button
-              onClick={onJoinClick}
+              onClick={handleJoinClick}
               size="sm"
               className="rounded-full shadow-warm"
             >
@@ -95,15 +101,20 @@ export const Navigation = ({ onJoinClick }: NavigationProps) => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 space-y-4 border-t border-border">
             {navLinks.map((link) => (
-              <button
-                key={link.id}
-                onClick={() => scrollToSection(link.id)}
-                className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              <Link
+                key={link.path}
+                to={link.path}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`block w-full text-left text-sm font-medium transition-colors ${
+                  location.pathname === link.path
+                    ? "text-foreground"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
               >
                 {link.label}
-              </button>
+              </Link>
             ))}
-            <Button onClick={onJoinClick} className="w-full rounded-full">
+            <Button onClick={handleJoinClick} className="w-full rounded-full">
               Join Us
             </Button>
           </div>

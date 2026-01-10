@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import { Link } from "react-router-dom";
 
 import firstGathering from "@/assets/first-gathering.jpg";
 import meetup3 from "@/assets/meetup-3.jpg";
@@ -119,14 +120,11 @@ export const GalleryCarousel = () => {
 
           <div className="text-center">
             <Button
+              asChild
               variant="outline"
-              onClick={() => {
-                const element = document.getElementById("gallery");
-                if (element) element.scrollIntoView({ behavior: "smooth" });
-              }}
               className="rounded-full"
             >
-              View All Photos
+              <Link to="/gallery">View All Photos</Link>
             </Button>
           </div>
         </div>
