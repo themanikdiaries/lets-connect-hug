@@ -1,35 +1,5 @@
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { Card } from "@/components/ui/card";
-
-import firstGathering from "@/assets/first-gathering.jpg";
-import meetup3 from "@/assets/meetup-3.jpg";
-
-const GALLERY_ITEMS = [
-  {
-    id: 1,
-    caption: "First Gathering - 17 Oct 2025",
-    description: "Our first ever gathering at Parivartan backstage",
-    image: firstGathering,
-  },
-  {
-    id: 3,
-    caption: "Third Gathering - 31 Oct 2025",
-    description: "Growing together as a community",
-    image: meetup3,
-  },
-  {
-    id: 4,
-    caption: "Fourth Gathering - 3 Nov 2025",
-    description: "Continuing our journey of connection and growth",
-    image: meetup3,
-  },
-];
+import { GALLERY_ITEMS } from "./GalleryCarousel";
 
 export const Gallery = () => {
   return (
@@ -39,10 +9,10 @@ export const Gallery = () => {
           {/* Header */}
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-display font-bold">
-              Moments
+              All Moments
             </h2>
             <p className="text-lg text-muted-foreground">
-              Capturing the warmth of our community
+              A complete gallery of our community gatherings
             </p>
           </div>
 
