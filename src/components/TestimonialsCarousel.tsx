@@ -1,9 +1,11 @@
 import { Card } from "@/components/ui/card";
-import { Quote, Linkedin, ChevronLeft, ChevronRight } from "lucide-react";
+import { Quote, Linkedin } from "lucide-react";
 import { useEffect, useState, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import manikImg from "@/assets/members/manik.jpg";
 import aryanImg from "@/assets/members/aryan.jpg";
@@ -27,7 +29,7 @@ import himanshi2Img from "@/assets/members/himanshi2.jpg";
 export const testimonials = [
   {
     name: "Manik",
-    quote: "I loved the energy and curiosity to learn from each other in all the 23 students who joined us. Can't wait for the next gatherings where we can do alot of fun activities and exchange our knowledge and values.",
+    quote: "I loved the energy and curiosity to learn from each other in all the 23 students who joined us. Can't wait for the next gatherings!",
     linkedin: "https://www.linkedin.com/in/mrmanik/",
     imageUrl: manikImg
   },
@@ -40,7 +42,7 @@ export const testimonials = [
   {
     name: "Haider Ali",
     quote: "In my first meet up everyone is so passionate... Har insan kuch na kuch sikh rha kr rha to sab dekh kr khud ka man krne laga!",
-    linkedin: "www.linkedin.com/in/haideralyy01",
+    linkedin: "https://www.linkedin.com/in/haideralyy01",
     imageUrl: divyanshuImg
   },
   {
@@ -51,7 +53,7 @@ export const testimonials = [
   },
   {
     name: "Harpreet Kaur",
-    quote: "Nice to meet all of them present in the gathering. Thing I loved the most is that we can connect without any hesitation.",
+    quote: "Nice to meet all of them present in the gathering. We can connect without any hesitation.",
     linkedin: "https://www.linkedin.com/in/harpreet-kaur-28a25735a",
     imageUrl: avneetImg
   },
@@ -63,13 +65,13 @@ export const testimonials = [
   },
   {
     name: "Shree Sharma",
-    quote: "Loved connecting with everyone. It was a short but amazing meetup. Would love to attend more such meetups.",
+    quote: "Loved connecting with everyone. It was a short but amazing meetup!",
     linkedin: "https://www.linkedin.com/in/shree-sharma-08b540334",
     imageUrl: ayushImg
   },
   {
     name: "Mishti Bansal",
-    quote: "Meetup was amazing. It will really help students a lot. I want the next meetup so that we can connect and upgrade ourselves.",
+    quote: "Meetup was amazing. It will really help students a lot!",
     linkedin: "https://www.linkedin.com/in/mishti-bansal-246a60344",
     imageUrl: mishtiImg
   },
@@ -81,7 +83,7 @@ export const testimonials = [
   },
   {
     name: "Shreya",
-    quote: "I literally liked meeting new people and learning about them and learning new things from them.",
+    quote: "I literally liked meeting new people and learning about them!",
     linkedin: "https://www.linkedin.com/in/shreya-chachra-2a5749322",
     imageUrl: shreyaImg
   },
@@ -93,7 +95,7 @@ export const testimonials = [
   },
   {
     name: "Swagita",
-    quote: "I really enjoyed attending the first 'Let's Connect' meetup. It felt so natural and wholesome.",
+    quote: "I really enjoyed attending the meetup. It felt so natural and wholesome.",
     linkedin: "https://www.linkedin.com/in/swagita-parida-876b54303",
     imageUrl: swagitaImg
   },
@@ -105,13 +107,13 @@ export const testimonials = [
   },
   {
     name: "Manmohan Singh",
-    quote: "It's was good.",
+    quote: "It was good.",
     linkedin: "https://www.linkedin.com/in/manmohan197814",
     imageUrl: manmohanImg
   },
   {
     name: "Sharan",
-    quote: "The meeting was good we had interactions with each other. The one we don't know but can help us grow.",
+    quote: "The meeting was good, we had interactions with each other.",
     linkedin: "https://www.linkedin.com/in/sharan-arora-2020b3363",
     imageUrl: sharanImg
   },
@@ -123,15 +125,34 @@ export const testimonials = [
   },
   {
     name: "Heena",
-    quote: "It was a nice and interactive meetup. I liked the introduction session.",
+    quote: "It was a nice and interactive meetup!",
     linkedin: "https://www.linkedin.com/in/heena-batra-35a8bb346",
     imageUrl: heenaImg
   },
   {
     name: "Himanshi",
-    quote: "That's amazing interactive meetup, where we came to know about each other's skills and perspective.",
+    quote: "That's amazing interactive meetup!",
     linkedin: "https://www.linkedin.com/in/himanshi-sardana-1842b1370",
     imageUrl: himanshi2Img
+  },
+  // New feedbacks from spreadsheet
+  {
+    name: "Sambhav Jain",
+    quote: "It was great.",
+    linkedin: "https://www.linkedin.com/in/sambhav-jain-b70494283",
+    imageUrl: null
+  },
+  {
+    name: "Suraj Kumar",
+    quote: "It was great and memorable meetup because it's my first career building meetup.",
+    linkedin: "https://www.linkedin.com/in/suraj-kumar-kuswaha-40a375315",
+    imageUrl: null
+  },
+  {
+    name: "Rishav",
+    quote: "It was great 😃",
+    linkedin: "https://www.linkedin.com/in/rishav-patiyal-22b69b395",
+    imageUrl: null
   },
   {
     name: "Sashank Joshi",
@@ -140,9 +161,39 @@ export const testimonials = [
     imageUrl: null
   },
   {
+    name: "Swayam Arora",
+    quote: "It was a nice meeting and I love the way they introduce and talk to each other.",
+    linkedin: "https://www.linkedin.com/in/swayam-arora-2b2806340",
+    imageUrl: null
+  },
+  {
+    name: "Swayam Bhatia",
+    quote: "Would love to attend more meetups!",
+    linkedin: "https://www.linkedin.com/in/swayam-bhatia-210177242",
+    imageUrl: null
+  },
+  {
+    name: "Paridhi",
+    quote: "I really enjoyed the meet-up. It was great connecting with like minded people!",
+    linkedin: "https://www.linkedin.com/in/paridhi-kaur-94117230a",
+    imageUrl: null
+  },
+  {
+    name: "Daksh",
+    quote: "To connect and meet everyone and talk about how we can make each other better.",
+    linkedin: "https://www.linkedin.com/in/daksh-khaneja-a034a0373",
+    imageUrl: null
+  },
+  {
     name: "Gaurav Singh",
     quote: "Hats off to Manik who actually pulled this whole thing off by keeping everyone together united. Always greater learnings!",
     linkedin: "https://www.linkedin.com/in/gaurav-singh-5392a7272",
+    imageUrl: null
+  },
+  {
+    name: "Aditya Pushpakar",
+    quote: "I would say it's a very fruitful session I had, Ayush really helped me to clear some of my brain fog.",
+    linkedin: "https://www.linkedin.com/in/aditya-pushpakar-609690323",
     imageUrl: null
   },
   {
@@ -153,8 +204,92 @@ export const testimonials = [
   },
   {
     name: "Divanshi",
-    quote: "There are so many people from each field. You can learn a lot from all of them!",
+    quote: "There are so many people from each and every field. You can learn a lot from all of them!",
     linkedin: "https://www.linkedin.com/in/divanshi-arora-541829373",
+    imageUrl: null
+  },
+  {
+    name: "Lovneet",
+    quote: "A good valuable meetup. Exploration to new people, new bonds. Love to be connected with more people!",
+    linkedin: "https://www.linkedin.com/in/lovneet-kaur-255763346",
+    imageUrl: null
+  },
+  {
+    name: "Meenu Rani",
+    quote: "It was amazing... Need activities that improve my communication skills!",
+    linkedin: "https://www.linkedin.com/in/meenu-rani",
+    imageUrl: null
+  },
+  {
+    name: "Jyotika",
+    quote: "It was really a great meeting...learned a lot!",
+    linkedin: "https://www.linkedin.com/in/jyotika-mittal-a2810332b",
+    imageUrl: null
+  },
+  {
+    name: "Piyush",
+    quote: "1st experience was really excellent!",
+    linkedin: "",
+    imageUrl: null
+  },
+  {
+    name: "Jatin Guleria",
+    quote: "I like the people we are interacting... interaction with same mindset and people who have achieved more gives kick to go on!",
+    linkedin: "https://www.linkedin.com/in/jatin-guleria-693b75366",
+    imageUrl: null
+  },
+  {
+    name: "Kanan",
+    quote: "It was good. For future meetups, it would be nice to have short ice-breaker activities and member introductions.",
+    linkedin: "https://www.linkedin.com/in/kanan-kango-16499b282",
+    imageUrl: null
+  },
+  {
+    name: "Purv",
+    quote: "Great meetup! Loved most is the way others are friendly too.",
+    linkedin: "https://www.linkedin.com/in/purv-bansal-22ba56306",
+    imageUrl: null
+  },
+  {
+    name: "Aditya Aggarwal",
+    quote: "It was great to meet new people!",
+    linkedin: "https://www.linkedin.com/in/adityaagg0003",
+    imageUrl: null
+  },
+  {
+    name: "Samridhi Gupta",
+    quote: "Meetup was great. Loved the vibe, and it was great to connect with others.",
+    linkedin: "https://www.linkedin.com/in/samridhi-gupta08/",
+    imageUrl: null
+  },
+  {
+    name: "Rishu Rana",
+    quote: "Bring Manik bhai chaiye! Loved the most? Ofc Manik bhai!",
+    linkedin: "https://www.linkedin.com/in/rishu-rana-32429a376",
+    imageUrl: null
+  },
+  {
+    name: "Manthan Mishra",
+    quote: "I appreciated the interactive discussions and the opportunity to exchange ideas and experiences.",
+    linkedin: "https://www.linkedin.com/in/manthan-mishra-4bbb1837b",
+    imageUrl: null
+  },
+  {
+    name: "Kamakshi",
+    quote: "Awesome ✌️",
+    linkedin: "https://www.linkedin.com/in/kamakshi-sachdeva-3318a7325",
+    imageUrl: null
+  },
+  {
+    name: "Rohineet Kaur",
+    quote: "I really enjoyed the meetup, especially the interactive discussions. What I loved most is the vibe - it was engaging and insightful!",
+    linkedin: "https://www.linkedin.com/in/rohineet-kaur-419b52362/",
+    imageUrl: null
+  },
+  {
+    name: "Yashika Kainth",
+    quote: "Enjoyed connecting with everyone!",
+    linkedin: "https://www.linkedin.com/in/yashika-kainth-69a0b1284",
     imageUrl: null
   }
 ];
@@ -200,7 +335,7 @@ export const TestimonialsCarousel = () => {
           <div className="relative">
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex gap-6">
-                {testimonials.slice(0, 8).map((testimonial, index) => (
+                {testimonials.slice(0, 10).map((testimonial, index) => (
                   <div
                     key={index}
                     className="flex-shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
@@ -225,14 +360,16 @@ export const TestimonialsCarousel = () => {
                             {testimonial.name}
                           </div>
                         </div>
-                        <a
-                          href={testimonial.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth"
-                        >
-                          <Linkedin className="w-4 h-4" />
-                        </a>
+                        {testimonial.linkedin && (
+                          <a
+                            href={testimonial.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth"
+                          >
+                            <Linkedin className="w-4 h-4" />
+                          </a>
+                        )}
                       </div>
                     </Card>
                   </div>
@@ -260,14 +397,11 @@ export const TestimonialsCarousel = () => {
 
           <div className="text-center">
             <Button
+              asChild
               variant="outline"
-              onClick={() => {
-                const element = document.getElementById("testimonials");
-                if (element) element.scrollIntoView({ behavior: "smooth" });
-              }}
               className="rounded-full"
             >
-              Read All Stories
+              <Link to="/voices">Read All Stories</Link>
             </Button>
           </div>
         </div>

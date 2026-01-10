@@ -39,7 +39,6 @@ export const WallOfMembers = () => {
       twitter: "https://x.com/themanikdiaries",
       instagram: "https://www.instagram.com/manik.3000/",
       skills: "Community Building & Public Speaking",
-      remarkable: "I am supporting women in tech with the help of Girls Leading Tech, a Pan India community.",
       imageUrl: manikImg
     },
     {
@@ -50,8 +49,7 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/shree-sharma-08b540334",
       twitter: "https://x.com/shr14930?s=21",
       instagram: "https://www.instagram.com/shreesharma8937",
-      skills: "Python | HTML | CSS | JavaScript | C programming | C++ | Communication",
-      remarkable: "I am Honest, positive and a very cheerful person.",
+      skills: "Python | HTML | CSS | JavaScript | C programming | C++",
       imageUrl: ayushImg
     },
     {
@@ -60,9 +58,8 @@ export const WallOfMembers = () => {
       branch: "B.Tech CSE",
       block: "10 - COE",
       linkedin: "https://www.linkedin.com/in/ishika-bains-699301378",
-      instagram: "https://www.instagram.com/ishika.0412?igsh=emJta3hqbHB4MHpy",
-      skills: "C, C++, DSA, basics of python and HTML | good communication skills, positive and adaptable mindset, self motivated and responsible",
-      remarkable: "I am curious and very confident.",
+      instagram: "https://www.instagram.com/ishika.0412",
+      skills: "C, C++, DSA, Python, HTML",
       imageUrl: aryanImg
     },
     {
@@ -73,8 +70,7 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/prabhjot-kaur-138b44364",
       twitter: "https://x.com/Prabhjot1607",
       instagram: "https://www.instagram.com/prabhi_kaur786",
-      skills: "C++ programming, Basic DSA | positive attitude, Good Listener and communicator, Best adviser, hardworking",
-      remarkable: "I am a sweet and positive person.",
+      skills: "C++ programming, Basic DSA",
       imageUrl: aashiImg
     },
     {
@@ -84,8 +80,7 @@ export const WallOfMembers = () => {
       block: "3 - CEC",
       linkedin: "https://www.linkedin.com/in/shourya-singh-khatiyan",
       twitter: "https://x.com/Shouryakhatiyan",
-      skills: "Data analysis, Model training",
-      remarkable: "I am a ML Developer",
+      skills: "Data analysis, Model training, ML",
       imageUrl: himanshiImg
     },
     {
@@ -97,7 +92,6 @@ export const WallOfMembers = () => {
       twitter: "https://x.com/Shinuverma_",
       instagram: "https://www.instagram.com/shinuverma___",
       skills: "Blockchain Developer",
-      remarkable: "I love to Explore",
       imageUrl: guneetImg
     },
     {
@@ -105,11 +99,10 @@ export const WallOfMembers = () => {
       graduationYear: "2029",
       branch: "B.Tech CSE - IOT, Cyber Security and Blockchain",
       block: "9 - CEC",
-      linkedin: "www.linkedin.com/in/haideralyy01",
-      twitter: "https://x.com/haideralyy__?t=a17NDOlEdv-MSHggXh7wig&s=09",
-      instagram: "https://www.instagram.com/haideralyy__?igsh=MXFzNzNuamVqczM2bQ==",
+      linkedin: "https://www.linkedin.com/in/haideralyy01",
+      twitter: "https://x.com/haideralyy__",
+      instagram: "https://www.instagram.com/haideralyy__",
       skills: "Coding and Management",
-      remarkable: "I know how to lead teams.",
       imageUrl: divyanshuImg
     },
     {
@@ -120,7 +113,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/meenu-rani",
       twitter: "https://x.com/MeenuRani2914",
       skills: "Technical and Communication, DSA in JAVA",
-      remarkable: "I am a public speaker",
       imageUrl: mannatImg
     },
     {
@@ -128,9 +120,8 @@ export const WallOfMembers = () => {
       graduationYear: "2028",
       branch: "B.Pharmacy",
       block: "8 - CCP",
-      linkedin: "https://www.linkedin.com/in/harpreet-kaur-28a25735a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/harpreet-kaur-28a25735a",
       skills: "Communication",
-      remarkable: "I am a fast leaner",
       imageUrl: harpreetImg
     },
     {
@@ -140,8 +131,7 @@ export const WallOfMembers = () => {
       block: "10 - COE",
       linkedin: "https://www.linkedin.com/in/ayush-rawat-b8412123a",
       twitter: "https://x.com/Ayushrwt_04",
-      skills: "Web Developer",
-      remarkable: "I am a very good frontend developer.",
+      skills: "Web Developer, Frontend",
       imageUrl: akshatImg
     },
     {
@@ -153,7 +143,6 @@ export const WallOfMembers = () => {
       twitter: "https://x.com/aayushchugh_x",
       instagram: "https://www.instagram.com/aayushchugh",
       skills: "Web Development, MERN Stack",
-      remarkable: "I have 5000 followers on twitter.",
       imageUrl: mayankImg
     },
     {
@@ -164,7 +153,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/ranvir-singh-5ba59736b",
       instagram: "https://www.instagram.com/ranvir_singh_sodhi",
       skills: "Full Stack Development, AI, ML",
-      remarkable: "I have lead teams as a CTO.",
       imageUrl: ranvirImg
     },
     {
@@ -176,7 +164,6 @@ export const WallOfMembers = () => {
       twitter: "https://x.com/shreya27chachra",
       instagram: "https://www.instagram.com/shreya27chachra",
       skills: "Public Speaking, Management",
-      remarkable: "I am a very confident Person.",
       imageUrl: shreyaImg
     },
     {
@@ -188,7 +175,6 @@ export const WallOfMembers = () => {
       twitter: "https://x.com/adityapant_",
       instagram: "https://www.instagram.com/adityapant_",
       skills: "Web Development",
-      remarkable: "I am curios and love coding.",
       imageUrl: adityaImg
     },
     {
@@ -199,7 +185,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/rahul-chhabra-336080296",
       instagram: "https://www.instagram.com/_rahul._.chhabra_",
       skills: "Problem Solving",
-      remarkable: "I founded Devantra Community",
       imageUrl: rahulImg
     },
     {
@@ -209,8 +194,7 @@ export const WallOfMembers = () => {
       block: "10 - COE",
       linkedin: "https://www.linkedin.com/in/mishti-bansal-246a60344",
       instagram: "https://www.instagram.com/mishti_mithu_",
-      skills: "Python, HTML, Currently working on Java",
-      remarkable: "I am good in communication and have a growth mindset.",
+      skills: "Python, HTML, Java",
       imageUrl: mishtiImg
     },
     {
@@ -221,7 +205,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/swagita-parida-876b54303",
       twitter: "https://twitter.com/Swag_with_techX",
       skills: "Web Development",
-      remarkable: "I am reflective and observant.",
       imageUrl: swagitaImg
     },
     {
@@ -232,7 +215,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/vinayak-bansal-4a609238a",
       instagram: "https://www.instagram.com/vinayak._.bansall",
       skills: "Management",
-      remarkable: "I know how to manage people and events.",
       imageUrl: vinayakImg
     },
     {
@@ -244,7 +226,6 @@ export const WallOfMembers = () => {
       twitter: "https://x.com/Manmohan197814",
       instagram: "https://www.instagram.com/manmohan141414",
       skills: "Blockchain Development, MERN Stack",
-      remarkable: "I helps everyone so that we can grow together.",
       imageUrl: manmohanImg
     },
     {
@@ -255,7 +236,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/sharan-arora-2020b3363",
       instagram: "https://www.instagram.com/not.ursam",
       skills: "Designing, Drawing",
-      remarkable: "I love Reading",
       imageUrl: sharanImg
     },
     {
@@ -265,9 +245,7 @@ export const WallOfMembers = () => {
       block: "10 - COE",
       linkedin: "https://www.linkedin.com/in/sampark-sharma-9b0923335",
       twitter: "https://x.com/_sampark_",
-      instagram: "https://www.instagram.com/",
       skills: "Social media management, Technology",
-      remarkable: "I am in love with computers and tech",
       imageUrl: samparkImg
     },
     {
@@ -278,7 +256,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/heena-batra-35a8bb346",
       twitter: "https://x.com/H242119619446",
       skills: "Time Management, Adaptability",
-      remarkable: "I am responsible and dedicated.",
       imageUrl: heenaImg
     },
     {
@@ -289,7 +266,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/himanshi-sardana-1842b1370",
       twitter: "https://x.com/HimanshiS786",
       skills: "Development",
-      remarkable: "I am optimistic and Creative",
       imageUrl: himanshi2Img
     },
     // New members from spreadsheet
@@ -300,8 +276,7 @@ export const WallOfMembers = () => {
       block: "2",
       linkedin: "https://www.linkedin.com/in/sambhav-jain-b70494283",
       instagram: "https://www.instagram.com/sambhav3802",
-      skills: "Good in friendships and a good listener",
-      remarkable: "I am good in friendships and a good listener",
+      skills: "Good listener, Friendships",
       imageUrl: null
     },
     {
@@ -311,8 +286,7 @@ export const WallOfMembers = () => {
       block: "2",
       linkedin: "https://www.linkedin.com/in/suraj-kumar-kuswaha-40a375315",
       instagram: "https://www.instagram.com/iitianssuraj",
-      skills: "C, C++, DSA in C++, basics of Python",
-      remarkable: "I am very disciplined and focused.",
+      skills: "C, C++, DSA, Python",
       imageUrl: null
     },
     {
@@ -322,8 +296,7 @@ export const WallOfMembers = () => {
       block: "2",
       linkedin: "https://www.linkedin.com/in/rishav-patiyal-22b69b395",
       instagram: "https://www.instagram.com/rishav_patiyal_07",
-      skills: "Good Listener, Beginner in C++",
-      remarkable: "Good Listener, Beginner in C++",
+      skills: "Good Listener, C++",
       imageUrl: null
     },
     {
@@ -334,7 +307,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/sashank-joshi-a603a2321",
       instagram: "https://www.instagram.com/_sashank__",
       skills: "Web Development, Idea Strategist",
-      remarkable: "Web Development, Idea Strategist",
       imageUrl: null
     },
     {
@@ -345,7 +317,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/swayam-arora-2b2806340",
       instagram: "https://www.instagram.com/samarora_1308",
       skills: "Coding and Marketing",
-      remarkable: "Coding and Marketing",
       imageUrl: null
     },
     {
@@ -356,7 +327,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/swayam-bhatia-210177242",
       instagram: "https://www.instagram.com/human.who.travels",
       skills: "LinkedIn Ghostwriting, Freelancing",
-      remarkable: "I do freelancing in LinkedIn ghostwriting.",
       imageUrl: null
     },
     {
@@ -367,7 +337,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/paridhi-kaur-94117230a",
       instagram: "https://www.instagram.com/kparidhii",
       skills: "Python, C++",
-      remarkable: "Python, C++",
       imageUrl: null
     },
     {
@@ -378,7 +347,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/daksh-khaneja-a034a0373",
       instagram: "https://www.instagram.com/dakshkhaneja_.45",
       skills: "Communication, Management, Web Dev, Branding",
-      remarkable: "Communication, Management, Web Dev, Branding",
       imageUrl: null
     },
     {
@@ -388,8 +356,7 @@ export const WallOfMembers = () => {
       block: "10 - COE",
       linkedin: "https://www.linkedin.com/in/gaurav-singh-5392a7272",
       instagram: "https://www.instagram.com/justtgxurxv._",
-      skills: "A man can't sleep without work!",
-      remarkable: "A man can't sleep without work!",
+      skills: "Hardworking, Dedicated",
       imageUrl: null
     },
     {
@@ -400,8 +367,7 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/aditya-pushpakar-609690323",
       instagram: "https://www.instagram.com/shotgunaditya",
       twitter: "https://x.com/Aditya23P005",
-      skills: "Designing, Python, C++, Prompt Engineering, Entrepreneurship",
-      remarkable: "Designing, Python, C++, Prompt Engineering, Entrepreneurship",
+      skills: "Designing, Python, C++, Prompt Engineering",
       imageUrl: null
     },
     {
@@ -411,8 +377,7 @@ export const WallOfMembers = () => {
       block: "10 - COE",
       linkedin: "https://www.linkedin.com/in/parth-sahni-7955a52b9",
       instagram: "https://www.instagram.com/parth_sahni_3556",
-      skills: "Chess player, like to learn",
-      remarkable: "Chess player, like to learn",
+      skills: "Chess player, Learner",
       imageUrl: null
     },
     {
@@ -423,7 +388,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/ishita-mahajan-522003377",
       instagram: "https://www.instagram.com/_ishitamahajan",
       skills: "Analytical skill",
-      remarkable: "Analytical skill",
       imageUrl: null
     },
     {
@@ -433,8 +397,7 @@ export const WallOfMembers = () => {
       block: "9",
       linkedin: "https://www.linkedin.com/in/divanshi-arora-541829373",
       instagram: "https://www.instagram.com/diva.nshi.arora",
-      skills: "Public speaking, anchoring, communication, sketching",
-      remarkable: "Public speaking, anchoring, communication, sketching",
+      skills: "Public speaking, Anchoring, Communication",
       imageUrl: null
     },
     {
@@ -444,8 +407,7 @@ export const WallOfMembers = () => {
       block: "10 - COE",
       linkedin: "https://www.linkedin.com/in/lovneet-kaur-255763346",
       instagram: "https://www.instagram.com/lovneet_kxur",
-      skills: "Leadership quality, Disciplined",
-      remarkable: "Leadership quality, Disciplined",
+      skills: "Leadership, Discipline",
       imageUrl: null
     },
     {
@@ -455,8 +417,7 @@ export const WallOfMembers = () => {
       block: "10 - COE",
       linkedin: "https://www.linkedin.com/in/jyotika-mittal-a2810332b",
       instagram: "https://www.instagram.com/_jyotika_28_",
-      skills: "Technology, Community-building, Self-improvement",
-      remarkable: "I am driven by a clear purpose to grow continuously and create meaningful impact.",
+      skills: "Technology, Community-building",
       imageUrl: null
     },
     {
@@ -467,7 +428,6 @@ export const WallOfMembers = () => {
       linkedin: "",
       instagram: "https://www.instagram.com/im_.piyush12",
       skills: "Cybersecurity",
-      remarkable: "Cybersecurity working on it",
       imageUrl: null
     },
     {
@@ -477,8 +437,7 @@ export const WallOfMembers = () => {
       block: "9 - Applied Sciences",
       linkedin: "https://www.linkedin.com/in/jatin-guleria-693b75366",
       instagram: "https://www.instagram.com/guleria_jatin02",
-      skills: "Basics of Python and C++ STL",
-      remarkable: "Basics of Python and C++ STL",
+      skills: "Python, C++ STL",
       imageUrl: null
     },
     {
@@ -488,8 +447,7 @@ export const WallOfMembers = () => {
       block: "10 - COE",
       linkedin: "https://www.linkedin.com/in/kanan-kango-16499b282",
       instagram: "https://www.instagram.com/kanan_kango",
-      skills: "Frontend Development (React, TypeScript, Next.js), Python, AI, ML",
-      remarkable: "Strong skills in frontend development with hands-on experience in AI and machine learning.",
+      skills: "React, TypeScript, Next.js, Python, AI, ML",
       imageUrl: null
     },
     {
@@ -499,8 +457,7 @@ export const WallOfMembers = () => {
       block: "6",
       linkedin: "https://www.linkedin.com/in/sahilb315",
       twitter: "https://x.com/Sahilbansall121",
-      skills: "Backend & Systems, Building from scratch",
-      remarkable: "Interested in backend & systems, like to build things from scratch.",
+      skills: "Backend & Systems",
       imageUrl: null
     },
     {
@@ -511,7 +468,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/harshita-joshi-3623b0309",
       instagram: "https://www.instagram.com/harshi.hihihi",
       skills: "Keen learner, Photo editing",
-      remarkable: "Keen learner and photo editor for fun",
       imageUrl: null
     },
     {
@@ -521,8 +477,7 @@ export const WallOfMembers = () => {
       block: "2 - CEC",
       linkedin: "https://www.linkedin.com/in/purv-bansal-22ba56306",
       instagram: "https://www.instagram.com/purvbansal9",
-      skills: "Communication, Leadership, Critical thinking",
-      remarkable: "I am a very positive person, focused on my goals, honest, energetic all day.",
+      skills: "Communication, Leadership",
       imageUrl: null
     },
     {
@@ -533,7 +488,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/adityaagg0003",
       instagram: "https://www.instagram.com/pvt.aditya2006",
       skills: "Never gives up",
-      remarkable: "I never give up",
       imageUrl: null
     },
     {
@@ -544,7 +498,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/samridhi-gupta08/",
       instagram: "https://www.instagram.com/samridhiii_gupta",
       skills: "Learning, Building, Innovating",
-      remarkable: "Learning. Building. Innovating",
       imageUrl: null
     },
     {
@@ -555,7 +508,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/rishu-rana-32429a376",
       instagram: "https://www.instagram.com/snnowmannnn",
       skills: "Cybersecurity",
-      remarkable: "Cybersecurity",
       imageUrl: null
     },
     {
@@ -566,7 +518,6 @@ export const WallOfMembers = () => {
       linkedin: "https://www.linkedin.com/in/manthan-mishra-4bbb1837b",
       instagram: "https://www.instagram.com/_mishra_manthan",
       skills: "Willingness to learn",
-      remarkable: "Willingness to learn",
       imageUrl: null
     },
     {
@@ -576,8 +527,7 @@ export const WallOfMembers = () => {
       block: "10",
       linkedin: "https://www.linkedin.com/in/kamakshi-sachdeva-3318a7325",
       twitter: "https://x.com/KamakshiSa49113",
-      skills: "Techie",
-      remarkable: "Techie :)",
+      skills: "Tech enthusiast",
       imageUrl: null
     },
     {
@@ -587,8 +537,7 @@ export const WallOfMembers = () => {
       block: "10 - COE",
       linkedin: "https://www.linkedin.com/in/rohineet-kaur-419b52362/",
       instagram: "https://www.instagram.com/ruh_1524",
-      skills: "Basic ML deployment, Python",
-      remarkable: "Basic ML deployment, Python",
+      skills: "ML deployment, Python",
       imageUrl: null
     },
     {
@@ -598,8 +547,7 @@ export const WallOfMembers = () => {
       block: "10 - COE",
       linkedin: "https://www.linkedin.com/in/yashika-kainth-69a0b1284",
       instagram: "https://www.instagram.com/_____yashika26",
-      skills: "Cyber security, Digital forensics, OSINT, AI threat detection, Pen testing",
-      remarkable: "Cyber security, Digital forensics, Social engineering, OSINT, Offensive security",
+      skills: "Cyber security, Digital forensics, OSINT, Pen testing",
       imageUrl: null
     }
   ];
@@ -675,12 +623,6 @@ export const WallOfMembers = () => {
                       <div className="pt-2">
                         <p className="text-sm font-semibold text-foreground">Skills</p>
                         <p className="text-sm text-muted-foreground">{member.skills}</p>
-                      </div>
-                    )}
-                    {member.remarkable && (
-                      <div className="pt-2">
-                        <p className="text-sm font-semibold text-foreground">I'm Remarkable Because</p>
-                        <p className="text-sm text-muted-foreground italic">{member.remarkable}</p>
                       </div>
                     )}
                   </div>
