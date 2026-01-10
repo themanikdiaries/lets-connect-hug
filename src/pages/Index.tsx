@@ -10,6 +10,9 @@ import { CodeOfConduct } from "@/components/CodeOfConduct";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
+import { GalleryCarousel } from "@/components/GalleryCarousel";
+import { MembersPreview } from "@/components/MembersPreview";
 
 const Index = () => {
   useScrollAnimation();
@@ -34,15 +37,25 @@ const Index = () => {
         
         <FounderStory />
         
-        <Gallery />
+        {/* Gallery Carousel on Homepage */}
+        <GalleryCarousel />
         
         <ConnectFormats onJoinClick={() => scrollToSection("join")} />
         
         <JoinUs />
         
+        {/* Members Preview (4 members) on Homepage */}
+        <MembersPreview />
+        
+        {/* Testimonials Carousel on Homepage */}
+        <TestimonialsCarousel />
+        
+        {/* Full Sections */}
         <WallOfMembers />
         
         <Testimonials />
+        
+        <Gallery />
         
         <CodeOfConduct />
       </main>

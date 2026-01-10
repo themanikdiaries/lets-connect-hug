@@ -10,7 +10,6 @@ import himanshiImg from "@/assets/members/himanshi.jpg";
 import guneetImg from "@/assets/members/guneet.jpg";
 import divyanshuImg from "@/assets/members/divyanshu.jpg";
 import mannatImg from "@/assets/members/mannat.jpg";
-import avneetImg from "@/assets/members/avneet.jpg";
 import harpreetImg from "@/assets/members/harpreet.jpg";
 import akshatImg from "@/assets/members/akshat.jpg";
 import mayankImg from "@/assets/members/mayank.jpg";
@@ -85,7 +84,7 @@ export const WallOfMembers = () => {
       block: "3 - CEC",
       linkedin: "https://www.linkedin.com/in/shourya-singh-khatiyan",
       twitter: "https://x.com/Shouryakhatiyan",
-      skills: "data analysis, model training",
+      skills: "Data analysis, Model training",
       remarkable: "I am a ML Developer",
       imageUrl: himanshiImg
     },
@@ -118,8 +117,9 @@ export const WallOfMembers = () => {
       graduationYear: "2028",
       branch: "B.Tech CSE",
       block: "10 - COE",
-      linkedin: "https://www.linkedin.com/in/meenu-rani-9894a4327",
-      skills: "DSA in JAVA",
+      linkedin: "https://www.linkedin.com/in/meenu-rani",
+      twitter: "https://x.com/MeenuRani2914",
+      skills: "Technical and Communication, DSA in JAVA",
       remarkable: "I am a public speaker",
       imageUrl: mannatImg
     },
@@ -291,6 +291,316 @@ export const WallOfMembers = () => {
       skills: "Development",
       remarkable: "I am optimistic and Creative",
       imageUrl: himanshi2Img
+    },
+    // New members from spreadsheet
+    {
+      name: "Sambhav Jain",
+      graduationYear: "2028",
+      branch: "B.Tech CSE(IOT)",
+      block: "2",
+      linkedin: "https://www.linkedin.com/in/sambhav-jain-b70494283",
+      instagram: "https://www.instagram.com/sambhav3802",
+      skills: "Good in friendships and a good listener",
+      remarkable: "I am good in friendships and a good listener",
+      imageUrl: null
+    },
+    {
+      name: "Suraj Kumar",
+      graduationYear: "2028",
+      branch: "B.Tech CSE(IOT)",
+      block: "2",
+      linkedin: "https://www.linkedin.com/in/suraj-kumar-kuswaha-40a375315",
+      instagram: "https://www.instagram.com/iitianssuraj",
+      skills: "C, C++, DSA in C++, basics of Python",
+      remarkable: "I am very disciplined and focused.",
+      imageUrl: null
+    },
+    {
+      name: "Rishav Patiyal",
+      graduationYear: "2028",
+      branch: "B.Tech CSE IOT",
+      block: "2",
+      linkedin: "https://www.linkedin.com/in/rishav-patiyal-22b69b395",
+      instagram: "https://www.instagram.com/rishav_patiyal_07",
+      skills: "Good Listener, Beginner in C++",
+      remarkable: "Good Listener, Beginner in C++",
+      imageUrl: null
+    },
+    {
+      name: "Sashank Joshi",
+      graduationYear: "2028",
+      branch: "B.Tech AI&DS",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/sashank-joshi-a603a2321",
+      instagram: "https://www.instagram.com/_sashank__",
+      skills: "Web Development, Idea Strategist",
+      remarkable: "Web Development, Idea Strategist",
+      imageUrl: null
+    },
+    {
+      name: "Swayam Arora",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/swayam-arora-2b2806340",
+      instagram: "https://www.instagram.com/samarora_1308",
+      skills: "Coding and Marketing",
+      remarkable: "Coding and Marketing",
+      imageUrl: null
+    },
+    {
+      name: "Swayam Bhatia",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "COE",
+      linkedin: "https://www.linkedin.com/in/swayam-bhatia-210177242",
+      instagram: "https://www.instagram.com/human.who.travels",
+      skills: "LinkedIn Ghostwriting, Freelancing",
+      remarkable: "I do freelancing in LinkedIn ghostwriting.",
+      imageUrl: null
+    },
+    {
+      name: "Paridhi Kaur",
+      graduationYear: "2028",
+      branch: "B.Tech AIDS",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/paridhi-kaur-94117230a",
+      instagram: "https://www.instagram.com/kparidhii",
+      skills: "Python, C++",
+      remarkable: "Python, C++",
+      imageUrl: null
+    },
+    {
+      name: "Daksh Khaneja",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/daksh-khaneja-a034a0373",
+      instagram: "https://www.instagram.com/dakshkhaneja_.45",
+      skills: "Communication, Management, Web Dev, Branding",
+      remarkable: "Communication, Management, Web Dev, Branding",
+      imageUrl: null
+    },
+    {
+      name: "Gaurav Singh",
+      graduationYear: "2027",
+      branch: "B.Tech AI&DS",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/gaurav-singh-5392a7272",
+      instagram: "https://www.instagram.com/justtgxurxv._",
+      skills: "A man can't sleep without work!",
+      remarkable: "A man can't sleep without work!",
+      imageUrl: null
+    },
+    {
+      name: "Aditya Pushpakar",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/aditya-pushpakar-609690323",
+      instagram: "https://www.instagram.com/shotgunaditya",
+      twitter: "https://x.com/Aditya23P005",
+      skills: "Designing, Python, C++, Prompt Engineering, Entrepreneurship",
+      remarkable: "Designing, Python, C++, Prompt Engineering, Entrepreneurship",
+      imageUrl: null
+    },
+    {
+      name: "Parth Sahni",
+      graduationYear: "2029",
+      branch: "B.Tech CSE",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/parth-sahni-7955a52b9",
+      instagram: "https://www.instagram.com/parth_sahni_3556",
+      skills: "Chess player, like to learn",
+      remarkable: "Chess player, like to learn",
+      imageUrl: null
+    },
+    {
+      name: "Ishita Mahajan",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "10",
+      linkedin: "https://www.linkedin.com/in/ishita-mahajan-522003377",
+      instagram: "https://www.instagram.com/_ishitamahajan",
+      skills: "Analytical skill",
+      remarkable: "Analytical skill",
+      imageUrl: null
+    },
+    {
+      name: "Divanshi Arora",
+      graduationYear: "2029",
+      branch: "B.Tech CSE",
+      block: "9",
+      linkedin: "https://www.linkedin.com/in/divanshi-arora-541829373",
+      instagram: "https://www.instagram.com/diva.nshi.arora",
+      skills: "Public speaking, anchoring, communication, sketching",
+      remarkable: "Public speaking, anchoring, communication, sketching",
+      imageUrl: null
+    },
+    {
+      name: "Lovneet Kaur",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/lovneet-kaur-255763346",
+      instagram: "https://www.instagram.com/lovneet_kxur",
+      skills: "Leadership quality, Disciplined",
+      remarkable: "Leadership quality, Disciplined",
+      imageUrl: null
+    },
+    {
+      name: "Jyotika Mittal",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/jyotika-mittal-a2810332b",
+      instagram: "https://www.instagram.com/_jyotika_28_",
+      skills: "Technology, Community-building, Self-improvement",
+      remarkable: "I am driven by a clear purpose to grow continuously and create meaningful impact.",
+      imageUrl: null
+    },
+    {
+      name: "Piyush Goyal",
+      graduationYear: "2029",
+      branch: "B.Tech IOT",
+      block: "9",
+      linkedin: "",
+      instagram: "https://www.instagram.com/im_.piyush12",
+      skills: "Cybersecurity",
+      remarkable: "Cybersecurity working on it",
+      imageUrl: null
+    },
+    {
+      name: "Jatin Guleria",
+      graduationYear: "2029",
+      branch: "B.Tech CSE DS",
+      block: "9 - Applied Sciences",
+      linkedin: "https://www.linkedin.com/in/jatin-guleria-693b75366",
+      instagram: "https://www.instagram.com/guleria_jatin02",
+      skills: "Basics of Python and C++ STL",
+      remarkable: "Basics of Python and C++ STL",
+      imageUrl: null
+    },
+    {
+      name: "Kanan Kango",
+      graduationYear: "2027",
+      branch: "B.Tech AIML",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/kanan-kango-16499b282",
+      instagram: "https://www.instagram.com/kanan_kango",
+      skills: "Frontend Development (React, TypeScript, Next.js), Python, AI, ML",
+      remarkable: "Strong skills in frontend development with hands-on experience in AI and machine learning.",
+      imageUrl: null
+    },
+    {
+      name: "Sahil Bansal",
+      graduationYear: "2026",
+      branch: "BCA",
+      block: "6",
+      linkedin: "https://www.linkedin.com/in/sahilb315",
+      twitter: "https://x.com/Sahilbansall121",
+      skills: "Backend & Systems, Building from scratch",
+      remarkable: "Interested in backend & systems, like to build things from scratch.",
+      imageUrl: null
+    },
+    {
+      name: "Harshita Joshi",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "3",
+      linkedin: "https://www.linkedin.com/in/harshita-joshi-3623b0309",
+      instagram: "https://www.instagram.com/harshi.hihihi",
+      skills: "Keen learner, Photo editing",
+      remarkable: "Keen learner and photo editor for fun",
+      imageUrl: null
+    },
+    {
+      name: "Purv Bansal",
+      graduationYear: "2028",
+      branch: "B.Tech CSE DS",
+      block: "2 - CEC",
+      linkedin: "https://www.linkedin.com/in/purv-bansal-22ba56306",
+      instagram: "https://www.instagram.com/purvbansal9",
+      skills: "Communication, Leadership, Critical thinking",
+      remarkable: "I am a very positive person, focused on my goals, honest, energetic all day.",
+      imageUrl: null
+    },
+    {
+      name: "Aditya Aggarwal",
+      graduationYear: "2028",
+      branch: "B.Tech AI-DS",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/adityaagg0003",
+      instagram: "https://www.instagram.com/pvt.aditya2006",
+      skills: "Never gives up",
+      remarkable: "I never give up",
+      imageUrl: null
+    },
+    {
+      name: "Samridhi Gupta",
+      graduationYear: "2027",
+      branch: "B.Tech CSE",
+      block: "3 - CEC",
+      linkedin: "https://www.linkedin.com/in/samridhi-gupta08/",
+      instagram: "https://www.instagram.com/samridhiii_gupta",
+      skills: "Learning, Building, Innovating",
+      remarkable: "Learning. Building. Innovating",
+      imageUrl: null
+    },
+    {
+      name: "Rishu Rana",
+      graduationYear: "2029",
+      branch: "B.Tech CSE",
+      block: "10",
+      linkedin: "https://www.linkedin.com/in/rishu-rana-32429a376",
+      instagram: "https://www.instagram.com/snnowmannnn",
+      skills: "Cybersecurity",
+      remarkable: "Cybersecurity",
+      imageUrl: null
+    },
+    {
+      name: "Manthan Mishra",
+      graduationYear: "2029",
+      branch: "B.Tech CSE",
+      block: "9 - CEC",
+      linkedin: "https://www.linkedin.com/in/manthan-mishra-4bbb1837b",
+      instagram: "https://www.instagram.com/_mishra_manthan",
+      skills: "Willingness to learn",
+      remarkable: "Willingness to learn",
+      imageUrl: null
+    },
+    {
+      name: "Kamakshi Sachdeva",
+      graduationYear: "2028",
+      branch: "B.Tech CSE",
+      block: "10",
+      linkedin: "https://www.linkedin.com/in/kamakshi-sachdeva-3318a7325",
+      twitter: "https://x.com/KamakshiSa49113",
+      skills: "Techie",
+      remarkable: "Techie :)",
+      imageUrl: null
+    },
+    {
+      name: "Rohineet Kaur",
+      graduationYear: "2028",
+      branch: "B.Tech AI and DS",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/rohineet-kaur-419b52362/",
+      instagram: "https://www.instagram.com/ruh_1524",
+      skills: "Basic ML deployment, Python",
+      remarkable: "Basic ML deployment, Python",
+      imageUrl: null
+    },
+    {
+      name: "Yashika Kainth",
+      graduationYear: "2027",
+      branch: "B.Tech CSE",
+      block: "10 - COE",
+      linkedin: "https://www.linkedin.com/in/yashika-kainth-69a0b1284",
+      instagram: "https://www.instagram.com/_____yashika26",
+      skills: "Cyber security, Digital forensics, OSINT, AI threat detection, Pen testing",
+      remarkable: "Cyber security, Digital forensics, Social engineering, OSINT, Offensive security",
+      imageUrl: null
     }
   ];
 
@@ -310,7 +620,7 @@ export const WallOfMembers = () => {
               Wall of Members
             </h2>
             <p className="text-lg text-muted-foreground">
-              Meet the incredible people who make Letz Connect special
+              Meet all {members.length} incredible people who make Letz Connect special
             </p>
             
             {/* Search bar */}
@@ -337,7 +647,7 @@ export const WallOfMembers = () => {
                   {/* Profile image */}
                   <div className="flex justify-center">
                     <img
-                      src={member.imageUrl}
+                      src={member.imageUrl || `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&background=6366f1&color=fff&size=128`}
                       alt={member.name}
                       className={`w-32 h-32 rounded-full object-cover border-4 border-primary/20 ${
                         member.name === "Mishti Bansal" || member.name === "Sampark" 
@@ -346,7 +656,7 @@ export const WallOfMembers = () => {
                       }`}
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
-                        target.src = 'https://via.placeholder.com/150/6366f1/ffffff?text=' + member.name.charAt(0);
+                        target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&background=6366f1&color=fff&size=128`;
                       }}
                     />
                   </div>

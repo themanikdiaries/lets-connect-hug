@@ -33,6 +33,7 @@ export const Navigation = ({ onJoinClick }: NavigationProps) => {
     { label: "The Movement", id: "movement" },
     { label: "How We Connect", id: "formats" },
     { label: "Members", id: "members" },
+    { label: "Voices", id: "testimonials" },
     { label: "Gallery", id: "gallery" },
     { label: "Code of Conduct", id: "conduct" },
   ];
