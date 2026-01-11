@@ -25,6 +25,33 @@ import sharanImg from "@/assets/members/sharan.jpg";
 import samparkImg from "@/assets/members/sampark.jpg";
 import heenaImg from "@/assets/members/heena.jpg";
 import himanshi2Img from "@/assets/members/himanshi2.jpg";
+import sambhavImg from "@/assets/members/sambhav.jpg";
+import surajImg from "@/assets/members/suraj.jpg";
+import rishavImg from "@/assets/members/rishav.jpg";
+import sashankImg from "@/assets/members/sashank.jpg";
+import swayamAroraImg from "@/assets/members/swayam-arora.jpg";
+import swayamBhatiaImg from "@/assets/members/swayam-bhatia.jpg";
+import paridhiImg from "@/assets/members/paridhi.jpg";
+import dakshImg from "@/assets/members/daksh.jpg";
+import gauravImg from "@/assets/members/gaurav.jpg";
+import adityaPushpakarImg from "@/assets/members/aditya-pushpakar.jpg";
+import ishitaImg from "@/assets/members/ishita.jpg";
+import divanshiImg from "@/assets/members/divanshi.jpg";
+import lovneetImg from "@/assets/members/lovneet.jpg";
+import meenuImg from "@/assets/members/meenu.jpg";
+import jyotikaImg from "@/assets/members/jyotika.jpg";
+import piyushImg from "@/assets/members/piyush.jpg";
+import jatinImg from "@/assets/members/jatin.jpg";
+import kananImg from "@/assets/members/kanan.jpg";
+import purvImg from "@/assets/members/purv.jpg";
+import adityaAggarwalImg from "@/assets/members/aditya-aggarwal.jpg";
+import samridhiImg from "@/assets/members/samridhi.jpg";
+import rishuImg from "@/assets/members/rishu.jpg";
+import manthanImg from "@/assets/members/manthan.jpg";
+import kamakshiImg from "@/assets/members/kamakshi.jpg";
+import rohineetImg from "@/assets/members/rohineet.jpg";
+import yashikaImg from "@/assets/members/yashika.jpg";
+import harpreetImg from "@/assets/members/harpreet.jpg";
 
 export const testimonials = [
   {
@@ -55,7 +82,7 @@ export const testimonials = [
     name: "Harpreet Kaur",
     quote: "Nice to meet all of them present in the gathering. We can connect without any hesitation.",
     linkedin: "https://www.linkedin.com/in/harpreet-kaur-28a25735a",
-    imageUrl: avneetImg
+    imageUrl: harpreetImg
   },
   {
     name: "Ayush Chugh",
@@ -135,162 +162,161 @@ export const testimonials = [
     linkedin: "https://www.linkedin.com/in/himanshi-sardana-1842b1370",
     imageUrl: himanshi2Img
   },
-  // New feedbacks from spreadsheet
   {
     name: "Sambhav Jain",
     quote: "It was great.",
     linkedin: "https://www.linkedin.com/in/sambhav-jain-b70494283",
-    imageUrl: null
+    imageUrl: sambhavImg
   },
   {
     name: "Suraj Kumar",
     quote: "It was great and memorable meetup because it's my first career building meetup.",
     linkedin: "https://www.linkedin.com/in/suraj-kumar-kuswaha-40a375315",
-    imageUrl: null
+    imageUrl: surajImg
   },
   {
     name: "Rishav",
     quote: "It was great 😃",
     linkedin: "https://www.linkedin.com/in/rishav-patiyal-22b69b395",
-    imageUrl: null
+    imageUrl: rishavImg
   },
   {
     name: "Sashank Joshi",
     quote: "The meetup was absolutely insane, definitely one of the best memories. The highlight was that cup of tea we shared - it just hit different.",
     linkedin: "https://www.linkedin.com/in/sashank-joshi-a603a2321",
-    imageUrl: null
+    imageUrl: sashankImg
   },
   {
     name: "Swayam Arora",
     quote: "It was a nice meeting and I love the way they introduce and talk to each other.",
     linkedin: "https://www.linkedin.com/in/swayam-arora-2b2806340",
-    imageUrl: null
+    imageUrl: swayamAroraImg
   },
   {
     name: "Swayam Bhatia",
     quote: "Would love to attend more meetups!",
     linkedin: "https://www.linkedin.com/in/swayam-bhatia-210177242",
-    imageUrl: null
+    imageUrl: swayamBhatiaImg
   },
   {
     name: "Paridhi",
     quote: "I really enjoyed the meet-up. It was great connecting with like minded people!",
     linkedin: "https://www.linkedin.com/in/paridhi-kaur-94117230a",
-    imageUrl: null
+    imageUrl: paridhiImg
   },
   {
     name: "Daksh",
     quote: "To connect and meet everyone and talk about how we can make each other better.",
     linkedin: "https://www.linkedin.com/in/daksh-khaneja-a034a0373",
-    imageUrl: null
+    imageUrl: dakshImg
   },
   {
     name: "Gaurav Singh",
     quote: "Hats off to Manik who actually pulled this whole thing off by keeping everyone together united. Always greater learnings!",
     linkedin: "https://www.linkedin.com/in/gaurav-singh-5392a7272",
-    imageUrl: null
+    imageUrl: gauravImg
   },
   {
     name: "Aditya Pushpakar",
     quote: "I would say it's a very fruitful session I had, Ayush really helped me to clear some of my brain fog.",
     linkedin: "https://www.linkedin.com/in/aditya-pushpakar-609690323",
-    imageUrl: null
+    imageUrl: adityaPushpakarImg
   },
   {
     name: "Ishita Mahajan",
     quote: "What I loved the most was how the meetup began with just two of you, then one by one people kept joining. It felt so natural and wholesome!",
     linkedin: "https://www.linkedin.com/in/ishita-mahajan-522003377",
-    imageUrl: null
+    imageUrl: ishitaImg
   },
   {
     name: "Divanshi",
     quote: "There are so many people from each and every field. You can learn a lot from all of them!",
     linkedin: "https://www.linkedin.com/in/divanshi-arora-541829373",
-    imageUrl: null
+    imageUrl: divanshiImg
   },
   {
     name: "Lovneet",
     quote: "A good valuable meetup. Exploration to new people, new bonds. Love to be connected with more people!",
     linkedin: "https://www.linkedin.com/in/lovneet-kaur-255763346",
-    imageUrl: null
+    imageUrl: lovneetImg
   },
   {
     name: "Meenu Rani",
     quote: "It was amazing... Need activities that improve my communication skills!",
     linkedin: "https://www.linkedin.com/in/meenu-rani",
-    imageUrl: null
+    imageUrl: meenuImg
   },
   {
     name: "Jyotika",
     quote: "It was really a great meeting...learned a lot!",
     linkedin: "https://www.linkedin.com/in/jyotika-mittal-a2810332b",
-    imageUrl: null
+    imageUrl: jyotikaImg
   },
   {
     name: "Piyush",
     quote: "1st experience was really excellent!",
     linkedin: "",
-    imageUrl: null
+    imageUrl: piyushImg
   },
   {
     name: "Jatin Guleria",
     quote: "I like the people we are interacting... interaction with same mindset and people who have achieved more gives kick to go on!",
     linkedin: "https://www.linkedin.com/in/jatin-guleria-693b75366",
-    imageUrl: null
+    imageUrl: jatinImg
   },
   {
     name: "Kanan",
     quote: "It was good. For future meetups, it would be nice to have short ice-breaker activities and member introductions.",
     linkedin: "https://www.linkedin.com/in/kanan-kango-16499b282",
-    imageUrl: null
+    imageUrl: kananImg
   },
   {
     name: "Purv",
     quote: "Great meetup! Loved most is the way others are friendly too.",
     linkedin: "https://www.linkedin.com/in/purv-bansal-22ba56306",
-    imageUrl: null
+    imageUrl: purvImg
   },
   {
     name: "Aditya Aggarwal",
     quote: "It was great to meet new people!",
     linkedin: "https://www.linkedin.com/in/adityaagg0003",
-    imageUrl: null
+    imageUrl: adityaAggarwalImg
   },
   {
     name: "Samridhi Gupta",
     quote: "Meetup was great. Loved the vibe, and it was great to connect with others.",
     linkedin: "https://www.linkedin.com/in/samridhi-gupta08/",
-    imageUrl: null
+    imageUrl: samridhiImg
   },
   {
     name: "Rishu Rana",
     quote: "Bring Manik bhai chaiye! Loved the most? Ofc Manik bhai!",
     linkedin: "https://www.linkedin.com/in/rishu-rana-32429a376",
-    imageUrl: null
+    imageUrl: rishuImg
   },
   {
     name: "Manthan Mishra",
     quote: "I appreciated the interactive discussions and the opportunity to exchange ideas and experiences.",
     linkedin: "https://www.linkedin.com/in/manthan-mishra-4bbb1837b",
-    imageUrl: null
+    imageUrl: manthanImg
   },
   {
     name: "Kamakshi",
     quote: "Awesome ✌️",
     linkedin: "https://www.linkedin.com/in/kamakshi-sachdeva-3318a7325",
-    imageUrl: null
+    imageUrl: kamakshiImg
   },
   {
     name: "Rohineet Kaur",
     quote: "I really enjoyed the meetup, especially the interactive discussions. What I loved most is the vibe - it was engaging and insightful!",
     linkedin: "https://www.linkedin.com/in/rohineet-kaur-419b52362/",
-    imageUrl: null
+    imageUrl: rohineetImg
   },
   {
     name: "Yashika Kainth",
     quote: "Enjoyed connecting with everyone!",
     linkedin: "https://www.linkedin.com/in/yashika-kainth-69a0b1284",
-    imageUrl: null
+    imageUrl: yashikaImg
   }
 ];
 
