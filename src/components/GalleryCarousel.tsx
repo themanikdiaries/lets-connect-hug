@@ -124,7 +124,7 @@ export const GalleryCarousel = () => {
               variant="outline"
               className="rounded-full"
             >
-              <Link to="/gallery">View All Photos</Link>
+              <Link to="/gallery" onClick={() => window.scrollTo(0, 0)}>View All Photos</Link>
             </Button>
           </div>
         </div>

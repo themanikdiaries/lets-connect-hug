@@ -137,7 +137,7 @@ export const MembersPreview = () => {
               asChild
               className="rounded-full gap-2"
             >
-              <Link to="/members">
+              <Link to="/members" onClick={() => window.scrollTo(0, 0)}>
                 See All Members
                 <ArrowRight className="w-4 h-4" />
               </Link>

@@ -401,7 +401,7 @@ export const TestimonialsCarousel = () => {
               variant="outline"
               className="rounded-full"
             >
-              <Link to="/voices">Read All Stories</Link>
+              <Link to="/voices" onClick={() => window.scrollTo(0, 0)}>Read All Stories</Link>
             </Button>
           </div>
         </div>
