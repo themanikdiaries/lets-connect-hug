@@ -13,7 +13,7 @@ export const Footer = () => {
             warmer, and more meaningful.
           </p>
           <div className="pt-4 text-sm text-muted-foreground">
-            © 2024-2026 Letz Connect. Built with ❤️ by Manik for helping his juniors and peers.
+            © 2026 Letz Connect. Built with ❤️ by Manik for helping his juniors and peers.
           </div>
         </div>
       </div>
