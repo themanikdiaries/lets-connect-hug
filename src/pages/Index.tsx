@@ -10,6 +10,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import { GalleryCarousel } from "@/components/GalleryCarousel";
 import { MembersPreview } from "@/components/MembersPreview";
+import { Timeline } from "@/components/Timeline";
 
 const Index = () => {
   useScrollAnimation();
@@ -33,6 +34,9 @@ const Index = () => {
         </div>
         
         <FounderStory />
+        
+        {/* Timeline Section */}
+        <Timeline />
         
         {/* Gallery Carousel on Homepage */}
         <GalleryCarousel />
