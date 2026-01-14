@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import chatIcon from "@/assets/icon-chat.png";
+import coffeeIcon from "@/assets/icon-coffee.png";
 
 interface ConnectFormatsProps {
   onJoinClick: () => void;
@@ -10,10 +10,17 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
   const formats = [
     {
       icon: chatIcon,
-      title: "Friday Gatherings",
-      description: "1:20pm to 1:50pm at Parivartan backstage",
+      title: "Friday Networking Gatherings",
+      description: "1:20pm to 1:50pm at Parivartan ground in front of basketball court",
       color: "secondary",
       details: "Weekly casual hangouts where we gather, share stories, and connect without pressure or expectations.",
+    },
+    {
+      icon: coffeeIcon,
+      title: "Public Speaking Circles",
+      description: "1:20pm to 1:50pm at Parivartan backstage",
+      color: "primary",
+      details: "We make you confident, a good speaker, teach you how to speak and turn yourself into a leader.",
     },
   ];
 
@@ -32,7 +39,7 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
           </div>
 
           {/* Format cards */}
-          <div className="max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {formats.map((format, index) => {
               return (
                 <Card
