@@ -317,6 +317,36 @@ export const testimonials = [
     quote: "Enjoyed connecting with everyone!",
     linkedin: "https://www.linkedin.com/in/yashika-kainth-69a0b1284",
     imageUrl: yashikaImg
+  },
+  {
+    name: "Avneet Kaur",
+    quote: "The meetup was really good. Loved the energy and enthusiasm of everyone!",
+    linkedin: "https://www.linkedin.com/in/avneet-kaur-a87555266",
+    imageUrl: avneetImg
+  },
+  {
+    name: "Kushal Mittal",
+    quote: "It was nice knowing other people who share similar interests. Looking forward to more meetups!",
+    linkedin: "https://www.linkedin.com/in/kushal-mittal-b9aa6a297",
+    imageUrl: null
+  },
+  {
+    name: "Chirag",
+    quote: "It was amazing!",
+    linkedin: "",
+    imageUrl: null
+  },
+  {
+    name: "Sarang Ahlawat",
+    quote: "Meetups are amazing as we meet such people who are curious and want to do something in life!",
+    linkedin: "https://www.linkedin.com/in/sarang-ahlawat-2ab5b0261",
+    imageUrl: null
+  },
+  {
+    name: "Aashi Raghuwanshi",
+    quote: "Enjoyed the energy and openness of the community. It felt great to connect with like-minded people!",
+    linkedin: "https://www.linkedin.com/in/aashiraghuwanshi",
+    imageUrl: null
   }
 ];
 
