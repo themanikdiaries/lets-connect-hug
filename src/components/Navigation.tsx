@@ -36,6 +36,7 @@ export const Navigation = () => {
     { label: "Members", path: "/members" },
     { label: "Gallery", path: "/gallery" },
     { label: "Voices", path: "/voices" },
+    { label: "Resources", path: "/resources" },
   ];
 
   return (

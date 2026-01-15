@@ -5,41 +5,18 @@ import { useEffect, useState, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { Link } from "react-router-dom";
+import { TIMELINE_IMAGES } from "./Timeline";
 
-import firstGathering from "@/assets/first-gathering.jpg";
-import meetup3 from "@/assets/meetup-3.jpg";
-
-export const GALLERY_ITEMS = [
-  {
-    id: 1,
-    caption: "First Gathering - 17 Oct 2025",
-    description: "Our first ever gathering at Parivartan backstage",
-    image: firstGathering,
-  },
-  {
-    id: 2,
-    caption: "Second Gathering - 27 Oct 2025",
-    description: "Building connections and sharing experiences",
-    image: meetup3,
-  },
-  {
-    id: 3,
-    caption: "Third Gathering - 31 Oct 2025",
-    description: "Growing together as a community",
-    image: meetup3,
-  },
-  {
-    id: 4,
-    caption: "Fourth Gathering - 3 Nov 2025",
-    description: "Continuing our journey of connection and growth",
-    image: meetup3,
-  },
-];
+// Use timeline images for the gallery carousel
+export const GALLERY_ITEMS = TIMELINE_IMAGES.map((image, index) => ({
+  id: index + 1,
+  image,
+}));
 
 export const GalleryCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop: true, align: "start" },
-    [Autoplay({ delay: 5000, stopOnInteraction: false })]
+    [Autoplay({ delay: 3000, stopOnInteraction: false })]
   );
 
   const [canScrollPrev, setCanScrollPrev] = useState(false);
@@ -76,24 +53,18 @@ export const GalleryCarousel = () => {
 
           <div className="relative">
             <div className="overflow-hidden" ref={emblaRef}>
-              <div className="flex gap-6">
+              <div className="flex gap-4">
                 {GALLERY_ITEMS.map((item) => (
                   <div
                     key={item.id}
-                    className="flex-shrink-0 w-full md:w-[calc(50%-12px)]"
+                    className="flex-shrink-0 w-[280px] md:w-[320px]"
                   >
                     <Card className="overflow-hidden rounded-2xl shadow-card hover:shadow-hover transition-smooth">
                       <img
                         src={item.image}
-                        alt={item.caption}
-                        className="w-full h-64 object-cover"
+                        alt={`Letz Connect Moment ${item.id}`}
+                        className="w-full h-48 object-cover"
                       />
-                      <div className="p-6 space-y-2">
-                        <h3 className="text-xl font-semibold">{item.caption}</h3>
-                        <p className="text-base text-muted-foreground">
-                          {item.description}
-                        </p>
-                      </div>
                     </Card>
                   </div>
                 ))}
