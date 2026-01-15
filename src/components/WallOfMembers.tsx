@@ -111,6 +111,11 @@ export const WallOfMembers = () => {
     { name: "Kamakshi Sachdeva", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Sirsa, Haryana", linkedin: "https://www.linkedin.com/in/kamakshi-sachdeva-3318a7325", instagram: "https://www.instagram.com/kamakshi._.sachdeva", skills: "Techie :)", imageUrl: kamakshiImg },
     { name: "Rohineet Kaur", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "Karnal, Haryana", linkedin: "https://www.linkedin.com/in/rohineet-kaur-419b52362/", instagram: "https://www.instagram.com/rohineeet.kaurr", skills: "Basic ML deployment, Python", imageUrl: rohineetImg },
     { name: "Yashika Kainth", graduationYear: "2027", branch: "B.Tech AIML", block: "10 - COE", location: "Mohali, Punjab", linkedin: "https://www.linkedin.com/in/yashika-kainth-69a0b1284", instagram: "https://www.instagram.com/yashika_kainth", skills: "Cyber security, Digital forensics, OSINT, AI threat detection", imageUrl: yashikaImg },
+    { name: "Avneet Kaur", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Sangrur, Punjab", linkedin: "https://www.linkedin.com/in/avneet-kaur-a87555266", instagram: "https://www.instagram.com/avneet__22_", skills: "Python, Public Speaking, Communication", imageUrl: avneetImg },
+    { name: "Kushal Mittal", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Haridwar, Uttarakhand", linkedin: "https://www.linkedin.com/in/kushal-mittal-b9aa6a297", skills: "Writing, Python, Team Management", imageUrl: null },
+    { name: "Chirag", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Gharaunda, Haryana", linkedin: "", skills: "Good Communication Skills", imageUrl: null },
+    { name: "Sarang Ahlawat", graduationYear: "2027", branch: "B.Tech CSE", block: "10 - COE", location: "Baghpat, UP", linkedin: "https://www.linkedin.com/in/sarang-ahlawat-2ab5b0261", skills: "AI, Startups, Community, Leadership", imageUrl: null },
+    { name: "Aashi Raghuwanshi", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Bhopal", linkedin: "https://www.linkedin.com/in/aashiraghuwanshi", skills: "AI & ML, Full Stack, Leadership & Communication", imageUrl: null },
   ];
 
   const filteredMembers = members.filter(
