@@ -8,7 +8,6 @@ import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
-import { GalleryCarousel } from "@/components/GalleryCarousel";
 import { MembersPreview } from "@/components/MembersPreview";
 import { Timeline } from "@/components/Timeline";
 
@@ -35,13 +34,11 @@ const Index = () => {
         
         <FounderStory />
         
-        {/* Timeline Section */}
-        <Timeline />
-        
-        {/* Gallery Carousel on Homepage */}
-        <GalleryCarousel />
-        
+        {/* What We Do Section - Before Journey */}
         <ConnectFormats onJoinClick={() => scrollToSection("join")} />
+        
+        {/* Timeline Section - Our Journey */}
+        <Timeline />
         
         <div id="join">
           <JoinUs />

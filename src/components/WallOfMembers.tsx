@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Linkedin, Twitter, Instagram, Search } from "lucide-react";
+import { Linkedin, Twitter, Instagram, Search, MapPin } from "lucide-react";
 import manikImg from "@/assets/members/manik.jpg";
 import ayushImg from "@/assets/members/ayush.jpg";
 import aryanImg from "@/assets/members/aryan.jpg";
@@ -53,34 +53,36 @@ import manthanImg from "@/assets/members/manthan.jpg";
 import kamakshiImg from "@/assets/members/kamakshi.jpg";
 import rohineetImg from "@/assets/members/rohineet.jpg";
 import yashikaImg from "@/assets/members/yashika.jpg";
+import avneetImg from "@/assets/members/avneet.jpg";
+import mannatImg from "@/assets/members/mannat.jpg";
 
 export const WallOfMembers = () => {
   const [searchQuery, setSearchQuery] = useState("");
   
   const members = [
-    { name: "Manik", graduationYear: "2027", branch: "B.Tech CSE", block: "10 - COE", location: "Chandigarh", linkedin: "https://www.linkedin.com/in/mrmanik/", twitter: "https://x.com/themanikdiaries", instagram: "https://www.instagram.com/manik.3000/", skills: "Community Building & Public Speaking", imageUrl: manikImg },
-    { name: "Shree Sharma", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "", linkedin: "https://www.linkedin.com/in/shree-sharma-08b540334", twitter: "https://x.com/shr14930?s=21", instagram: "https://www.instagram.com/shreesharma8937", skills: "Python | HTML | CSS | JavaScript | C++", imageUrl: ayushImg },
-    { name: "Ishika Bains", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "", linkedin: "https://www.linkedin.com/in/ishika-bains-699301378", instagram: "https://www.instagram.com/ishika.0412", skills: "C, C++, DSA, Python, HTML", imageUrl: aryanImg },
-    { name: "Prabhjot Kaur", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "", linkedin: "https://www.linkedin.com/in/prabhjot-kaur-138b44364", twitter: "https://x.com/Prabhjot1607", instagram: "https://www.instagram.com/prabhi_kaur786", skills: "C++ programming, Basic DSA", imageUrl: aashiImg },
-    { name: "Shourya", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "", linkedin: "https://www.linkedin.com/in/shourya-singh-khatiyan", twitter: "https://x.com/Shouryakhatiyan", skills: "Data analysis, Model training, ML", imageUrl: himanshiImg },
-    { name: "Shinu Verma", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "", linkedin: "https://www.linkedin.com/in/shinu-verma-4678432a2", twitter: "https://x.com/Shinuverma_", instagram: "https://www.instagram.com/shinuverma___", skills: "Blockchain Developer", imageUrl: guneetImg },
-    { name: "Gulam Haider Ali", graduationYear: "2029", branch: "B.Tech CSE - IOT, Cyber Security and Blockchain", block: "9 - CEC", location: "", linkedin: "https://www.linkedin.com/in/haideralyy01", twitter: "https://x.com/haideralyy__", instagram: "https://www.instagram.com/haideralyy__", skills: "Coding and Management", imageUrl: divyanshuImg },
-    { name: "Meenu Rani", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Mohali", linkedin: "https://www.linkedin.com/in/meenu-rani", twitter: "https://x.com/MeenuRani2914", skills: "Technical and communication", imageUrl: meenuImg },
-    { name: "Harpreet Kaur", graduationYear: "2028", branch: "B.Pharmacy", block: "8 - CCP", location: "", linkedin: "https://www.linkedin.com/in/harpreet-kaur-28a25735a", skills: "Communication", imageUrl: harpreetImg },
-    { name: "Ayush Rawat", graduationYear: "2027", branch: "B.Tech - CSE", block: "10 - COE", location: "", linkedin: "https://www.linkedin.com/in/ayush-rawat-b8412123a", twitter: "https://x.com/Ayushrwt_04", skills: "Web Developer, Frontend", imageUrl: akshatImg },
-    { name: "Ayush Chugh", graduationYear: "2028", branch: "B.Tech - CSE", block: "10 - COE", location: "", linkedin: "https://www.linkedin.com/in/aayushchugh", twitter: "https://x.com/aayushchugh_x", instagram: "https://www.instagram.com/aayushchugh", skills: "Web Development, MERN Stack", imageUrl: mayankImg },
-    { name: "Ranvir Singh", graduationYear: "2028", branch: "B.Tech CSE - IOT", block: "2", location: "", linkedin: "https://www.linkedin.com/in/ranvir-singh-5ba59736b", instagram: "https://www.instagram.com/ranvir_singh_sodhi", skills: "Full Stack Development, AI, ML", imageUrl: ranvirImg },
-    { name: "Shreya", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "", linkedin: "https://www.linkedin.com/in/shreya-chachra-2a5749322", twitter: "https://x.com/shreya27chachra", instagram: "https://www.instagram.com/shreya27chachra", skills: "Public Speaking, Management", imageUrl: shreyaImg },
-    { name: "Aditya Pant", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "", linkedin: "https://www.linkedin.com/in/adityaapant", twitter: "https://x.com/adityapant_", instagram: "https://www.instagram.com/adityapant_", skills: "Web Development", imageUrl: adityaImg },
-    { name: "Rahul", graduationYear: "2027", branch: "B.Tech CSE", block: "3 - CEC", location: "", linkedin: "https://www.linkedin.com/in/rahul-chhabra-336080296", instagram: "https://www.instagram.com/_rahul._.chhabra_", skills: "Problem Solving", imageUrl: rahulImg },
-    { name: "Mishti Bansal", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "", linkedin: "https://www.linkedin.com/in/mishti-bansal-246a60344", instagram: "https://www.instagram.com/mishti_mithu_", skills: "Python, HTML, Java", imageUrl: mishtiImg },
-    { name: "Swagita", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "", linkedin: "https://www.linkedin.com/in/swagita-parida-876b54303", twitter: "https://twitter.com/Swag_with_techX", skills: "Web Development", imageUrl: swagitaImg },
-    { name: "Vinayak Bansal", graduationYear: "2029", branch: "B.Tech IT", block: "9 - CEC", location: "", linkedin: "https://www.linkedin.com/in/vinayak-bansal-4a609238a", instagram: "https://www.instagram.com/vinayak._.bansall", skills: "Management", imageUrl: vinayakImg },
-    { name: "Manmohan Singh", graduationYear: "2027", branch: "B.Tech CSE", block: "10 - COE", location: "", linkedin: "https://www.linkedin.com/in/manmohan197814", twitter: "https://x.com/Manmohan197814", instagram: "https://www.instagram.com/manmohan141414", skills: "Blockchain Development, MERN Stack", imageUrl: manmohanImg },
-    { name: "Sharan", graduationYear: "2028", branch: "B.Tech CSE IOT", block: "2", location: "", linkedin: "https://www.linkedin.com/in/sharan-arora-2020b3363", instagram: "https://www.instagram.com/not.ursam", skills: "Designing, Drawing", imageUrl: sharanImg },
-    { name: "Sampark", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "", linkedin: "https://www.linkedin.com/in/sampark-sharma-9b0923335", twitter: "https://x.com/_sampark_", skills: "Social media management, Technology", imageUrl: samparkImg },
-    { name: "Heena", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "", linkedin: "https://www.linkedin.com/in/heena-batra-35a8bb346", twitter: "https://x.com/H242119619446", skills: "Time Management, Adaptability", imageUrl: heenaImg },
-    { name: "Himanshi Sardana", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "", linkedin: "https://www.linkedin.com/in/himanshi-sardana-1842b1370", twitter: "https://x.com/HimanshiS786", skills: "Development", imageUrl: himanshi2Img },
+    { name: "Manik", graduationYear: "2027", branch: "B.Tech CSE", block: "10 - COE", location: "Ambala City, Haryana", linkedin: "https://www.linkedin.com/in/mrmanik/", twitter: "https://x.com/themanikdiaries", instagram: "https://www.instagram.com/manik.3000/", skills: "Community Building, Connecting People, Public Speaking, Communication, Blockchain", imageUrl: manikImg },
+    { name: "Shree Sharma", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Chandigarh", linkedin: "https://www.linkedin.com/in/shree-sharma-08b540334", twitter: "https://x.com/shr14930?s=21", instagram: "https://www.instagram.com/shreesharma8937", skills: "Python, HTML, CSS, JavaScript, C++, Communication", imageUrl: ayushImg },
+    { name: "Ishika Bains", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Roorkee, Uttarakhand", linkedin: "https://www.linkedin.com/in/ishika-bains-699301378", instagram: "https://www.instagram.com/ishika.0412", skills: "C, C++, DSA, Python, HTML, Good Communication", imageUrl: aryanImg },
+    { name: "Prabhjot Kaur", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Ambala Cantt, Haryana", linkedin: "https://www.linkedin.com/in/prabhjot-kaur-138b44364", twitter: "https://x.com/Prabhjot1607", instagram: "https://www.instagram.com/prabhi_kaur786", skills: "C++ programming, Basic DSA, Good Listener", imageUrl: aashiImg },
+    { name: "Shourya", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "Shamli, Uttar Pradesh", linkedin: "https://www.linkedin.com/in/shourya-singh-khatiyan", twitter: "https://x.com/Shouryakhatiyan", skills: "ML Developer, Data Analysis, Model Training", imageUrl: himanshiImg },
+    { name: "Shinu Verma", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Ambala, Haryana", linkedin: "https://www.linkedin.com/in/shinu-verma-4678432a2", twitter: "https://x.com/Shinuverma_", instagram: "https://www.instagram.com/shinuverma___", skills: "Blockchain Developer, PR and Outreach", imageUrl: guneetImg },
+    { name: "Gulam Haider Ali", graduationYear: "2029", branch: "B.Tech CSE - IOT, Cyber Security and Blockchain", block: "9 - CEC", location: "Ludhiana", linkedin: "https://www.linkedin.com/in/haideralyy01", twitter: "https://x.com/haideralyy__", instagram: "https://www.instagram.com/haideralyy__", skills: "Team Leading and Managing", imageUrl: divyanshuImg },
+    { name: "Meenu Rani", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Rajpura", linkedin: "https://www.linkedin.com/in/meenu-rani", twitter: "https://x.com/MeenuRani2914", skills: "Public Speaking", imageUrl: meenuImg },
+    { name: "Harpreet Kaur", graduationYear: "2028", branch: "B.Pharmacy", block: "8 - CCP", location: "Rajpura, Punjab", linkedin: "https://www.linkedin.com/in/harpreet-kaur-28a25735a", skills: "Fast Learner, Marketing", imageUrl: harpreetImg },
+    { name: "Ayush Rawat", graduationYear: "2027", branch: "B.Tech - CSE", block: "10 - COE", location: "Uttrakhand", linkedin: "https://www.linkedin.com/in/ayush-rawat-b8412123a", twitter: "https://x.com/Ayushrwt_04", skills: "Web Developer, Frontend", imageUrl: akshatImg },
+    { name: "Ayush Chugh", graduationYear: "2028", branch: "B.Tech - CSE", block: "10 - COE", location: "Mohali", linkedin: "https://www.linkedin.com/in/aayushchugh", twitter: "https://x.com/aayushchugh_x", instagram: "https://www.instagram.com/aayushchugh", skills: "Web Development, MERN Stack", imageUrl: mayankImg },
+    { name: "Ranvir Singh", graduationYear: "2028", branch: "B.Tech CSE - IOT", block: "2", location: "Mohali, Punjab", linkedin: "https://www.linkedin.com/in/ranvir-singh-5ba59736b", instagram: "https://www.instagram.com/ranvir_singh_sodhi", skills: "Full Stack Development, AI, ML, Prompt Engineering", imageUrl: ranvirImg },
+    { name: "Shreya", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "Panipat, Haryana", linkedin: "https://www.linkedin.com/in/shreya-chachra-2a5749322", twitter: "https://x.com/shreya27chachra", instagram: "https://www.instagram.com/shreya27chachra", skills: "Public Speaking, Management", imageUrl: shreyaImg },
+    { name: "Aditya Pant", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "Uttrakhand", linkedin: "https://www.linkedin.com/in/adityaapant", twitter: "https://x.com/adityapant_", instagram: "https://www.instagram.com/adityapant_", skills: "Web Development", imageUrl: adityaImg },
+    { name: "Rahul", graduationYear: "2027", branch: "B.Tech CSE", block: "3 - CEC", location: "Malout", linkedin: "https://www.linkedin.com/in/rahul-chhabra-336080296", instagram: "https://www.instagram.com/_rahul._.chhabra_", skills: "Problem Solving", imageUrl: rahulImg },
+    { name: "Mishti Bansal", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Tohana, Haryana", linkedin: "https://www.linkedin.com/in/mishti-bansal-246a60344", instagram: "https://www.instagram.com/mishti_mithu_", skills: "Python, HTML, Java, Communication, Growth Mindset", imageUrl: mishtiImg },
+    { name: "Swagita", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "Patiala, Punjab", linkedin: "https://www.linkedin.com/in/swagita-parida-876b54303", twitter: "https://twitter.com/Swag_with_techX", skills: "Creative, Observant, Reflective", imageUrl: swagitaImg },
+    { name: "Vinayak Bansal", graduationYear: "2029", branch: "B.Tech IT", block: "9 - CEC", location: "Muzaffarnagar, Uttar Pradesh", linkedin: "https://www.linkedin.com/in/vinayak-bansal-4a609238a", instagram: "https://www.instagram.com/vinayak._.bansall", skills: "Management", imageUrl: vinayakImg },
+    { name: "Manmohan Singh", graduationYear: "2027", branch: "B.Tech CSE", block: "10 - COE", location: "Ambala City, Haryana", linkedin: "https://www.linkedin.com/in/manmohan197814", twitter: "https://x.com/Manmohan197814", instagram: "https://www.instagram.com/manmohan141414", skills: "Blockchain, MERN Developer, Connecting People", imageUrl: manmohanImg },
+    { name: "Sharan", graduationYear: "2028", branch: "B.Tech CSE IOT", block: "2", location: "Ambala, Haryana", linkedin: "https://www.linkedin.com/in/sharan-arora-2020b3363", instagram: "https://www.instagram.com/not.ursam", skills: "Designing, Reading, Drawing", imageUrl: sharanImg },
+    { name: "Sampark", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Kangra, Himachal Pradesh", linkedin: "https://www.linkedin.com/in/sampark-sharma-9b0923335", twitter: "https://x.com/_sampark_", skills: "Tech, Communication, Social Media", imageUrl: samparkImg },
+    { name: "Heena", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "Patiala", linkedin: "https://www.linkedin.com/in/heena-batra-35a8bb346", twitter: "https://x.com/H242119619446", skills: "Time Management, Teamwork, Adaptability", imageUrl: heenaImg },
+    { name: "Himanshi Sardana", graduationYear: "2028", branch: "B.Tech CSE", block: "3 - CEC", location: "Patiala, Punjab", linkedin: "https://www.linkedin.com/in/himanshi-sardana-1842b1370", twitter: "https://x.com/HimanshiS786", skills: "Optimistic, Creative", imageUrl: himanshi2Img },
     { name: "Sambhav Jain", graduationYear: "2028", branch: "B.Tech CSE(IOT)", block: "2", location: "Panipat", linkedin: "https://www.linkedin.com/in/sambhav-jain-b70494283", instagram: "https://www.instagram.com/sambhav3802", skills: "Good in friendships and a good listener", imageUrl: sambhavImg },
     { name: "Suraj Kumar", graduationYear: "2028", branch: "B.Tech CSE(IOT)", block: "2", location: "Punjab", linkedin: "https://www.linkedin.com/in/suraj-kumar-kuswaha-40a375315", instagram: "https://www.instagram.com/iitianssuraj", skills: "Disciplined and focused, C, C++, DSA, Python", imageUrl: surajImg },
     { name: "Rishav Patiyal", graduationYear: "2028", branch: "B.Tech CSE IOT", block: "2", location: "Himachal Pradesh", linkedin: "https://www.linkedin.com/in/rishav-patiyal-22b69b395", instagram: "https://www.instagram.com/rishav_patiyal_07", skills: "Good Listener, Beginner in C++", imageUrl: rishavImg },
@@ -115,7 +117,8 @@ export const WallOfMembers = () => {
     (member) =>
       member.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       member.branch.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      member.skills.toLowerCase().includes(searchQuery.toLowerCase())
+      member.skills.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      member.location.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
@@ -133,82 +136,19 @@ export const WallOfMembers = () => {
 
           <div className="max-w-md mx-auto">
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
               <Input
-                type="text"
-                placeholder="Search by name, branch, or skills..."
+                placeholder="Search by name, branch, skills, or location..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10 rounded-full"
+                className="pl-10"
               />
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredMembers.map((member, index) => (
-              <Card
-                key={index}
-                className="animate-card group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card"
-              >
-                <div className="p-6 space-y-4">
-                  <div className="flex justify-center">
-                    <img
-                      src={member.imageUrl}
-                      alt={member.name}
-                      className="w-24 h-24 rounded-full object-cover object-top border-4 border-primary/20"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&background=6366f1&color=fff`;
-                      }}
-                    />
-                  </div>
-
-                  <div className="text-center space-y-2">
-                    <h3 className="text-xl font-display font-semibold">
-                      {member.name}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">{member.branch}</p>
-                    <p className="text-xs text-muted-foreground">Class of {member.graduationYear} • {member.block}</p>
-                    {member.location && (
-                      <p className="text-xs text-primary font-medium">📍 {member.location}</p>
-                    )}
-                    <p className="text-xs text-muted-foreground/80">{member.skills}</p>
-                  </div>
-
-                  <div className="flex justify-center gap-2">
-                    {member.linkedin && (
-                      <a
-                        href={member.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth"
-                      >
-                        <Linkedin className="w-4 h-4" />
-                      </a>
-                    )}
-                    {member.twitter && (
-                      <a
-                        href={member.twitter}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth"
-                      >
-                        <Twitter className="w-4 h-4" />
-                      </a>
-                    )}
-                    {member.instagram && (
-                      <a
-                        href={member.instagram}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth"
-                      >
-                        <Instagram className="w-4 h-4" />
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </Card>
+              <MemberCard key={index} member={member} />
             ))}
           </div>
 
@@ -220,5 +160,66 @@ export const WallOfMembers = () => {
         </div>
       </div>
     </section>
+  );
+};
+
+interface MemberCardProps {
+  member: {
+    name: string;
+    graduationYear: string;
+    branch: string;
+    block: string;
+    location: string;
+    linkedin?: string;
+    twitter?: string;
+    instagram?: string;
+    skills: string;
+    imageUrl: string;
+  };
+}
+
+const MemberCard = ({ member }: MemberCardProps) => {
+  return (
+    <Card className="p-6 shadow-card hover:shadow-hover transition-all hover-lift bg-card">
+      <div className="flex flex-col items-center text-center space-y-4">
+        <img
+          src={member.imageUrl}
+          alt={member.name}
+          className="w-24 h-24 rounded-full object-cover border-2 border-primary/20"
+          onError={(e) => {
+            e.currentTarget.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${member.name}`;
+          }}
+        />
+        <div className="space-y-1">
+          <h3 className="font-semibold text-lg">{member.name}</h3>
+          <p className="text-sm text-muted-foreground">{member.branch}</p>
+          <p className="text-xs text-muted-foreground">Class of {member.graduationYear}</p>
+          {member.location && (
+            <div className="flex items-center justify-center gap-1 text-xs text-primary">
+              <MapPin className="w-3 h-3" />
+              <span>{member.location}</span>
+            </div>
+          )}
+        </div>
+        <p className="text-xs text-muted-foreground line-clamp-2">{member.skills}</p>
+        <div className="flex gap-3">
+          {member.linkedin && (
+            <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Linkedin className="w-4 h-4" />
+            </a>
+          )}
+          {member.twitter && (
+            <a href={member.twitter} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Twitter className="w-4 h-4" />
+            </a>
+          )}
+          {member.instagram && (
+            <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+              <Instagram className="w-4 h-4" />
+            </a>
+          )}
+        </div>
+      </div>
+    </Card>
   );
 };

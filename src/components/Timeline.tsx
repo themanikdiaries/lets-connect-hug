@@ -20,12 +20,24 @@ import nov29TwitterImg from "@/assets/timeline/nov-29-twitter.jpg";
 import nov29DevfestImg from "@/assets/timeline/nov-29-devfest.jpg";
 import dec20Img from "@/assets/timeline/dec-20.jpg";
 import jan09Img from "@/assets/timeline/jan-09.jpg";
+import jan13LohriImg from "@/assets/timeline/jan-13-lohri.jpg";
+import jan13MentorshipImg from "@/assets/timeline/jan-13-mentorship.jpg";
+import jan13ParivartanImg from "@/assets/timeline/jan-13-parivartan.jpg";
+import jan13PodcastImg from "@/assets/timeline/jan-13-podcast.jpg";
 
 interface TimelineEvent {
   date: string;
   description: string;
   image?: string;
 }
+
+// Export all timeline images for use in gallery
+export const TIMELINE_IMAGES = [
+  oct17Img, oct31Img, nov02Img, nov03Img, nov04Img, nov05Img, nov06Img, nov07Img,
+  nov08Img, nov11Img, nov20Img, nov21Img, nov22Img, nov24Img, nov29TwitterImg,
+  nov29DevfestImg, dec20Img, jan09Img, jan13LohriImg, jan13MentorshipImg,
+  jan13ParivartanImg, jan13PodcastImg
+];
 
 export const Timeline = () => {
   const events: TimelineEvent[] = [
@@ -119,6 +131,26 @@ export const Timeline = () => {
       description: "The largest gathering of Letz Connect since its inception where 40+ students joined us. Many new members also joined our family.",
       image: jan09Img,
     },
+    {
+      date: "13 Jan 2026",
+      description: "On the occasion of Lohri at Central Park, Mehul introduced Aksheeta to Manik who was with Yashi, Swagita and Himanshi. We ended up doing an impromptu meetup joined by Rahul, Sharan, Vishesh, Chirag, Simar, Vrinda, and Ishita. We discussed career, networking, and everyone introduced each other.",
+      image: jan13LohriImg,
+    },
+    {
+      date: "13 Jan 2026",
+      description: "Manik guided Aksheeta, Simar and Chirag for an hour or so and along the way they met Zareen and Pragyansh at Aashique Chowk. After introducing them to Zareen, they moved on. They all had an amazing time together.",
+      image: jan13MentorshipImg,
+    },
+    {
+      date: "13 Jan 2026",
+      description: "Shree, Sampark, Jyotika, Ishita, and Manik at Parivartan ground connected, laughed, and shared their problems and perspectives. Sampark complimented Manik for his hairs which made him very happy and with this the day ended with positive vibes.",
+      image: jan13ParivartanImg,
+    },
+    {
+      date: "13 Jan 2026",
+      description: "Manik met Rahul, Sharan, and Vishesh at Central Park where they were recording a podcast, and Manik connected them with Bhagya and a lot of other folks.",
+      image: jan13PodcastImg,
+    },
   ];
 
   return (
@@ -151,7 +183,7 @@ export const Timeline = () => {
 
                   {/* Content */}
                   <div className={`ml-10 md:ml-0 md:w-1/2 ${index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
-                    <Card className="p-5 shadow-card hover:shadow-hover transition-all hover-lift bg-card">
+                    <Card className="p-5 shadow-card hover:shadow-hover transition-all hover-lift bg-card overflow-hidden">
                       <div className={`space-y-3 ${index % 2 === 0 ? "md:text-right" : ""}`}>
                         <div className={`flex items-center gap-2 text-primary font-semibold ${index % 2 === 0 ? "md:justify-end" : ""}`}>
                           <Calendar className="w-4 h-4" />
@@ -161,7 +193,7 @@ export const Timeline = () => {
                           <img
                             src={event.image}
                             alt={`Letz Connect - ${event.date}`}
-                            className="w-full h-40 object-cover rounded-lg"
+                            className="w-full h-auto max-h-80 object-contain rounded-lg bg-muted"
                           />
                         )}
                         <p className="text-sm text-muted-foreground leading-relaxed">
