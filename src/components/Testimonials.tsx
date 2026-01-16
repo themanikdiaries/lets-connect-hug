@@ -10,10 +10,10 @@ export const Testimonials = () => {
           {/* Section header */}
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-display font-bold">
-              Community Voices
+              Feedbacks
             </h2>
             <p className="text-lg text-muted-foreground">
-              All {testimonials.length} testimonials from our amazing community members
+              All {testimonials.length} feedbacks from our amazing community members
             </p>
           </div>
 
