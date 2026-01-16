@@ -10,8 +10,6 @@ import { Link } from "react-router-dom";
 import manikImg from "@/assets/members/manik.jpg";
 import aryanImg from "@/assets/members/aryan.jpg";
 import divyanshuImg from "@/assets/members/divyanshu.jpg";
-import aashiImg from "@/assets/members/aashi.jpg";
-import avneetImg from "@/assets/members/avneet.jpg";
 import mayankImg from "@/assets/members/mayank.jpg";
 import ayushImg from "@/assets/members/ayush.jpg";
 import mishtiImg from "@/assets/members/mishti.jpg";
@@ -51,7 +49,11 @@ import manthanImg from "@/assets/members/manthan.jpg";
 import kamakshiImg from "@/assets/members/kamakshi.jpg";
 import rohineetImg from "@/assets/members/rohineet.jpg";
 import yashikaImg from "@/assets/members/yashika.jpg";
-import harpreetImg from "@/assets/members/harpreet.jpg";
+import harpreetImg from "@/assets/members/harpreet-new.jpg";
+import kushalImg from "@/assets/members/kushal.jpg";
+import chiragImg from "@/assets/members/chirag.jpg";
+import sarangImg from "@/assets/members/sarang.jpg";
+import aashiImg from "@/assets/members/aashi.jpg";
 
 export const testimonials = [
   {
@@ -76,7 +78,7 @@ export const testimonials = [
     name: "Prabhjot Kaur",
     quote: "The meetup was really informative. I got to learn about the experiences of seniors.",
     linkedin: "https://www.linkedin.com/in/prabhjot-kaur-138b44364",
-    imageUrl: aashiImg
+    imageUrl: null
   },
   {
     name: "Harpreet Kaur",
@@ -319,34 +321,28 @@ export const testimonials = [
     imageUrl: yashikaImg
   },
   {
-    name: "Avneet Kaur",
-    quote: "The meetup was really good. Loved the energy and enthusiasm of everyone!",
-    linkedin: "https://www.linkedin.com/in/avneet-kaur-a87555266",
-    imageUrl: avneetImg
-  },
-  {
     name: "Kushal Mittal",
     quote: "It was nice knowing other people who share similar interests. Looking forward to more meetups!",
     linkedin: "https://www.linkedin.com/in/kushal-mittal-b9aa6a297",
-    imageUrl: null
+    imageUrl: kushalImg
   },
   {
     name: "Chirag",
     quote: "It was amazing!",
     linkedin: "",
-    imageUrl: null
+    imageUrl: chiragImg
   },
   {
     name: "Sarang Ahlawat",
     quote: "Meetups are amazing as we meet such people who are curious and want to do something in life!",
     linkedin: "https://www.linkedin.com/in/sarang-ahlawat-2ab5b0261",
-    imageUrl: null
+    imageUrl: sarangImg
   },
   {
     name: "Aashi Raghuwanshi",
     quote: "Enjoyed the energy and openness of the community. It felt great to connect with like-minded people!",
     linkedin: "https://www.linkedin.com/in/aashiraghuwanshi",
-    imageUrl: null
+    imageUrl: aashiImg
   }
 ];
 
@@ -381,7 +377,7 @@ export const TestimonialsCarousel = () => {
         <div className="max-w-6xl mx-auto space-y-8">
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-display font-bold">
-              Community Voices
+              Feedbacks
             </h2>
             <p className="text-lg text-muted-foreground">
               Hear what our members say about Letz Connect
@@ -457,7 +453,9 @@ export const TestimonialsCarousel = () => {
               variant="outline"
               className="rounded-full"
             >
-              <Link to="/voices" onClick={() => window.scrollTo(0, 0)}>Read All Stories</Link>
+              <Link to="/voices">
+                View All {testimonials.length} Feedbacks
+              </Link>
             </Button>
           </div>
         </div>

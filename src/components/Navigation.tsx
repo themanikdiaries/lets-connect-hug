@@ -34,8 +34,9 @@ export const Navigation = () => {
   const navLinks = [
     { label: "Home", path: "/" },
     { label: "Members", path: "/members" },
+    { label: "Timeline", path: "/timeline" },
     { label: "Gallery", path: "/gallery" },
-    { label: "Voices", path: "/voices" },
+    { label: "Feedbacks", path: "/voices" },
     { label: "Resources", path: "/resources" },
   ];
 

@@ -8,6 +8,7 @@ import MembersPage from "./pages/MembersPage";
 import GalleryPage from "./pages/GalleryPage";
 import TestimonialsPage from "./pages/TestimonialsPage";
 import ResourcesPage from "./pages/ResourcesPage";
+import TimelinePage from "./pages/TimelinePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/members" element={<MembersPage />} />
+          <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/voices" element={<TestimonialsPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
