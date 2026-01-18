@@ -26,6 +26,11 @@ import jan13LohriImg from "@/assets/timeline/jan-13-lohri.jpg";
 import jan13MentorshipImg from "@/assets/timeline/jan-13-mentorship.jpg";
 import jan13ParivartanImg from "@/assets/timeline/jan-13-parivartan.jpg";
 import jan13PodcastImg from "@/assets/timeline/jan-13-podcast.jpg";
+import jan15AriseImg from "@/assets/timeline/jan-15-arise.jpg";
+import jan16AriseImg from "@/assets/timeline/jan-16-arise.jpg";
+import jan16MeetupImg from "@/assets/timeline/jan-16-meetup.jpg";
+import jan17SukhnaImg from "@/assets/timeline/jan-17-sukhna.jpg";
+import jan17MuseumImg from "@/assets/timeline/jan-17-museum.jpg";
 
 interface TimelineEvent {
   date: string;
@@ -38,7 +43,8 @@ export const TIMELINE_IMAGES = [
   oct17Img, oct31Img, nov02Img, nov03Img, nov04Img, nov05Img, nov06Img, nov07Img,
   nov08Img, nov11Img, nov20Img, nov21Img, nov22Img, nov24Img, nov29TwitterImg,
   nov29DevfestImg, dec20Img, jan09Img, jan13LohriImg, jan13MentorshipImg,
-  jan13ParivartanImg, jan13PodcastImg
+  jan13ParivartanImg, jan13PodcastImg, jan15AriseImg, jan16AriseImg,
+  jan16MeetupImg, jan17SukhnaImg, jan17MuseumImg
 ];
 
 // All timeline events
@@ -153,8 +159,32 @@ const allEvents: TimelineEvent[] = [
     description: "Manik met Rahul, Sharan, and Vishesh at Central Park where they were recording a podcast, and Manik connected them with Bhagya and a lot of other folks.",
     image: jan13PodcastImg,
   },
+  {
+    date: "15 Jan 2026",
+    description: "Simar, Meenu, Prabhjot, and Manik attended the Arise Summit in the auditorium. Manik guided all of them on the power of observation and the good communities to be a part of, and they had an amazing time. He had a particularly good time with Prabhjot, where she taught him Punjabi and shared her funny experiences, and with Simar, who finally clicked a group picture.",
+    image: jan15AriseImg,
+  },
+  {
+    date: "16 Jan 2026",
+    description: "The 2nd Day of the Arise Summit was attended by Aashi, Gaurav, Sarang, Manik, Meenu, and Prabhjot. They all enjoyed the day, especially the expressions and fun moments of Amrish Sir, and the summit ended with Manik and Sarang asking questions from the panelists.",
+    image: jan16AriseImg,
+  },
+  {
+    date: "16 Jan 2026",
+    description: "While Manik was not able to arrive on time as he was in the auditorium and got free by 1:30, 10 minutes late. He was super happy to see so many people sitting together and also found Simar and Aksheeta who was going back as they felt awkward because they don't know anyone but Manik took them in the meetup and they all for the first time played an interactive activity which they all enjoyed and got to know about one another.",
+    image: jan16MeetupImg,
+  },
+  {
+    date: "17 Jan 2026",
+    description: "Manik, Aditya, and Purv went on early morning mini trip to sukhna lake and Nature Trail and had fun plus adventure.",
+    image: jan17SukhnaImg,
+  },
+  {
+    date: "17 Jan 2026",
+    description: "Manik went to the Art Museum after saying bye to Aditya and Purv, and there he met the fellow members of Letz Connect - Harshita, Eva, Daivik, and Gagandeep, surprisingly. They all had a short convo and then continued the beauty in the old sculptures and paintings.",
+    image: jan17MuseumImg,
+  },
 ];
-
 // Reverse the events so latest appears first, then take first 10 for homepage
 const homepageEvents = [...allEvents].reverse().slice(0, 10);
 
