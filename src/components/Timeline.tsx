@@ -155,16 +155,8 @@ const allEvents: TimelineEvent[] = [
   },
 ];
 
-// Filter events up to March 31st for homepage display
-const homepageEvents = allEvents.filter(event => {
-  // Parse the date string and check if it's before April 1st
-  const dateParts = event.date.split(' ');
-  const month = dateParts[1];
-  const year = parseInt(dateParts[2]);
-  
-  // All current events are before March 31st anyway
-  return true;
-}).slice(0, 10); // Show only first 10 events on homepage for cleaner look
+// Reverse the events so latest appears first, then take first 10 for homepage
+const homepageEvents = [...allEvents].reverse().slice(0, 10);
 
 export const Timeline = () => {
   return (
