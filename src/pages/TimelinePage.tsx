@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
-import { Calendar } from "lucide-react";
+import { Calendar, ArrowUpDown } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 // Import timeline images
 import oct17Img from "@/assets/timeline/oct-17.jpg";
@@ -35,17 +37,104 @@ interface TimelineEvent {
 }
 
 const TimelinePage = () => {
-  // Events in reverse order (latest first)
-  const events: TimelineEvent[] = [
+  const [isReversed, setIsReversed] = useState(true); // Default: latest first
+
+  // Events in chronological order (oldest first)
+  const eventsChronological: TimelineEvent[] = [
     {
-      date: "13 Jan 2026",
-      description: "Manik met Rahul, Sharan, and Vishesh at Central Park where they were recording a podcast, and Manik connected them with Bhagya and a lot of other folks.",
-      image: jan13PodcastImg,
+      date: "17 Oct 2025",
+      description: "1st ever meetup of Letz Connect. From thinking whether someone will come to seeing so many people joining us. This is the beginning of something big and truly special.",
+      image: oct17Img,
+    },
+    {
+      date: "31 Oct 2025",
+      description: "To be continued, some new people joined us.",
+      image: oct31Img,
+    },
+    {
+      date: "2 Nov 2025",
+      description: "3rd meetup and we continued to become bigger and better.",
+      image: nov02Img,
+    },
+    {
+      date: "3 Nov 2025",
+      description: "Shree gave us her birthday party and afterwards we all continued our meetup the whole day as it were papers time and some of the students were free and some bunked the classes haha..",
+      image: nov03Img,
+    },
+    {
+      date: "4 Nov 2025",
+      description: "We did Chai pr Charcha, where Gaurav mentored the juniors regarding DSA, career and what to do. By the way, Team Treat is from Manik Side.",
+      image: nov04Img,
+    },
+    {
+      date: "5 Nov 2025",
+      description: "We connect over chai, where Paridhi introduced her friends, and Sambhav called his friends, and here we go. We ended up having a small meetup again at the food court.",
+      image: nov05Img,
+    },
+    {
+      date: "6 Nov 2025",
+      description: "Manik, Sarang, and Paridhi from Letz Connect attended Assocham MSME Conclave and also went to Bird Park.",
+      image: nov06Img,
+    },
+    {
+      date: "7 Nov 2025",
+      description: "Guess what, we ended up doing a small meetup during the 1st day of Parivartan 2k25 where Gagandeep got the guidance regarding GDG club from Manik, and also brought his friends. And with this, they also joined our family.",
+      image: nov07Img,
+    },
+    {
+      date: "8 Nov 2025",
+      description: "So many members (15+) of our family went to attended Devfest Chandigarh at SVIET and had so much fun. Later on, Sarang and Manik met Mishti, and afterwards, Rahul, Ranvir, and Sambhav, and danced for the night.",
+      image: nov08Img,
+    },
+    {
+      date: "11 Nov 2025",
+      description: "Small meetup in the canteen of block 10 during break time, where Manik, along with Kashish, guided Jashn and Vanshika while distributing the T-shirts of Devfest Chandigarh. Aarti also gifted Manik a box full of thekua :)",
+      image: nov11Img,
+    },
+    {
+      date: "20 Nov 2025",
+      description: "Small impromptu meetup at the food court, where we finally have Samridhi joining us, the only Google Women Engineer Scholar from our college, and we talked over pasta :)",
+      image: nov20Img,
+    },
+    {
+      date: "21 Nov 2025",
+      description: "Shree and Kamakshi got the guidance from Manik regarding Life, Career and How to Make the most out of college. Soon Paridhi and Nishika also joined them.",
+      image: nov21Img,
+    },
+    {
+      date: "22 Nov 2025",
+      description: "Shree, Ishita, Kamakshi and Haider attended Pecfest in Punjab Engineering College.",
+      image: nov22Img,
+    },
+    {
+      date: "24 Nov 2025",
+      description: "Sarang and Manik Guided Ishita regarding building presence and getting exposure, outside of the college, and getting involved in global-level communities. Soon, Lovneet, Haider, Meenu, Prabhjot, and Sampark joined, and we all played Truth and Dare and had so much fun.",
+      image: nov24Img,
+    },
+    {
+      date: "29 Nov 2025",
+      description: "We welcomed Sahil, Tanav, and Jashan in our community, and finally, Manik, Ayush, Sahil, and Tanav were able to have their Twitter meetup after being connected virtually.",
+      image: nov29TwitterImg,
+    },
+    {
+      date: "29 Nov 2025",
+      description: "Paridhi, Nishika from Letz Connect attended Devfest Jalandhar along with their friends.",
+      image: nov29DevfestImg,
+    },
+    {
+      date: "20 Dec 2025",
+      description: "Shree and Ishita attended the Graduation Ceremony of the 2025 Batch where Manik connected them with his super cool seniors.",
+      image: dec20Img,
+    },
+    {
+      date: "9 Jan 2026",
+      description: "The largest gathering of Letz Connect since its inception where 40+ students joined us. Many new members also joined our family.",
+      image: jan09Img,
     },
     {
       date: "13 Jan 2026",
-      description: "Shree, Sampark, Jyotika, Ishita, and Manik at Parivartan ground connected, laughed, and shared their problems and perspectives. Sampark complimented Manik for his hairs which made him very happy and with this the day ended with positive vibes.",
-      image: jan13ParivartanImg,
+      description: "On the occasion of Lohri at Central Park, Mehul introduced Aksheeta to Manik who was with Yashi, Swagita and Himanshi. We ended up doing an impromptu meetup joined by Rahul, Sharan, Vishesh, Chirag, Simar, Vrinda, and Ishita. We discussed career, networking, and everyone introduced each other.",
+      image: jan13LohriImg,
     },
     {
       date: "13 Jan 2026",
@@ -54,100 +143,17 @@ const TimelinePage = () => {
     },
     {
       date: "13 Jan 2026",
-      description: "On the occasion of Lohri at Central Park, Mehul introduced Aksheeta to Manik who was with Yashi, Swagita and Himanshi. We ended up doing an impromptu meetup joined by Rahul, Sharan, Vishesh, Chirag, Simar, Vrinda, and Ishita. We discussed career, networking, and everyone introduced each other.",
-      image: jan13LohriImg,
+      description: "Shree, Sampark, Jyotika, Ishita, and Manik at Parivartan ground connected, laughed, and shared their problems and perspectives. Sampark complimented Manik for his hairs which made him very happy and with this the day ended with positive vibes.",
+      image: jan13ParivartanImg,
     },
     {
-      date: "9 Jan 2026",
-      description: "The largest gathering of Letz Connect since its inception where 40+ students joined us. Many new members also joined our family.",
-      image: jan09Img,
-    },
-    {
-      date: "20 Dec 2025",
-      description: "Shree and Ishita attended the Graduation Ceremony of the 2025 Batch where Manik connected them with his super cool seniors.",
-      image: dec20Img,
-    },
-    {
-      date: "29 Nov 2025",
-      description: "Paridhi, Nishika from Letz Connect attended Devfest Jalandhar along with their friends.",
-      image: nov29DevfestImg,
-    },
-    {
-      date: "29 Nov 2025",
-      description: "We welcomed Sahil, Tanav, and Jashan in our community, and finally, Manik, Ayush, Sahil, and Tanav were able to have their Twitter meetup after being connected virtually.",
-      image: nov29TwitterImg,
-    },
-    {
-      date: "24 Nov 2025",
-      description: "Sarang and Manik Guided Ishita regarding building presence and getting exposure, outside of the college, and getting involved in global-level communities. Soon, Lovneet, Haider, Meenu, Prabhjot, and Sampark joined, and we all played Truth and Dare and had so much fun.",
-      image: nov24Img,
-    },
-    {
-      date: "22 Nov 2025",
-      description: "Shree, Ishita, Kamakshi and Haider attended Pecfest in Punjab Engineering College.",
-      image: nov22Img,
-    },
-    {
-      date: "21 Nov 2025",
-      description: "Shree and Kamakshi got the guidance from Manik regarding Life, Career and How to Make the most out of college. Soon Paridhi and Nishika also joined them.",
-      image: nov21Img,
-    },
-    {
-      date: "20 Nov 2025",
-      description: "Small impromptu meetup at the food court, where we finally have Samridhi joining us, the only Google Women Engineer Scholar from our college, and we talked over pasta :)",
-      image: nov20Img,
-    },
-    {
-      date: "11 Nov 2025",
-      description: "Small meetup in the canteen of block 10 during break time, where Manik, along with Kashish, guided Jashn and Vanshika while distributing the T-shirts of Devfest Chandigarh. Aarti also gifted Manik a box full of thekua :)",
-      image: nov11Img,
-    },
-    {
-      date: "8 Nov 2025",
-      description: "So many members (15+) of our family went to attended Devfest Chandigarh at SVIET and had so much fun. Later on, Sarang and Manik met Mishti, and afterwards, Rahul, Ranvir, and Sambhav, and danced for the night.",
-      image: nov08Img,
-    },
-    {
-      date: "7 Nov 2025",
-      description: "Guess what, we ended up doing a small meetup during the 1st day of Parivartan 2k25 where Gagandeep got the guidance regarding GDG club from Manik, and also brought his friends. And with this, they also joined our family.",
-      image: nov07Img,
-    },
-    {
-      date: "6 Nov 2025",
-      description: "Manik, Sarang, and Paridhi from Letz Connect attended Assocham MSME Conclave and also went to Bird Park.",
-      image: nov06Img,
-    },
-    {
-      date: "5 Nov 2025",
-      description: "We connect over chai, where Paridhi introduced her friends, and Sambhav called his friends, and here we go. We ended up having a small meetup again at the food court.",
-      image: nov05Img,
-    },
-    {
-      date: "4 Nov 2025",
-      description: "We did Chai pr Charcha, where Gaurav mentored the juniors regarding DSA, career and what to do. By the way, Team Treat is from Manik Side.",
-      image: nov04Img,
-    },
-    {
-      date: "3 Nov 2025",
-      description: "Shree gave us her birthday party and afterwards we all continued our meetup the whole day as it were papers time and some of the students were free and some bunked the classes haha..",
-      image: nov03Img,
-    },
-    {
-      date: "2 Nov 2025",
-      description: "3rd meetup and we continued to become bigger and better.",
-      image: nov02Img,
-    },
-    {
-      date: "31 Oct 2025",
-      description: "To be continued, some new people joined us.",
-      image: oct31Img,
-    },
-    {
-      date: "17 Oct 2025",
-      description: "1st ever meetup of Letz Connect. From thinking whether someone will come to seeing so many people joining us. This is the beginning of something big and truly special.",
-      image: oct17Img,
+      date: "13 Jan 2026",
+      description: "Manik met Rahul, Sharan, and Vishesh at Central Park where they were recording a podcast, and Manik connected them with Bhagya and a lot of other folks.",
+      image: jan13PodcastImg,
     },
   ];
+
+  const events = isReversed ? [...eventsChronological].reverse() : eventsChronological;
 
   return (
     <div className="smooth-scroll">
@@ -163,6 +169,18 @@ const TimelinePage = () => {
                 <p className="text-lg text-muted-foreground">
                   Every moment that shaped Letz Connect
                 </p>
+                
+                {/* Toggle Button */}
+                <div className="pt-4">
+                  <Button
+                    variant="outline"
+                    onClick={() => setIsReversed(!isReversed)}
+                    className="gap-2"
+                  >
+                    <ArrowUpDown className="w-4 h-4" />
+                    {isReversed ? "Showing Latest First" : "Showing Oldest First"}
+                  </Button>
+                </div>
               </div>
 
               <div className="relative">

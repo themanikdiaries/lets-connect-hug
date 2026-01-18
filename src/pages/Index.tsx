@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { FounderStory } from "@/components/FounderStory";
 import { ConnectFormats } from "@/components/ConnectFormats";
+import { Achievements } from "@/components/Achievements";
 import { JoinUs } from "@/components/JoinUs";
 import { CodeOfConduct } from "@/components/CodeOfConduct";
 import { Footer } from "@/components/Footer";
@@ -36,6 +37,9 @@ const Index = () => {
         
         {/* What We Do Section - Before Journey */}
         <ConnectFormats onJoinClick={() => scrollToSection("join")} />
+        
+        {/* Achievements Section */}
+        <Achievements />
         
         {/* Timeline Section - Our Journey */}
         <Timeline />

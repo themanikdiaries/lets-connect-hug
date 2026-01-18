@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import chatIcon from "@/assets/icon-chat.png";
 import coffeeIcon from "@/assets/icon-coffee.png";
+import { MapPin, Clock } from "lucide-react";
 
 interface ConnectFormatsProps {
   onJoinClick: () => void;
@@ -11,21 +12,18 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
     {
       icon: chatIcon,
       title: "Friday Networking Gatherings",
-      description: "1:20pm to 1:50pm at Parivartan ground in front of basketball court",
       color: "secondary",
       details: "Weekly casual hangouts where we gather, share stories, and connect without pressure or expectations.",
     },
     {
       icon: coffeeIcon,
       title: "Public Speaking Circles",
-      description: "1:20pm to 1:50pm in front of basketball court",
       color: "primary",
       details: "We make you confident, a good speaker, teach you how to speak and turn yourself into a leader.",
     },
     {
       icon: chatIcon,
       title: "Weekly Wednesday Session",
-      description: "A member-led informal session every Wednesday",
       color: "accent",
       details: "A member of our community takes an informal session and guides others by sharing their experience, mistakes and learnings.",
     },
@@ -41,8 +39,20 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
               What we do
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Join us every Friday for casual conversations and meaningful connections
+              Join us for casual conversations and meaningful connections
             </p>
+            
+            {/* Common Location and Time */}
+            <div className="flex flex-wrap justify-center gap-4 pt-4">
+              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
+                <MapPin className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium">At Parivartan Ground in front of Basketball Court</span>
+              </div>
+              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
+                <Clock className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium">1:20pm to 1:50pm</span>
+              </div>
+            </div>
           </div>
 
           {/* Format cards */}
@@ -68,9 +78,6 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
                       <h3 className="text-2xl font-display font-semibold">
                         {format.title}
                       </h3>
-                      <p className="text-lg font-medium text-primary">
-                        {format.description}
-                      </p>
                       <p className="text-muted-foreground leading-relaxed">
                         {format.details}
                       </p>
