@@ -18,9 +18,16 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
     {
       icon: coffeeIcon,
       title: "Public Speaking Circles",
-      description: "1:20pm to 1:50pm at Parivartan backstage",
+      description: "1:20pm to 1:50pm in front of basketball court",
       color: "primary",
       details: "We make you confident, a good speaker, teach you how to speak and turn yourself into a leader.",
+    },
+    {
+      icon: chatIcon,
+      title: "Weekly Wednesday Session",
+      description: "A member-led informal session every Wednesday",
+      color: "accent",
+      details: "A member of our community takes an informal session and guides others by sharing their experience, mistakes and learnings.",
     },
   ];
 
@@ -39,7 +46,7 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
           </div>
 
           {/* Format cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {formats.map((format, index) => {
               return (
                 <Card
