@@ -204,7 +204,10 @@ const TimelinePage = () => {
                 <div className="pt-4">
                   <Button
                     variant="outline"
-                    onClick={() => setIsReversed(!isReversed)}
+                    onClick={() => {
+                      setIsReversed(!isReversed);
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
                     className="gap-2"
                   >
                     <ArrowUpDown className="w-4 h-4" />
@@ -230,7 +233,7 @@ const TimelinePage = () => {
 
                       {/* Content */}
                       <div className={`ml-10 md:ml-0 md:w-1/2 ${index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
-                        <Card className="p-5 shadow-card hover:shadow-hover transition-all hover-lift bg-card overflow-hidden">
+                        <div className="bg-card border border-border rounded-2xl p-5 overflow-hidden">
                           <div className={`space-y-3 ${index % 2 === 0 ? "md:text-right" : ""}`}>
                             <div className={`flex items-center gap-2 text-primary font-semibold ${index % 2 === 0 ? "md:justify-end" : ""}`}>
                               <Calendar className="w-4 h-4" />
@@ -247,7 +250,7 @@ const TimelinePage = () => {
                               {event.description}
                             </p>
                           </div>
-                        </Card>
+                        </div>
                       </div>
                     </div>
                   ))}

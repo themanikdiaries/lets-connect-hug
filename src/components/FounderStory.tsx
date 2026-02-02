@@ -19,7 +19,7 @@ export const FounderStory = () => {
         <div className="max-w-6xl mx-auto space-y-16">
           {/* Section header */}
           <div className="text-center space-y-4">
-            <h2 className="text-4xl md:text-5xl font-display font-bold">
+            <h2 className="text-3xl md:text-4xl font-display font-bold">
               How it started
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -52,9 +52,9 @@ export const FounderStory = () => {
               The Journey
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              {timelineSteps.map((step, index) => <div key={index} className="animate-card relative group">
-                  <div className="bg-card rounded-2xl p-6 h-full shadow-card hover:shadow-hover transition-smooth hover-lift cursor-pointer">
-                    <div className="text-4xl font-display font-bold text-primary mb-3">
+              {timelineSteps.map((step, index) => <div key={index} className="relative">
+                  <div className="bg-card rounded-2xl p-6 h-full border border-border">
+                    <div className="text-3xl font-display font-bold text-primary mb-3">
                       {step.year}
                     </div>
                     <h4 className="font-semibold mb-2">{step.title}</h4>
@@ -66,9 +66,9 @@ export const FounderStory = () => {
                 </div>)}
               
               {/* Future Vision - Adjacent to timeline */}
-              <div className="animate-card relative group">
-                <div className="bg-card rounded-2xl p-6 h-full shadow-card hover:shadow-hover transition-smooth hover-lift">
-                  <div className="text-4xl font-display font-bold text-primary mb-3">
+              <div className="relative">
+                <div className="bg-card rounded-2xl p-6 h-full border border-border">
+                  <div className="text-3xl font-display font-bold text-primary mb-3">
                     →
                   </div>
                   <h4 className="font-semibold mb-2">The Future</h4>

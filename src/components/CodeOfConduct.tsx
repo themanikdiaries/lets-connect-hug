@@ -54,30 +54,26 @@ export const CodeOfConduct = () => {
             {principles.map((principle, index) => {
               const Icon = principle.icon;
               return (
-                <Card
+                <div
                   key={index}
-                  className="group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card"
+                  className="relative bg-card border border-border rounded-2xl p-6 overflow-hidden"
                 >
-                  <div className="p-6 space-y-4">
-                    {/* Icon */}
-                    <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center">
-                      <Icon className="w-7 h-7 text-primary" />
-                    </div>
-
-                    {/* Content */}
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-display font-semibold">
-                        {principle.title}
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed text-sm">
-                        {principle.description}
-                      </p>
-                    </div>
+                  {/* Icon */}
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Icon className="w-6 h-6 text-primary" />
                   </div>
+
+                  {/* Content */}
+                  <h3 className="text-lg font-display font-semibold mb-2">
+                    {principle.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
+                    {principle.description}
+                  </p>
 
                   {/* Decorative gradient */}
                   <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-warm opacity-5 rounded-full blur-3xl" />
-                </Card>
+                </div>
               );
             })}
           </div>
