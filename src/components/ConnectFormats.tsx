@@ -1,4 +1,3 @@
-import { Card } from "@/components/ui/card";
 import chatIcon from "@/assets/icon-chat.png";
 import coffeeIcon from "@/assets/icon-coffee.png";
 import { MapPin, Clock } from "lucide-react";
@@ -59,35 +58,30 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {formats.map((format, index) => {
               return (
-                <Card
+                <div
                   key={index}
-                  className="animate-card group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift cursor-pointer shadow-card bg-card"
+                  className="relative bg-card border border-border rounded-2xl p-6 md:p-8 overflow-hidden"
                 >
-                  <div className="p-8 space-y-4">
-                    {/* Icon */}
-                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
-                      <img
-                        src={format.icon}
-                        alt={format.title}
-                        className="w-10 h-10"
-                      />
-                    </div>
-
-                    {/* Content */}
-                    <div className="space-y-2">
-                      <h3 className="text-2xl font-display font-semibold">
-                        {format.title}
-                      </h3>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {format.details}
-                      </p>
-                    </div>
-
+                  {/* Icon */}
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <img
+                      src={format.icon}
+                      alt={format.title}
+                      className="w-8 h-8"
+                    />
                   </div>
+
+                  {/* Content */}
+                  <h3 className="text-xl font-display font-semibold mb-2">
+                    {format.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
+                    {format.details}
+                  </p>
 
                   {/* Decorative gradient */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-warm opacity-5 rounded-full blur-3xl" />
-                </Card>
+                </div>
               );
             })}
           </div>

@@ -1,19 +1,42 @@
-import { Card } from "@/components/ui/card";
-import { Trophy } from "lucide-react";
+import { Trophy, Award, Star, Building2, Briefcase } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import ishitaImg from "@/assets/members/ishita.jpg";
+import samparkImg from "@/assets/members/sampark.jpg";
+import jyotikaImg from "@/assets/members/jyotika.jpg";
+import rahulImg from "@/assets/members/rahul.jpg";
 
 interface Achievement {
-  name: string;
+  names: string[];
   achievement: string;
-  image: string;
+  images: string[];
+  icon: React.ElementType;
+  category: string;
 }
 
 export const Achievements = () => {
-  const achievements: Achievement[] = [
+  // Show only 3 featured achievements on homepage
+  const featuredAchievements: Achievement[] = [
     {
-      name: "Ishita",
-      achievement: "Got into D4 as a Co Campus Lead and Campus Ambassador at Innovation Mission Punjab.",
-      image: ishitaImg,
+      names: ["Sampark", "Shree", "Aditya", "Ishika"],
+      achievement: "Got into the core team of Google Developer Groups on Campus.",
+      images: [samparkImg],
+      icon: Star,
+      category: "GDG on Campus",
+    },
+    {
+      names: ["Jyotika"],
+      achievement: "Became the GeeksforGeeks Campus Mantri of our college.",
+      images: [jyotikaImg],
+      icon: Award,
+      category: "GeeksforGeeks",
+    },
+    {
+      names: ["Rahul"],
+      achievement: "Officially registered his company - Devantra Innovations.",
+      images: [rahulImg],
+      icon: Briefcase,
+      category: "Entrepreneurship",
     },
   ];
 
@@ -32,43 +55,62 @@ export const Achievements = () => {
           </div>
 
           {/* Achievement cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {achievements.map((item, index) => (
-              <Card
-                key={index}
-                className="group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift cursor-pointer shadow-card bg-card"
-              >
-                <div className="p-6 space-y-4">
-                  {/* Member Image */}
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/20">
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        className="w-full h-full object-cover"
-                      />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {featuredAchievements.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={index}
+                  className="group relative bg-card border border-border rounded-2xl p-6 transition-all duration-300 hover:border-primary/30 overflow-hidden"
+                >
+                  {/* Category badge */}
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="p-2 bg-primary/10 rounded-lg">
+                      <Icon className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
-                      <h3 className="text-xl font-display font-semibold">
-                        {item.name}
-                      </h3>
-                      <div className="flex items-center gap-1 text-primary">
-                        <Trophy className="w-4 h-4" />
-                        <span className="text-sm font-medium">Achievement</span>
-                      </div>
-                    </div>
+                    <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">
+                      {item.category}
+                    </span>
                   </div>
 
+                  {/* Member Image */}
+                  <div className="flex -space-x-3 mb-4">
+                    {item.images.map((img, imgIndex) => (
+                      <div
+                        key={imgIndex}
+                        className="w-12 h-12 rounded-full overflow-hidden border-2 border-background"
+                      >
+                        <img
+                          src={img}
+                          alt={item.names[imgIndex] || "Member"}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Names */}
+                  <h3 className="text-lg font-display font-semibold mb-2">
+                    {item.names.join(", ")}
+                  </h3>
+
                   {/* Achievement description */}
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {item.achievement}
                   </p>
-                </div>
 
-                {/* Decorative gradient */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-warm opacity-5 rounded-full blur-3xl" />
-              </Card>
-            ))}
+                  {/* Decorative gradient */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-warm opacity-5 rounded-full blur-3xl" />
+                </div>
+              );
+            })}
+          </div>
+
+          {/* View All Button */}
+          <div className="text-center">
+            <Button asChild variant="outline" className="rounded-full">
+              <Link to="/achievements">View All Achievements</Link>
+            </Button>
           </div>
         </div>
       </div>

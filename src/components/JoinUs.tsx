@@ -1,5 +1,5 @@
-import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { MessageCircle, Users, FileText, CheckCircle, AlertTriangle } from "lucide-react";
 
 export const JoinUs = () => {
@@ -49,19 +49,19 @@ export const JoinUs = () => {
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
-                <Card
+                <div
                   key={index}
-                  className="animate-card group relative overflow-hidden rounded-3xl border-2 hover:border-primary/50 transition-all hover-lift shadow-card bg-card flex flex-col aspect-square"
+                  className="relative bg-card border border-border rounded-2xl p-5 md:p-6 flex flex-col"
                 >
-                  <div className="p-4 md:p-6 flex flex-col items-center text-center space-y-3 flex-1">
+                  <div className="flex flex-col items-center text-center space-y-3 flex-1">
                     {/* Step number */}
                     <div className="text-sm font-bold text-primary">
                       {step.step}
                     </div>
                     
                     {/* Icon */}
-                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
-                      <Icon className="w-8 h-8 text-primary" />
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
+                      <Icon className="w-7 h-7 text-primary" />
                     </div>
 
                     {/* Content */}
@@ -91,12 +91,10 @@ export const JoinUs = () => {
                       </Button>
                     )}
                   </div>
-
-                  {/* Decorative gradient */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-warm opacity-5 rounded-full blur-3xl" />
-                </Card>
+                </div>
               );
             })}
+              );
           </div>
 
           {/* Important note */}
