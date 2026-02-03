@@ -12,6 +12,7 @@ import jatinImg from "@/assets/members/jatin.jpg";
 import lovneetImg from "@/assets/members/lovneet.jpg";
 import rahulImg from "@/assets/members/rahul.jpg";
 import adityaImg from "@/assets/members/aditya.jpg";
+import shreeImg from "@/assets/members/shree.jpg";
 
 interface Achievement {
   names: string[];
@@ -26,7 +27,7 @@ const AchievementsPage = () => {
     {
       names: ["Sampark", "Shree", "Aditya", "Ishika"],
       achievement: "Got into the core team of Google Developer Groups on Campus.",
-      images: [samparkImg, adityaImg],
+      images: [samparkImg, shreeImg, adityaImg, ishitaImg],
       icon: Star,
       category: "GDG on Campus",
     },
@@ -40,7 +41,7 @@ const AchievementsPage = () => {
     {
       names: ["Lovneet", "Ishita", "Shree"],
       achievement: "Became Campus Ambassadors of Innovation Mission Punjab.",
-      images: [lovneetImg, ishitaImg, ""], // Note: Shree's image needs to be added
+      images: [lovneetImg, ishitaImg, shreeImg],
       icon: Award,
       category: "Innovation Mission Punjab",
     },
