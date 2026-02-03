@@ -40,7 +40,7 @@ const AchievementsPage = () => {
     {
       names: ["Lovneet", "Ishita", "Shree"],
       achievement: "Became Campus Ambassadors of Innovation Mission Punjab.",
-      images: [lovneetImg, ishitaImg],
+      images: [lovneetImg, ishitaImg, ""], // Note: Shree's image needs to be added
       icon: Award,
       category: "Innovation Mission Punjab",
     },
@@ -105,7 +105,7 @@ const AchievementsPage = () => {
 
                       {/* Member Images */}
                       <div className="flex -space-x-3 mb-4">
-                        {item.images.map((img, imgIndex) => (
+                        {item.images.filter(img => img).map((img, imgIndex) => (
                           <div
                             key={imgIndex}
                             className="w-12 h-12 rounded-full overflow-hidden border-2 border-background"

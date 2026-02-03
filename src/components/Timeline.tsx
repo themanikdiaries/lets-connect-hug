@@ -31,6 +31,14 @@ import jan16AriseImg from "@/assets/timeline/jan-16-arise.jpg";
 import jan16MeetupImg from "@/assets/timeline/jan-16-meetup.jpg";
 import jan17SukhnaImg from "@/assets/timeline/jan-17-sukhna.jpg";
 import jan17MuseumImg from "@/assets/timeline/jan-17-museum.jpg";
+import jan19SpeakingImg from "@/assets/timeline/jan-19-speaking.jpg";
+import jan19ChaiImg from "@/assets/timeline/jan-19-chai.jpg";
+import jan20SamosaImg from "@/assets/timeline/jan-20-samosa.jpg";
+import jan22TechsprintImg from "@/assets/timeline/jan-22-techsprint.jpg";
+import jan23MeetupImg from "@/assets/timeline/jan-23-meetup.jpg";
+import jan26ShimlaImg from "@/assets/timeline/jan-26-shimla.jpg";
+import jan27SpeakingImg from "@/assets/timeline/jan-27-speaking.jpg";
+import jan30ActivityImg from "@/assets/timeline/jan-30-activity.jpg";
 
 interface TimelineEvent {
   date: string;
@@ -44,7 +52,9 @@ export const TIMELINE_IMAGES = [
   nov08Img, nov11Img, nov20Img, nov21Img, nov22Img, nov24Img, nov29TwitterImg,
   nov29DevfestImg, dec20Img, jan09Img, jan13LohriImg, jan13MentorshipImg,
   jan13ParivartanImg, jan13PodcastImg, jan15AriseImg, jan16AriseImg,
-  jan16MeetupImg, jan17SukhnaImg, jan17MuseumImg
+  jan16MeetupImg, jan17SukhnaImg, jan17MuseumImg, jan19SpeakingImg, jan19ChaiImg,
+  jan20SamosaImg, jan22TechsprintImg, jan23MeetupImg, jan26ShimlaImg,
+  jan27SpeakingImg, jan30ActivityImg
 ];
 
 // All timeline events
@@ -183,6 +193,46 @@ const allEvents: TimelineEvent[] = [
     date: "17 Jan 2026",
     description: "Manik went to the Art Museum after saying bye to Aditya and Purv, and there he met the fellow members of Letz Connect - Harshita, Eva, Daivik, and Gagandeep, surprisingly. They all had a short convo and then continued the beauty in the old sculptures and paintings.",
     image: jan17MuseumImg,
+  },
+  {
+    date: "19 Jan 2026",
+    description: "We conducted our first public speaking circle and had over 20 members who wanted to improve their confidence, become better public speakers, and become effective communicators.",
+    image: jan19SpeakingImg,
+  },
+  {
+    date: "19 Jan 2026",
+    description: "Ayush called for an impromptu chai pr charcha and some of the members joined him. The fun part was when Ayush shared the pics of the food items they were eating and chai, and some more members joined them. And they had an amazing time together.",
+    image: jan19ChaiImg,
+  },
+  {
+    date: "20 Jan 2026",
+    description: "Lovneet, Shree, Ishita, and Jyotika gave a mini samosa party to Manik as they got selected in different Programs like - Jyotika became Campus Mantri by Geeks for Geeks of our college, Shree, Lovneet, and Ishita became the campus ambassador at Innovation Mission Punjab. Paridhi, Nishika, and Gursimar also joined them later on, and they all ate Paridhi's Mom's Baingan ka Bharta. Haider and a new member lakshita also joined them and they all had an amazing day where they thought to plan for mini trip and shree started crying as usko mirchi lg gye thee samosa khaa kr :) She's such a cute girl.",
+    image: jan20SamosaImg,
+  },
+  {
+    date: "22 Jan 2026",
+    description: "25+ members from Letz Connect attended the Speaker Session as part of the Techsprint organised by the GDG club, where Aashi gave an insightful talk very gracefully.",
+    image: jan22TechsprintImg,
+  },
+  {
+    date: "23 Jan 2026",
+    description: "Due to the weather, we conducted our weekly meetup in the egd hall of the CoE block, and the surprising part was to see people from blocks 3 and 2 coming for the meetup. As we were less members, we had candid discussions with the members. Prabhjot, Sashank, and Jatin had some queries that were solved by everyone.",
+    image: jan23MeetupImg,
+  },
+  {
+    date: "26 Jan 2026",
+    description: "The Best Thing happened in Letz Connect. We had our 1st trip to Shimla under 1k. 13 members (Ishita, Shree, Kamakshi, Simarjot, Aksheeta, Yash, Manan, Parveen, Manik, Kanish, Haider, Mehakdeep, and Jashan) went to Shimla and had so much fun in the snow. They all came back with lifelong memories and many new friendships.",
+    image: jan26ShimlaImg,
+  },
+  {
+    date: "27 Jan 2026",
+    description: "#2 public speaking circle led by Jatin where we had the activities to tell about our idol and to sell anything in 1 min. Despite the rain going on, the meetup was conducted and we had fun.",
+    image: jan27SpeakingImg,
+  },
+  {
+    date: "30 Jan 2026",
+    description: "With over 36 people joining us, we played the activity where we have to find a problem around us with its solution in 5 mins in a mini group and had to present it in 2 mins in front of everyone.",
+    image: jan30ActivityImg,
   },
 ];
 // Reverse the events so latest appears first, then take first 10 for homepage
