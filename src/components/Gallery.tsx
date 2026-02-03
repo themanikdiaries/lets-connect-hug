@@ -25,24 +25,18 @@ export const Gallery = () => {
               return (
                 <div
                   key={index}
-                  className={`overflow-hidden rounded-lg group cursor-pointer transition-all duration-300 hover:z-10 hover:scale-105 ${
+                  className={`overflow-hidden rounded-lg group transition-all duration-300 hover:z-10 hover:scale-105 ${
                     isLarge 
-                      ? "col-span-2 row-span-2" 
+                      ? "col-span-2 row-span-2 h-64 md:h-80" 
                       : isMedium 
-                        ? "col-span-2 md:col-span-1" 
-                        : ""
+                        ? "col-span-2 md:col-span-1 h-40 md:h-48" 
+                        : "h-32 md:h-40"
                   }`}
                 >
                   <img
                     src={image}
                     alt={`Letz Connect Moment ${index + 1}`}
-                    className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
-                      isLarge 
-                        ? "h-64 md:h-80" 
-                        : isMedium 
-                          ? "h-40 md:h-48" 
-                          : "h-32 md:h-40"
-                    }`}
+                    className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110`}
                   />
                 </div>
               );
