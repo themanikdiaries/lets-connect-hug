@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export const Navigation = () => {
@@ -43,87 +44,96 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-card"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link
-            to="/"
-            className="text-2xl font-display font-bold text-foreground hover:text-primary transition-colors"
-          >
-            Letz Connect
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`text-sm font-medium transition-colors relative group ${
-                  location.pathname === link.path
-                    ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {link.label}
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-primary transition-all ${
-                  location.pathname === link.path ? "w-full" : "w-0 group-hover:w-full"
-                }`} />
-              </Link>
-            ))}
-            <ThemeToggle />
-            <Button
-              onClick={handleJoinClick}
-              size="sm"
-              className="rounded-full shadow-warm"
+    <>
+      <ScrollProgress />
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          isScrolled
+            ? "glass shadow-card py-2"
+            : "bg-transparent py-4"
+        }`}
+      >
+        <div className="container mx-auto px-6">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <Link
+              to="/"
+              className="text-2xl font-display font-bold text-foreground hover:text-primary transition-colors relative group"
             >
-              Join Us
-            </Button>
-          </div>
+              <span className="relative z-10">Letz Connect</span>
+              <span className="absolute inset-0 bg-primary/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300" />
+            </Link>
 
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground"
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 space-y-4 border-t border-border">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={`block w-full text-left text-sm font-medium transition-colors ${
-                  location.pathname === link.path
-                    ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center gap-6">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`text-sm font-medium transition-all duration-300 relative group px-2 py-1 ${
+                    location.pathname === link.path
+                      ? "text-foreground"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {link.label}
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-warm rounded-full transition-all duration-300 ${
+                    location.pathname === link.path ? "w-full" : "w-0 group-hover:w-full"
+                  }`} />
+                </Link>
+              ))}
+              <ThemeToggle />
+              <Button
+                onClick={handleJoinClick}
+                size="sm"
+                className="rounded-full shadow-warm hover:shadow-glow transition-smooth"
               >
-                {link.label}
-              </Link>
-            ))}
-            <Button onClick={handleJoinClick} className="w-full rounded-full">
-              Join Us
-            </Button>
+                Join Us
+              </Button>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="flex items-center gap-4 lg:hidden">
+              <ThemeToggle />
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="p-2 text-foreground glass rounded-xl transition-smooth hover:shadow-card"
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
+              </button>
+            </div>
           </div>
-        )}
-      </div>
-    </nav>
+
+          {/* Mobile Navigation */}
+          <div className={`lg:hidden overflow-hidden transition-all duration-500 ${
+            isMobileMenuOpen ? "max-h-[500px] opacity-100 mt-4" : "max-h-0 opacity-0"
+          }`}>
+            <div className="glass-card rounded-2xl p-4 space-y-2">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                    location.pathname === link.path
+                      ? "bg-primary/10 text-foreground"
+                      : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <Button onClick={handleJoinClick} className="w-full rounded-xl mt-2 shadow-warm">
+                Join Us
+              </Button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 };

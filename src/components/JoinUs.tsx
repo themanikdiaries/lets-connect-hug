@@ -51,16 +51,17 @@ export const JoinUs = () => {
               return (
                 <div
                   key={index}
-                  className="relative bg-card border border-border rounded-2xl p-5 md:p-6 flex flex-col"
+                  className="relative glass-card rounded-2xl p-5 md:p-6 flex flex-col card-3d group"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex flex-col items-center text-center space-y-3 flex-1">
                     {/* Step number */}
-                    <div className="text-sm font-bold text-primary">
+                    <div className="text-sm font-bold gradient-text">
                       {step.step}
                     </div>
                     
                     {/* Icon */}
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:shadow-glow transition-smooth">
                       <Icon className="w-7 h-7 text-primary" />
                     </div>
 
@@ -78,7 +79,7 @@ export const JoinUs = () => {
                     {index === 0 && (
                       <Button 
                         asChild 
-                        className="w-full mt-auto bg-green-600 hover:bg-green-700 text-white"
+                        className="w-full mt-auto bg-green-600 hover:bg-green-700 text-white shadow-warm hover:shadow-glow transition-smooth"
                         size="sm"
                       >
                         <a 
@@ -91,10 +92,12 @@ export const JoinUs = () => {
                       </Button>
                     )}
                   </div>
+                  
+                  {/* Decorative gradient */}
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-warm opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-smooth" />
                 </div>
               );
             })}
-              );
           </div>
 
           {/* Important note */}
