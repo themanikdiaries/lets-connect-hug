@@ -60,10 +60,11 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
               return (
                 <div
                   key={index}
-                  className="relative bg-card border border-border rounded-2xl p-6 md:p-8 overflow-hidden"
+                  className="relative glass-card rounded-2xl p-6 md:p-8 overflow-hidden card-3d group"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {/* Icon */}
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:shadow-glow transition-smooth">
                     <img
                       src={format.icon}
                       alt={format.title}
@@ -80,7 +81,10 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
                   </p>
 
                   {/* Decorative gradient */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-warm opacity-5 rounded-full blur-3xl" />
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-warm opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-smooth" />
+                  
+                  {/* Shimmer effect on hover */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 animate-shimmer rounded-2xl pointer-events-none" />
                 </div>
               );
             })}

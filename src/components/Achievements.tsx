@@ -61,11 +61,12 @@ export const Achievements = () => {
               return (
                 <div
                   key={index}
-                  className="group relative bg-card border border-border rounded-2xl p-6 transition-all duration-300 hover:border-primary/30 overflow-hidden"
+                  className="group relative glass-card rounded-2xl p-6 overflow-hidden card-3d"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {/* Category badge */}
                   <div className="flex items-center gap-2 mb-4">
-                    <div className="p-2 bg-primary/10 rounded-lg">
+                    <div className="p-2 bg-primary/10 rounded-lg group-hover:shadow-glow transition-smooth">
                       <Icon className="w-5 h-5 text-primary" />
                     </div>
                     <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">
@@ -78,7 +79,7 @@ export const Achievements = () => {
                     {item.images.map((img, imgIndex) => (
                       <div
                         key={imgIndex}
-                        className="w-12 h-12 rounded-full overflow-hidden border-2 border-background"
+                        className="w-12 h-12 rounded-full overflow-hidden border-2 border-background shadow-card"
                       >
                         <img
                           src={img}
@@ -100,7 +101,7 @@ export const Achievements = () => {
                   </p>
 
                   {/* Decorative gradient */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-warm opacity-5 rounded-full blur-3xl" />
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-warm opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-smooth" />
                 </div>
               );
             })}
