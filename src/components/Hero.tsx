@@ -26,10 +26,7 @@ export const Hero = ({
       <div className="relative z-10 container mx-auto px-6 py-20 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full fade-in-up">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-muted-foreground">Where Connections Begin</span>
-          </div>
+          
 
           {/* Headline with gradient text */}
           <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight fade-in-up" style={{
