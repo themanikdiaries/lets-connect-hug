@@ -236,7 +236,7 @@ const allEvents: TimelineEvent[] = [
   },
 ];
 // Reverse the events so latest appears first, then take first 10 for homepage
-const homepageEvents = [...allEvents].reverse().slice(0, 10);
+const homepageEvents = [...allEvents].reverse().slice(0, 3);
 
 export const Timeline = () => {
   return (

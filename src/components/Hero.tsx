@@ -29,7 +29,7 @@ export const Hero = ({ onJoinClick, onStoryClick }: HeroProps) => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full fade-in-up">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-muted-foreground">A Student-Led Community</span>
+            <span className="text-sm font-medium text-muted-foreground">Where Connections Begin</span>
           </div>
 
           {/* Headline with gradient text */}
@@ -69,7 +69,7 @@ export const Hero = ({ onJoinClick, onStoryClick }: HeroProps) => {
                 <div className="flex flex-col items-center gap-2">
                   <Users className="w-6 h-6 text-primary mb-1" />
                   <span className="text-3xl md:text-4xl font-display font-bold gradient-text">
-                    <AnimatedCounter end={75} suffix="+" />
+                    <AnimatedCounter end={110} suffix="+" />
                   </span>
                   <span className="text-xs md:text-sm text-muted-foreground">Members</span>
                 </div>
@@ -79,9 +79,9 @@ export const Hero = ({ onJoinClick, onStoryClick }: HeroProps) => {
                 <div className="flex flex-col items-center gap-2">
                   <Calendar className="w-6 h-6 text-secondary mb-1" />
                   <span className="text-3xl md:text-4xl font-display font-bold gradient-text">
-                    <AnimatedCounter end={30} suffix="+" duration={2200} />
+                    <AnimatedCounter end={20} suffix="+" duration={2200} />
                   </span>
-                  <span className="text-xs md:text-sm text-muted-foreground">Events</span>
+                  <span className="text-xs md:text-sm text-muted-foreground">Meetups</span>
                 </div>
               </div>
               
@@ -89,7 +89,7 @@ export const Hero = ({ onJoinClick, onStoryClick }: HeroProps) => {
                 <div className="flex flex-col items-center gap-2">
                   <Sparkles className="w-6 h-6 text-accent mb-1" />
                   <span className="text-3xl md:text-4xl font-display font-bold gradient-text">
-                    <AnimatedCounter end={3} duration={1500} />
+                    <AnimatedCounter end={4} duration={1500} />
                   </span>
                   <span className="text-xs md:text-sm text-muted-foreground">Months</span>
                 </div>
