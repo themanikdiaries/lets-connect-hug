@@ -11,6 +11,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import { MembersPreview } from "@/components/MembersPreview";
 import { Timeline } from "@/components/Timeline";
+import { GallerySlideshow } from "@/components/GallerySlideshow";
 
 const Index = () => {
   useScrollAnimation();
@@ -33,13 +34,13 @@ const Index = () => {
           />
         </div>
         
+        {/* Gallery Slideshow - Right after hero */}
+        <GallerySlideshow />
+        
         <FounderStory />
         
         {/* What We Do Section - Before Journey */}
         <ConnectFormats onJoinClick={() => scrollToSection("join")} />
-        
-        {/* Achievements Section */}
-        <Achievements />
         
         {/* Timeline Section - Our Journey */}
         <Timeline />
@@ -53,6 +54,9 @@ const Index = () => {
         
         {/* Testimonials Carousel on Homepage */}
         <TestimonialsCarousel />
+        
+        {/* Achievements Section - After Testimonials */}
+        <Achievements />
         
         <CodeOfConduct />
       </main>

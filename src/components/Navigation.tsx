@@ -70,16 +70,13 @@ export const Navigation = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-sm font-medium transition-all duration-300 relative group px-2 py-1 ${
+                  className={`text-sm font-medium transition-all duration-300 nav-link-underline px-2 py-1 ${
                     location.pathname === link.path
-                      ? "text-foreground"
+                      ? "text-foreground after:scale-x-100"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
                   {link.label}
-                  <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-warm rounded-full transition-all duration-300 ${
-                    location.pathname === link.path ? "w-full" : "w-0 group-hover:w-full"
-                  }`} />
                 </Link>
               ))}
               <ThemeToggle />

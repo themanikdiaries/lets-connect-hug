@@ -16,7 +16,7 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
     },
     {
       icon: coffeeIcon,
-      title: "Public Speaking Circles",
+      title: "Monday Public Speaking Circle",
       color: "primary",
       details: "We make you confident, a good speaker, teach you how to speak and turn yourself into a leader.",
     },

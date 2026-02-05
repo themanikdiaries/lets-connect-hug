@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Linkedin, Twitter, Instagram, Search, MapPin } from "lucide-react";
+import { Linkedin, Twitter, Instagram, Search, MapPin, Filter } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import manikImg from "@/assets/members/manik.jpg";
 import ayushImg from "@/assets/members/ayush.jpg";
 import aryanImg from "@/assets/members/aryan.jpg";
@@ -62,6 +63,7 @@ import aksheetaImg from "@/assets/members/aksheeta.jpg";
 
 export const WallOfMembers = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedYear, setSelectedYear] = useState<string>("all");
   
   const members = [
     { name: "Manik", graduationYear: "2027", branch: "B.Tech CSE", block: "10 - COE", location: "Ambala City, Haryana", linkedin: "https://www.linkedin.com/in/mrmanik/", twitter: "https://x.com/themanikdiaries", instagram: "https://www.instagram.com/manik.3000/", skills: "Community Building, Connecting People, Public Speaking, Communication, Blockchain", imageUrl: manikImg },
@@ -123,13 +125,19 @@ export const WallOfMembers = () => {
     { name: "Aksheeta", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "", linkedin: "", skills: "", imageUrl: aksheetaImg },
   ];
 
-  const filteredMembers = members.filter(
-    (member) =>
+  const graduationYears = ["all", "2026", "2027", "2028", "2029"];
+
+  const filteredMembers = members.filter((member) => {
+    const matchesSearch =
       member.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       member.branch.toLowerCase().includes(searchQuery.toLowerCase()) ||
       member.skills.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      member.location.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+      member.location.toLowerCase().includes(searchQuery.toLowerCase());
+    
+    const matchesYear = selectedYear === "all" || member.graduationYear === selectedYear;
+    
+    return matchesSearch && matchesYear;
+  });
 
   return (
     <section className="py-16 bg-gradient-sunset">
@@ -144,7 +152,7 @@ export const WallOfMembers = () => {
             </p>
           </div>
 
-          <div className="max-w-md mx-auto">
+          <div className="max-w-2xl mx-auto space-y-4">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
               <Input
@@ -153,6 +161,25 @@ export const WallOfMembers = () => {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10"
               />
+            </div>
+
+            {/* Graduation Year Filter */}
+            <div className="flex flex-wrap justify-center gap-2">
+              <div className="flex items-center gap-2 text-sm text-muted-foreground mr-2">
+                <Filter className="w-4 h-4" />
+                <span>Class of:</span>
+              </div>
+              {graduationYears.map((year) => (
+                <Button
+                  key={year}
+                  variant={selectedYear === year ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setSelectedYear(year)}
+                  className="rounded-full px-4 text-xs"
+                >
+                  {year === "all" ? "All" : year}
+                </Button>
+              ))}
             </div>
           </div>
 
