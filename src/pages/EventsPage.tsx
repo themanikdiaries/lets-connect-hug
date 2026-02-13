@@ -27,6 +27,13 @@ const EventsPage = () => {
       date: "7, 8 March 2026",
       link: "https://hacknwin-3.devfolio.co/",
     },
+    {
+      name: "E-Summit CGC",
+      type: "Summit",
+      location: "CGC Landran",
+      date: "17, 18 March 2026",
+      link: "#",
+    },
   ];
 
   return (
