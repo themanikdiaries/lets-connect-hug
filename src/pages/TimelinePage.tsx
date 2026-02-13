@@ -42,6 +42,18 @@ import jan23MeetupImg from "@/assets/timeline/jan-23-meetup.jpg";
 import jan26ShimlaImg from "@/assets/timeline/jan-26-shimla.jpg";
 import jan27SpeakingImg from "@/assets/timeline/jan-27-speaking.jpg";
 import jan30ActivityImg from "@/assets/timeline/jan-30-activity.jpg";
+import feb02TechsprintImg from "@/assets/timeline/feb-02-techsprint.jpg";
+import feb03SpeakingImg from "@/assets/timeline/feb-03-speaking.jpg";
+import feb06MeetupImg from "@/assets/timeline/feb-06-meetup.jpg";
+import feb07MongodbImg from "@/assets/timeline/feb-07-mongodb.jpg";
+import feb07CarnivalImg from "@/assets/timeline/feb-07-carnival.jpg";
+import feb07JammingImg from "@/assets/timeline/feb-07-jamming.jpg";
+import feb08FloralImg from "@/assets/timeline/feb-08-floral.jpg";
+import feb08CarnivalImg from "@/assets/timeline/feb-08-carnival.jpg";
+import feb09SpeakingImg from "@/assets/timeline/feb-09-speaking.jpg";
+import feb09AisummitImg from "@/assets/timeline/feb-09-aisummit.jpg";
+import feb12TechtalkImg from "@/assets/timeline/feb-12-techtalk.jpg";
+import feb12GirlsImg from "@/assets/timeline/feb-12-girls.jpg";
 
 interface TimelineEvent {
   date: string;
@@ -228,6 +240,66 @@ const TimelinePage = () => {
       date: "30 Jan 2026",
       description: "With over 36 people joining us, we played the activity where we have to find a problem around us with its solution in 5 mins in a mini group and had to present it in 2 mins in front of everyone.",
       image: jan30ActivityImg,
+    },
+    {
+      date: "2 Feb 2026",
+      description: "Letz Connect Members at Techsprint Final Phase Organised By GDG Club. About 20+ members of our community attended this event together. Ishita, Shree, Haider, Manik, Jashan, Prabhjot and Shree had so much fun. Highlight of the event - Mindblowing Anchoring of Shree.",
+      image: feb02TechsprintImg,
+    },
+    {
+      date: "3 Feb 2026",
+      description: "#3 public speaking circle led by Ranvir - where he came with some chits, everyone has to choose one among them and had to speak on the topic mentioned in the chit for a minute. It was a nice activity enjoyed by all. Thanks to Ranvir for volunteering to lead this public speaking circle.",
+      image: feb03SpeakingImg,
+    },
+    {
+      date: "6 Feb 2026",
+      description: "This meetup at Letz Connect was a very special one. We all gathered to discuss the societal problems that we faced or witnessed. Thanks to those who came at the forefront and spoke. Animals are treated like they are nothing, so many members shared heart-wrenching incidents. Healthcare, Sexual Harassment - brave members shared their own experiences and encouraged others to become confident and bold.",
+      image: feb06MeetupImg,
+    },
+    {
+      date: "7 Feb 2026",
+      description: "Letz Connect Members (Abhinav, Samridhi, Manik, Haider, and Lavisha) at MongoDB User Group Chandigarh Meetup. They got to meet many people and Haider also won a prize in a competition.",
+      image: feb07MongodbImg,
+    },
+    {
+      date: "7 Feb 2026",
+      description: "After attending the MongoDB event, Manik, Haider and Abhinav went to Mohali Carnival after Cab wale uncle recommended them to visit it. They had an amazing time there, seeing different stalls, playing games and took rides that scare the shit out of a person. Manik was very scared before taking the ride but ended up overcoming his fear and also vlogged the entire ride.",
+      image: feb07CarnivalImg,
+    },
+    {
+      date: "7 Feb 2026",
+      description: "After the event and the Mohali carnival, Abhinav, Sarang, Jashan, Haider and Manik went to the Live Jamming at Chai By Engineer, an amazing place to hang out on the weekends. They all spent 3 hours and came back at 1am.",
+      image: feb07JammingImg,
+    },
+    {
+      date: "8 Feb 2026",
+      description: "Manik, Shree, Ishita, Haider, Mehakdeep, Lakshita, and Jashan went to the Floral fest organised by Panjab University. They shot 4 reels, took rides, talked with the booth representatives, Jashan and Manik bought books, and ended the day with Haider giving a stress test and the rest consulting with a final yr psychology student from Tripura.",
+      image: feb08FloralImg,
+    },
+    {
+      date: "8 Feb 2026",
+      description: "After attending the fest, they went to the Mohali carnival, where they bought crockery, took rides, and also went to the horror house. With much tiredness in their eyes, they were filled with unforgettable memories. Manik dropped Ishita to Paridhi House and they along with Nishika ended the day with Golgappa's.",
+      image: feb08CarnivalImg,
+    },
+    {
+      date: "9 Feb 2026",
+      description: "#4 public speaking circle led by Ishita, where everyone had to frame a story with the given set of emojis. The activity made the atmosphere interactive and fun, and made the members think on the spot and represent themselves in front of everyone. Kudos to Ishita for leading the meetup and building a safe and supportive environment.",
+      image: feb09SpeakingImg,
+    },
+    {
+      date: "9 Feb 2026",
+      description: "Letz Connect Members at AI for Atmanirbhar Bharat - an official pre summit event of AI for Impact Summit. They attended the panel discussions featuring eminent personalities and the startup founders incubated by Rise Department. Later on Heena, Himanshi, Manik, Isha, Prabhjot, and Meenu clicked a group picture :)",
+      image: feb09AisummitImg,
+    },
+    {
+      date: "12 Feb 2026",
+      description: "20+ members from Letz Connect attended Tech Talk 2.0 organised by Fusion Club, where they all got to listen to Varun Singla, the man behind Gate Smashers. The proud moment is to see Divanshi, Manik, Prabhjot, Meenu, Vrinda, Ishita, Himanshi, and Navya asking their questions confidently in the Main Auditorium.",
+      image: feb12TechtalkImg,
+    },
+    {
+      date: "12 Feb 2026",
+      description: "#2nd Girls Meetup - The brave girls of Letz Connect family attended and owned Tech Talk 2.0 by being hyper interactive and confident as they asked their questions in the auditorium. We're really proud of Divanshi, Ishita, Himanshi, Navya, Meenu, and Prabhjot :)",
+      image: feb12GirlsImg,
     },
   ];
 
