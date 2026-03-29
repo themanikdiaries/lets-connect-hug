@@ -22,9 +22,9 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
     },
     {
       icon: chatIcon,
-      title: "Weekly Wednesday Session",
+      title: "All Girls Meetup on Thursday",
       color: "accent",
-      details: "A member of our community takes an informal session and guides others by sharing their experience, mistakes and learnings.",
+      details: "A safe and supportive space for the girls of our community to connect, share, and grow together every Thursday.",
     },
   ];
 
