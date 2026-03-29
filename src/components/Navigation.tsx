@@ -15,7 +15,6 @@ export const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -48,20 +47,17 @@ export const Navigation = () => {
       <ScrollProgress />
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled
-            ? "glass shadow-card py-2"
-            : "bg-transparent py-4"
+          isScrolled ? "glass shadow-card py-2" : "bg-transparent py-4"
         }`}
       >
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between">
-            {/* Logo */}
+            {/* Logo - icon/symbol only, no text */}
             <Link
               to="/"
-              className="text-2xl font-display font-bold text-foreground hover:text-primary transition-colors relative group"
+              className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors group"
             >
-              <span className="relative z-10">Letz Connect</span>
-              <span className="absolute inset-0 bg-primary/10 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300" />
+              <span className="text-xl font-display font-bold text-primary group-hover:scale-110 transition-transform">LC</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -96,19 +92,17 @@ export const Navigation = () => {
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="p-2 text-foreground glass rounded-xl transition-smooth hover:shadow-card"
               >
-                {isMobileMenuOpen ? (
-                  <X className="w-6 h-6" />
-                ) : (
-                  <Menu className="w-6 h-6" />
-                )}
+                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
             </div>
           </div>
 
           {/* Mobile Navigation */}
-          <div className={`lg:hidden overflow-hidden transition-all duration-500 ${
-            isMobileMenuOpen ? "max-h-[500px] opacity-100 mt-4" : "max-h-0 opacity-0"
-          }`}>
+          <div
+            className={`lg:hidden overflow-hidden transition-all duration-500 ${
+              isMobileMenuOpen ? "max-h-[500px] opacity-100 mt-4" : "max-h-0 opacity-0"
+            }`}
+          >
             <div className="glass-card rounded-2xl p-4 space-y-2">
               {navLinks.map((link) => (
                 <Link
