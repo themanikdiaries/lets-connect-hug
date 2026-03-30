@@ -148,7 +148,7 @@ const TimelinePage = () => {
     { date: "27 Feb 2026", description: "Haider bagged 1st position under coding category in National Science Day Competition and won 15k cash prize. Congratulations!", image: feb27HaiderImg },
     { date: "3 Mar 2026", description: "One of the best days — we played Holi, danced, vibed together. Manik played Holi after a decade :)", image: mar03HoliImg },
     { date: "5 Mar 2026", description: "The brave girls of our community connected with each other, and had a wonderful time :)", image: mar05GirlsImg },
-    { date: "6 Mar 2026", description: "A great meetup where we connected, exchanged ideas, and strengthened our bond.", image: mar06MeetupImg },
+    { date: "6 Mar 2026", description: "We had a great time playing passing the page game where each one had to share their future goals and answer one impromptu question.", image: mar06MeetupImg },
     { date: "7 Mar 2026", description: "Manik met Paridhi, Ishan, Ishav, Dhruv, and Harsh at CGC University during Hack N Win 3.0 Hackathon.", image: mar07HacknwinImg },
     { date: "7 Mar 2026", description: "They all were roaming in the art fest in the book zone :)", image: mar07ArtfestImg },
     { date: "7 Mar 2026", description: "At Hack N Win 3.0 — Haider, Ishita, Jashan as hackers, Swagita, Heena, Harsh and Himanshi for Build with AI, and Manik as coordinator :)", image: mar07Hacknwin2Img },

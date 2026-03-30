@@ -92,30 +92,30 @@ export const HeroStats = () => {
           <div className="glass-card rounded-2xl p-4 md:p-6 card-3d border border-border">
             <div className="flex flex-col items-center gap-2">
               <Users className="w-6 h-6 text-primary mb-1" />
-              <span className="text-3xl md:text-4xl font-display font-bold gradient-text">
+              <span className="text-3xl md:text-4xl font-display font-bold text-primary">
                 <AnimatedCounter end={110} suffix="+" />
               </span>
-              <span className="text-xs md:text-sm text-muted-foreground">Members</span>
+              <span className="text-xs md:text-sm text-foreground font-medium">Members</span>
             </div>
           </div>
 
           <div className="glass-card rounded-2xl p-4 md:p-6 card-3d border border-border">
             <div className="flex flex-col items-center gap-2">
               <Calendar className="w-6 h-6 text-secondary mb-1" />
-              <span className="text-3xl md:text-4xl font-display font-bold gradient-text">
-                <AnimatedCounter end={20} suffix="+" duration={2200} />
+              <span className="text-3xl md:text-4xl font-display font-bold text-primary">
+                <AnimatedCounter end={50} suffix="+" duration={2200} />
               </span>
-              <span className="text-xs md:text-sm text-muted-foreground">Meetups</span>
+              <span className="text-xs md:text-sm text-foreground font-medium">Meetups</span>
             </div>
           </div>
 
           <div className="glass-card rounded-2xl p-4 md:p-6 card-3d border border-border">
             <div className="flex flex-col items-center gap-2">
               <Sparkles className="w-6 h-6 text-accent mb-1" />
-              <span className="text-3xl md:text-4xl font-display font-bold gradient-text">
-                <AnimatedCounter end={4} duration={1500} />
+              <span className="text-3xl md:text-4xl font-display font-bold text-primary">
+                <AnimatedCounter end={6} duration={1500} />
               </span>
-              <span className="text-xs md:text-sm text-muted-foreground">Months</span>
+              <span className="text-xs md:text-sm text-foreground font-medium">Months</span>
             </div>
           </div>
         </div>

@@ -55,9 +55,9 @@ export const Navigation = () => {
             {/* Logo - icon/symbol only, no text */}
             <Link
               to="/"
-              className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors group"
+              className="text-sm font-display font-bold text-primary hover:text-primary/80 transition-colors"
             >
-              <span className="text-xl font-display font-bold text-primary group-hover:scale-110 transition-transform">LC</span>
+              {/* No logo */}
             </Link>
 
             {/* Desktop Navigation */}
