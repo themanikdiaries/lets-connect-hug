@@ -82,9 +82,16 @@ export const MembersPreview = () => {
                       className="w-24 h-24 rounded-full object-cover object-top border-4 border-primary/20"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
-                        target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(member.name)}&background=6366f1&color=fff`;
+                        target.style.display = 'none';
+                        const fallback = target.nextElementSibling as HTMLElement;
+                        if (fallback) fallback.style.display = 'flex';
                       }}
                     />
+                    <div
+                      className="w-24 h-24 rounded-full border-4 border-primary/20 bg-primary/10 items-center justify-center text-primary text-2xl font-bold hidden"
+                    >
+                      {member.name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase()}
+                    </div>
                   </div>
 
                   <div className="text-center space-y-2">

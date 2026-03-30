@@ -1,6 +1,6 @@
 import chatIcon from "@/assets/icon-chat.png";
 import coffeeIcon from "@/assets/icon-coffee.png";
-import { MapPin, Clock } from "lucide-react";
+import { Clock } from "lucide-react";
 
 interface ConnectFormatsProps {
   onJoinClick: () => void;
@@ -41,15 +41,14 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
               Join us for casual conversations and meaningful connections
             </p>
             
-            {/* Common Location and Time */}
+            {/* Contact for meetup location */}
             <div className="flex flex-wrap justify-center gap-4 pt-4">
-              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
-                <MapPin className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">At Parivartan Ground in front of Basketball Court</span>
-              </div>
               <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
                 <Clock className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">1:20pm to 1:50pm</span>
+              </div>
+              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
+                <span className="text-sm font-medium">📞 Contact Manik (+91 8059422804) for meetup location</span>
               </div>
             </div>
           </div>

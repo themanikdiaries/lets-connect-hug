@@ -219,14 +219,24 @@ const MemberCard = ({ member }: MemberCardProps) => {
   return (
     <Card className="p-6 shadow-card hover:shadow-hover transition-all hover-lift bg-card">
       <div className="flex flex-col items-center text-center space-y-4">
-        <img
-          src={member.imageUrl || `https://api.dicebear.com/7.x/avataaars/svg?seed=${member.name}`}
-          alt={member.name}
-          className="w-24 h-24 rounded-full object-cover border-2 border-primary/20"
-          onError={(e) => {
-            e.currentTarget.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${member.name}`;
-          }}
-        />
+        {member.imageUrl ? (
+          <img
+            src={member.imageUrl}
+            alt={member.name}
+            className="w-24 h-24 rounded-full object-cover border-2 border-primary/20"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+              if (fallback) fallback.style.display = 'flex';
+            }}
+          />
+        ) : null}
+        <div
+          className="w-24 h-24 rounded-full border-2 border-primary/20 bg-primary/10 items-center justify-center text-primary text-2xl font-bold"
+          style={{ display: member.imageUrl ? 'none' : 'flex' }}
+        >
+          {member.name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase()}
+        </div>
         <div className="space-y-1">
           <h3 className="font-semibold text-lg">{member.name}</h3>
           <p className="text-sm text-muted-foreground">{member.branch}</p>
