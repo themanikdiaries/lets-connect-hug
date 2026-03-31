@@ -103,7 +103,7 @@ export const HeroStats = () => {
             <div className="flex flex-col items-center gap-2">
               <Calendar className="w-6 h-6 text-secondary mb-1" />
               <span className="text-3xl md:text-4xl font-display font-bold text-primary">
-                <AnimatedCounter end={50} suffix="+" duration={2200} />
+                <AnimatedCounter end={75} suffix="+" duration={2200} />
               </span>
               <span className="text-xs md:text-sm text-foreground font-medium">Meetups</span>
             </div>
