@@ -93,7 +93,7 @@ export const HeroStats = () => {
             <div className="flex flex-col items-center gap-2">
               <Users className="w-6 h-6 text-primary mb-1" />
               <span className="text-3xl md:text-4xl font-display font-bold text-primary">
-                <AnimatedCounter end={110} suffix="+" />
+                <AnimatedCounter end={150} suffix="+" />
               </span>
               <span className="text-xs md:text-sm text-foreground font-medium">Members</span>
             </div>
