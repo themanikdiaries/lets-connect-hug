@@ -4,15 +4,15 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { Trophy, Award, Star, Building2, Briefcase } from "lucide-react";
 
 // Import member images
-import ishitaImg from "@/assets/members/ishita.jpg";
-import samparkImg from "@/assets/members/sampark.jpg";
-import jyotikaImg from "@/assets/members/jyotika.jpg";
-import parthImg from "@/assets/members/parth.jpg";
-import jatinImg from "@/assets/members/jatin.jpg";
-import lovneetImg from "@/assets/members/lovneet.jpg";
-import rahulImg from "@/assets/members/rahul.jpg";
-import adityaImg from "@/assets/members/aditya.jpg";
-import shreeImg from "@/assets/members/shree.jpg";
+import ishitaImg from "@/assets/members/ishita.webp";
+import samparkImg from "@/assets/members/sampark.webp";
+import jyotikaImg from "@/assets/members/jyotika.webp";
+import parthImg from "@/assets/members/parth.webp";
+import jatinImg from "@/assets/members/jatin.webp";
+import lovneetImg from "@/assets/members/lovneet.webp";
+import rahulImg from "@/assets/members/rahul.webp";
+import adityaImg from "@/assets/members/aditya.webp";
+import shreeImg from "@/assets/members/shree.webp";
 
 interface Achievement {
   names: string[];

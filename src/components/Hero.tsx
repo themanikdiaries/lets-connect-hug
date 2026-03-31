@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { FloatingElements } from "@/components/FloatingElements";
 import { Users, Calendar, Sparkles } from "lucide-react";
-import heroImage from "@/assets/first-gathering.jpg";
+import heroImage from "@/assets/first-gathering.webp";
 
 interface HeroProps {
   onJoinClick: () => void;
@@ -93,7 +93,7 @@ export const HeroStats = () => {
             <div className="flex flex-col items-center gap-2">
               <Users className="w-6 h-6 text-primary mb-1" />
               <span className="text-3xl md:text-4xl font-display font-bold text-primary">
-                <AnimatedCounter end={110} suffix="+" />
+                <AnimatedCounter end={150} suffix="+" />
               </span>
               <span className="text-xs md:text-sm text-foreground font-medium">Members</span>
             </div>
@@ -103,7 +103,7 @@ export const HeroStats = () => {
             <div className="flex flex-col items-center gap-2">
               <Calendar className="w-6 h-6 text-secondary mb-1" />
               <span className="text-3xl md:text-4xl font-display font-bold text-primary">
-                <AnimatedCounter end={50} suffix="+" duration={2200} />
+                <AnimatedCounter end={75} suffix="+" duration={2200} />
               </span>
               <span className="text-xs md:text-sm text-foreground font-medium">Meetups</span>
             </div>

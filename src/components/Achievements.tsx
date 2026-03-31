@@ -1,10 +1,10 @@
 import { Trophy, Award, Star, Building2, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import ishitaImg from "@/assets/members/ishita.jpg";
-import samparkImg from "@/assets/members/sampark.jpg";
-import jyotikaImg from "@/assets/members/jyotika.jpg";
-import rahulImg from "@/assets/members/rahul.jpg";
+import ishitaImg from "@/assets/members/ishita.webp";
+import samparkImg from "@/assets/members/sampark.webp";
+import jyotikaImg from "@/assets/members/jyotika.webp";
+import rahulImg from "@/assets/members/rahul.webp";
 
 interface Achievement {
   names: string[];

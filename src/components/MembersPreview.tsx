@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Linkedin, Twitter, Instagram, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import manikImg from "@/assets/members/manik.jpg";
-import ayushImg from "@/assets/members/ayush.jpg";
-import aryanImg from "@/assets/members/aryan.jpg";
-import aashiImg from "@/assets/members/aashi.jpg";
+import manikImg from "@/assets/members/manik.webp";
+import ayushImg from "@/assets/members/ayush.webp";
+import aryanImg from "@/assets/members/aryan.webp";
+import aashiImg from "@/assets/members/aashi.webp";
 
 const previewMembers = [
   {

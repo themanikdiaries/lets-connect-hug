@@ -1,5 +1,5 @@
-import chatIcon from "@/assets/icon-chat.png";
-import coffeeIcon from "@/assets/icon-coffee.png";
+import chatIcon from "@/assets/icon-chat.webp";
+import coffeeIcon from "@/assets/icon-coffee.webp";
 import { Clock } from "lucide-react";
 
 interface ConnectFormatsProps {
