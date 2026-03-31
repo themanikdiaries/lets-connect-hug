@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { FloatingElements } from "@/components/FloatingElements";
 import { Users, Calendar, Sparkles } from "lucide-react";
-import heroImage from "@/assets/first-gathering.jpg";
+import heroImage from "@/assets/first-gathering.webp";
 
 interface HeroProps {
   onJoinClick: () => void;

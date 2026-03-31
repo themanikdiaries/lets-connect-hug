@@ -1,5 +1,5 @@
 import { Quote } from "lucide-react";
-import bridgeIcon from "@/assets/icon-bridge.png";
+import bridgeIcon from "@/assets/icon-bridge.webp";
 export const FounderStory = () => {
   const timelineSteps = [{
     title: "The Interview",
