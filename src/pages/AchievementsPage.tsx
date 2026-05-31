@@ -1,7 +1,8 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
-import { Trophy, Award, Star, Building2, Briefcase } from "lucide-react";
+import { Trophy, Award, Star, Building2, Briefcase, Sparkles } from "lucide-react";
+import { useExtraAchievements } from "@/lib/admin";
 
 // Import member images
 import ishitaImg from "@/assets/members/ishita.webp";
@@ -23,7 +24,15 @@ interface Achievement {
 }
 
 const AchievementsPage = () => {
-  const achievements: Achievement[] = [
+  const extras = useExtraAchievements();
+  const extraAchievements: Achievement[] = extras.map((a) => ({
+    names: [a.title],
+    achievement: a.description || "",
+    images: a.image_url ? [a.image_url] : [],
+    icon: Sparkles,
+    category: a.event_date || "New",
+  }));
+  const baseAchievements: Achievement[] = [
     {
       names: ["Sampark", "Shree", "Aditya", "Ishika"],
       achievement: "Got into the core team of Google Developer Groups on Campus.",
