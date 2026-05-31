@@ -2,6 +2,7 @@ import { Calendar } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useExtraTimeline } from "@/lib/admin";
 
 // Import timeline images
 import oct17Img from "@/assets/timeline/oct-17.webp";
@@ -184,9 +185,18 @@ const allEvents: TimelineEvent[] = [
   { date: "27 Mar 2026", description: "We welcomed Nandini, a new member in the community. We discussed about hackathons, GDG history, Build with AI Bootcamp by Google, Dev shared his idea and overall it was a good catchup :)", image: mar27NandiniImg },
 ];
 
-const homepageEvents = [...allEvents].reverse().slice(0, 3);
+const homepageEventsBase = [...allEvents].reverse().slice(0, 3);
 
 export const Timeline = () => {
+  const extras = useExtraTimeline();
+  const extraEvents: TimelineEvent[] = extras.map((e) => ({
+    date: e.event_date,
+    description: e.description ? `${e.title} — ${e.description}` : e.title,
+    image: e.image_url || undefined,
+  }));
+  // Show admin-added first (most recent additions), then fall back to last static events.
+  const homepageEvents = [...extraEvents.slice().reverse(), ...homepageEventsBase].slice(0, 3);
+  const totalCount = allEvents.length + extras.length;
   return (
     <section id="timeline" className="py-16 bg-gradient-sunset">
       <div className="container mx-auto px-6">
@@ -240,7 +250,7 @@ export const Timeline = () => {
           <div className="text-center">
             <Button asChild variant="outline" className="rounded-full">
               <Link to="/timeline">
-                View Complete Journey ({allEvents.length} moments)
+                View Complete Journey ({totalCount} moments)
               </Link>
             </Button>
           </div>

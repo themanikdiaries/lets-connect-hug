@@ -5,6 +5,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { Calendar, ArrowUpDown } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useExtraTimeline } from "@/lib/admin";
 
 // Import timeline images
 import oct17Img from "@/assets/timeline/oct-17.webp";
@@ -168,7 +169,15 @@ const TimelinePage = () => {
     { date: "27 Mar 2026", description: "We welcomed Nandini! Discussed hackathons, GDG history, Build with AI Bootcamp by Google, and Dev shared his idea :)", image: mar27NandiniImg },
   ];
 
-  const events = isReversed ? [...eventsChronological].reverse() : eventsChronological;
+  const extras = useExtraTimeline();
+  const extraEvents: TimelineEvent[] = extras.map((e) => ({
+    date: e.event_date,
+    description: e.description ? `${e.title} — ${e.description}` : e.title,
+    image: e.image_url || undefined,
+  }));
+  const combined = [...eventsChronological, ...extraEvents];
+  const events = isReversed ? [...combined].reverse() : combined;
+
 
   return (
     <div className="smooth-scroll">

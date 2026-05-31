@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Linkedin, Twitter, Instagram, Search, MapPin, Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useExtraMembers } from "@/lib/admin";
 import manikImg from "@/assets/members/manik.webp";
 import ayushImg from "@/assets/members/ayush.webp";
 import aryanImg from "@/assets/members/aryan.webp";
@@ -125,17 +126,32 @@ export const WallOfMembers = () => {
     { name: "Aksheeta", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "", linkedin: "", skills: "", imageUrl: aksheetaImg },
   ];
 
+  const extras = useExtraMembers();
+  const extraMembers = extras.map((m) => ({
+    name: m.name,
+    graduationYear: "",
+    branch: m.role || "",
+    block: "",
+    location: "",
+    linkedin: "",
+    twitter: "",
+    instagram: "",
+    skills: m.story || "",
+    imageUrl: m.image_url || null,
+  }));
+  const allMembers = [...extraMembers, ...members];
+
   const graduationYears = ["all", "2026", "2027", "2028", "2029"];
 
-  const filteredMembers = members.filter((member) => {
+  const filteredMembers = allMembers.filter((member) => {
     const matchesSearch =
       member.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       member.branch.toLowerCase().includes(searchQuery.toLowerCase()) ||
       member.skills.toLowerCase().includes(searchQuery.toLowerCase()) ||
       member.location.toLowerCase().includes(searchQuery.toLowerCase());
-    
+
     const matchesYear = selectedYear === "all" || member.graduationYear === selectedYear;
-    
+
     return matchesSearch && matchesYear;
   });
 
