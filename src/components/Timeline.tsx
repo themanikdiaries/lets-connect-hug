@@ -250,7 +250,7 @@ export const Timeline = () => {
           <div className="text-center">
             <Button asChild variant="outline" className="rounded-full">
               <Link to="/timeline">
-                View Complete Journey ({allEvents.length} moments)
+                View Complete Journey ({totalCount} moments)
               </Link>
             </Button>
           </div>
