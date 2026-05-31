@@ -5,6 +5,7 @@ import { ScrollToTop } from "@/components/ScrollToTop";
 import { Calendar, ArrowUpDown } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useExtraTimeline } from "@/lib/admin";
 
 // Import timeline images
 import oct17Img from "@/assets/timeline/oct-17.webp";
