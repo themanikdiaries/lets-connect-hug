@@ -54,6 +54,15 @@ export const Footer = () => {
           
           <div className="pt-4 text-sm text-muted-foreground">
             © 2026 Letz Connect. Built with ❤️ by Manik for helping his juniors and peers.
+            {" "}
+            <a
+              href="/admin/login"
+              aria-label="admin"
+              className="text-muted-foreground/30 hover:text-primary transition-colors select-none ml-1"
+              title="Admin"
+            >
+              ·
+            </a>
           </div>
         </div>
       </div>
