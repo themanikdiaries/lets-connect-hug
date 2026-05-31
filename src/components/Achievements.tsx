@@ -1,10 +1,11 @@
-import { Trophy, Award, Star, Building2, Briefcase } from "lucide-react";
+import { Trophy, Award, Star, Building2, Briefcase, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ishitaImg from "@/assets/members/ishita.webp";
 import samparkImg from "@/assets/members/sampark.webp";
 import jyotikaImg from "@/assets/members/jyotika.webp";
 import rahulImg from "@/assets/members/rahul.webp";
+import { useExtraAchievements } from "@/lib/admin";
 
 interface Achievement {
   names: string[];
@@ -15,8 +16,8 @@ interface Achievement {
 }
 
 export const Achievements = () => {
-  // Show only 3 featured achievements on homepage
-  const featuredAchievements: Achievement[] = [
+  const extras = useExtraAchievements();
+  const baseFeatured: Achievement[] = [
     {
       names: ["Sampark", "Shree", "Aditya", "Ishika"],
       achievement: "Got into the core team of Google Developer Groups on Campus.",
@@ -39,6 +40,14 @@ export const Achievements = () => {
       category: "Entrepreneurship",
     },
   ];
+  const extraFeatured: Achievement[] = extras.map((a) => ({
+    names: [a.title],
+    achievement: a.description || "",
+    images: a.image_url ? [a.image_url] : [],
+    icon: Sparkles,
+    category: a.event_date || "New",
+  }));
+  const featuredAchievements = [...extraFeatured, ...baseFeatured].slice(0, 3);
 
   return (
     <section id="achievements" className="py-16">
