@@ -76,6 +76,8 @@ const AchievementsPage = () => {
       category: "Entrepreneurship",
     },
   ];
+  const achievements = [...extraAchievements, ...baseAchievements];
+
 
   return (
     <div className="smooth-scroll">
