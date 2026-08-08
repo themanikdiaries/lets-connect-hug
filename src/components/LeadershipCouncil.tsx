@@ -4,6 +4,7 @@ import { Linkedin, Instagram, Crown } from "lucide-react";
 import divanshiImg from "@/assets/members/divanshi.webp";
 import ranvirImg from "@/assets/members/ranvir.webp";
 import jatinImg from "@/assets/members/jatin.webp";
+import harshImg from "@/assets/members/harsh.webp";
 
 const council = [
   {
@@ -33,6 +34,15 @@ const council = [
     instagram: "https://www.instagram.com/guleria_jatin02",
     imageUrl: jatinImg,
   },
+  {
+    name: "Harsh Kumar",
+    role: "Learning & Curiosity",
+    branch: "BTech IT · Class of 2029",
+    note: "A learner at heart — keeping the SWOT spirit of honest sharing alive in every meetup.",
+    linkedin: "https://www.linkedin.com/in/yourharshkumar",
+    instagram: "https://www.instagram.com/yourharshkumar",
+    imageUrl: harshImg,
+  },
 ];
 
 export const LeadershipCouncil = () => {
@@ -54,7 +64,7 @@ export const LeadershipCouncil = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {council.map((person) => (
               <Card
                 key={person.name}
