@@ -13,6 +13,7 @@ import { MembersPreview } from "@/components/MembersPreview";
 import { Timeline } from "@/components/Timeline";
 import { GallerySlideshow } from "@/components/GallerySlideshow";
 import { EventPartner } from "@/components/EventPartner";
+import { LeadershipCouncil } from "@/components/LeadershipCouncil";
 
 const Index = () => {
   useScrollAnimation();
@@ -52,6 +53,8 @@ const Index = () => {
         </div>
         
         <MembersPreview />
+
+        <LeadershipCouncil />
         
         <TestimonialsCarousel />
         

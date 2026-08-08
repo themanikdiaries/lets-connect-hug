@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import manikImg from "@/assets/members/manik.webp";
 import ayushImg from "@/assets/members/ayush.webp";
 import aryanImg from "@/assets/members/aryan.webp";
-import aashiImg from "@/assets/members/aashi.webp";
+
 
 const previewMembers = [
   {
@@ -50,7 +50,7 @@ const previewMembers = [
     twitter: "https://x.com/Prabhjot1607",
     instagram: "https://www.instagram.com/prabhi_kaur786",
     skills: "C++ programming, Basic DSA",
-    imageUrl: aashiImg
+    imageUrl: null as string | null
   }
 ];
 
@@ -76,19 +76,21 @@ export const MembersPreview = () => {
               >
                 <div className="p-6 space-y-4">
                   <div className="flex justify-center">
-                    <img
-                      src={member.imageUrl}
-                      alt={member.name}
-                      className="w-24 h-24 rounded-full object-cover object-top border-4 border-primary/20"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                        const fallback = target.nextElementSibling as HTMLElement;
-                        if (fallback) fallback.style.display = 'flex';
-                      }}
-                    />
+                    {member.imageUrl ? (
+                      <img
+                        src={member.imageUrl}
+                        alt={member.name}
+                        className="w-24 h-24 rounded-full object-cover object-top border-4 border-primary/20"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const fallback = target.nextElementSibling as HTMLElement;
+                          if (fallback) fallback.style.display = 'flex';
+                        }}
+                      />
+                    ) : null}
                     <div
-                      className="w-24 h-24 rounded-full border-4 border-primary/20 bg-primary/10 items-center justify-center text-primary text-2xl font-bold hidden"
+                      className={`w-24 h-24 rounded-full border-4 border-primary/20 bg-primary/10 items-center justify-center text-primary text-2xl font-bold ${member.imageUrl ? 'hidden' : 'flex'}`}
                     >
                       {member.name.split(' ').map(n => n[0]).join('').slice(0, 2).toUpperCase()}
                     </div>
