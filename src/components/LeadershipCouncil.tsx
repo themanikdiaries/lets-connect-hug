@@ -34,6 +34,15 @@ const council = [
     instagram: "https://www.instagram.com/guleria_jatin02",
     imageUrl: jatinImg,
   },
+  {
+    name: "Harsh Kumar",
+    role: "Learning & Curiosity",
+    branch: "BTech IT · Class of 2029",
+    note: "A learner at heart — keeping the SWOT spirit of honest sharing alive in every meetup.",
+    linkedin: "https://www.linkedin.com/in/yourharshkumar",
+    instagram: "https://www.instagram.com/yourharshkumar",
+    imageUrl: harshImg,
+  },
 ];
 
 export const LeadershipCouncil = () => {
