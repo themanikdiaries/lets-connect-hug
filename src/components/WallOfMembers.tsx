@@ -5,6 +5,7 @@ import { Linkedin, Twitter, Instagram, Search, MapPin, Filter } from "lucide-rea
 import { Button } from "@/components/ui/button";
 import { useExtraMembers } from "@/lib/admin";
 import manikImg from "@/assets/members/manik.webp";
+import harshImg from "@/assets/members/harsh.webp";
 import ayushImg from "@/assets/members/ayush.webp";
 import aryanImg from "@/assets/members/aryan.webp";
 import himanshiImg from "@/assets/members/himanshi.webp";
@@ -124,6 +125,7 @@ export const WallOfMembers = () => {
     { name: "Aashi Raghuwanshi", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "Bhopal", linkedin: "https://www.linkedin.com/in/aashiraghuwanshi", skills: "AI & ML, Full Stack, Leadership & Communication", imageUrl: aashiImg },
     { name: "Vrinda", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "", linkedin: "", skills: "", imageUrl: vrindaImg },
     { name: "Aksheeta", graduationYear: "2028", branch: "B.Tech CSE", block: "10 - COE", location: "", linkedin: "", skills: "", imageUrl: aksheetaImg },
+    { name: "Harsh Kumar", graduationYear: "2029", branch: "BTech IT", block: "9 - CEC", location: "Kharar, Punjab", linkedin: "https://www.linkedin.com/in/yourharshkumar", instagram: "https://www.instagram.com/yourharshkumar", skills: "Learner", imageUrl: harshImg },
   ];
 
   const extras = useExtraMembers();

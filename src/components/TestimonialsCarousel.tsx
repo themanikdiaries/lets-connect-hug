@@ -54,6 +54,7 @@ import kushalImg from "@/assets/members/kushal.webp";
 import chiragImg from "@/assets/members/chirag.webp";
 import sarangImg from "@/assets/members/sarang.webp";
 import aashiImg from "@/assets/members/aashi.webp";
+import harshImg from "@/assets/members/harsh.webp";
 
 export const testimonials = [
   {
@@ -343,6 +344,12 @@ export const testimonials = [
     quote: "Enjoyed the energy and openness of the community. It felt great to connect with like-minded people!",
     linkedin: "https://www.linkedin.com/in/aashiraghuwanshi",
     imageUrl: aashiImg
+  },
+  {
+    name: "Harsh Kumar",
+    quote: "I loved the concept of SWOT, where everyone — known and unknown to each other — shares their core things, whether it's a skill or a weakness.",
+    linkedin: "https://www.linkedin.com/in/yourharshkumar",
+    imageUrl: harshImg
   }
 ];
 

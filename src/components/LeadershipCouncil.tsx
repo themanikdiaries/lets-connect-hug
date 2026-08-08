@@ -4,6 +4,7 @@ import { Linkedin, Instagram, Crown } from "lucide-react";
 import divanshiImg from "@/assets/members/divanshi.webp";
 import ranvirImg from "@/assets/members/ranvir.webp";
 import jatinImg from "@/assets/members/jatin.webp";
+import harshImg from "@/assets/members/harsh.webp";
 
 const council = [
   {
