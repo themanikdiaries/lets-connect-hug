@@ -69,24 +69,8 @@ export const JoinUs = () => {
                         {step.description}
                       </p>
                     </div>
-                    
-                    {/* WhatsApp button for Step 1 */}
-                    {index === 0 && (
-                      <Button 
-                        asChild 
-                        className="w-full mt-auto bg-green-600 hover:bg-green-700 text-white shadow-warm hover:shadow-glow transition-smooth"
-                        size="sm"
-                      >
-                        <a 
-                          href="https://chat.whatsapp.com/Kk66jdyr6RI4zlRhgqcnbe?mode=wwt" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                          Join WhatsApp Group
-                        </a>
-                      </Button>
-                    )}
                   </div>
+
                   
                   {/* Decorative gradient */}
                   <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-warm opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-smooth" />
