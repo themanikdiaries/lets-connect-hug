@@ -38,19 +38,16 @@ export const Footer = () => {
             warmer, and more meaningful.
           </p>
           
-          {/* Contact Info - Enhanced */}
+          {/* Contact Info */}
           <div className="pt-4">
             <div className="inline-flex items-center gap-3 glass-card px-6 py-3 rounded-full">
               <Phone className="w-4 h-4 text-primary" />
-              <span className="text-muted-foreground">For inquiries, contact Manik:</span>
-              <a 
-                href="tel:+918059422804" 
-                className="text-primary font-medium hover:underline"
-              >
-                +91 8059422804
-              </a>
+              <span className="text-muted-foreground">
+                For inquiries, join the WhatsApp group and tag an admin
+              </span>
             </div>
           </div>
+
           
           <div className="pt-4 text-sm text-muted-foreground">
             © 2026 Letz Connect. Built with ❤️ by Manik for helping his juniors and peers.
