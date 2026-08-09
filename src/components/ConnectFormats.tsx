@@ -36,9 +36,9 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
                 <Clock className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium">1:20pm to 1:50pm</span>
               </div>
-              <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
-                <span className="text-sm font-medium">📞 Contact Manik (+91 8059422804) for meetup location</span>
-              </div>
+              <div className="flex flex-wrap justify-center gap-4 pt-4">
+                <span className="text-sm font-medium">💬 Join our WhatsApp group and tag an admin to enquire about the meetup location</span>
+
             </div>
           </div>
 
