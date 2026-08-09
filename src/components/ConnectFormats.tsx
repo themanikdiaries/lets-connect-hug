@@ -14,19 +14,8 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
       color: "secondary",
       details: "Weekly casual hangouts where we gather, share stories, and connect without pressure or expectations.",
     },
-    {
-      icon: coffeeIcon,
-      title: "Monday Public Speaking Circle",
-      color: "primary",
-      details: "We make you confident, a good speaker, teach you how to speak and turn yourself into a leader.",
-    },
-    {
-      icon: chatIcon,
-      title: "All Girls Meetup on Thursday",
-      color: "accent",
-      details: "A safe and supportive space for the girls of our community to connect, share, and grow together every Thursday.",
-    },
   ];
+
 
   return (
     <section id="formats" className="py-16">
@@ -48,13 +37,14 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
                 <span className="text-sm font-medium">1:20pm to 1:50pm</span>
               </div>
               <div className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full">
-                <span className="text-sm font-medium">📞 Contact Manik (+91 8059422804) for meetup location</span>
+                <span className="text-sm font-medium">💬 Join our WhatsApp group and tag an admin to enquire about the meetup location</span>
               </div>
             </div>
+
           </div>
 
           {/* Format cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 gap-6 max-w-md mx-auto">
             {formats.map((format, index) => {
               return (
                 <div

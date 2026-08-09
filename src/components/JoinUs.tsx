@@ -1,34 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { MessageCircle, Users, FileText, CheckCircle, AlertTriangle } from "lucide-react";
+import { Users, FileText, CheckCircle, AlertTriangle } from "lucide-react";
 
 export const JoinUs = () => {
   const steps = [
     {
-      icon: MessageCircle,
-      title: "Join the Waiting Area WhatsApp Group",
-      description: "Connect with us and stay updated about upcoming gatherings",
-      step: "Step 1"
-    },
-    {
       icon: Users,
       title: "Join one of our In-person gathering on Friday",
       description: "Experience the community firsthand at our weekly Friday gatherings",
-      step: "Step 2"
+      step: "Step 1"
     },
     {
       icon: FileText,
       title: "Fill the Airtable form to get featured in directory and website",
       description: "Share your details to become an official member of our community",
-      step: "Step 3"
+      step: "Step 2"
     },
     {
       icon: CheckCircle,
       title: "Welcome to Letz Connect",
       description: "You're now part of the community! Start connecting and growing together",
-      step: "Step 4"
+      step: "Step 3"
     }
   ];
+
 
   return (
     <section id="join" className="py-16 bg-gradient-sunset">
@@ -45,7 +40,7 @@ export const JoinUs = () => {
           </div>
 
           {/* Steps - Horizontal Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
@@ -74,24 +69,8 @@ export const JoinUs = () => {
                         {step.description}
                       </p>
                     </div>
-                    
-                    {/* WhatsApp button for Step 1 */}
-                    {index === 0 && (
-                      <Button 
-                        asChild 
-                        className="w-full mt-auto bg-green-600 hover:bg-green-700 text-white shadow-warm hover:shadow-glow transition-smooth"
-                        size="sm"
-                      >
-                        <a 
-                          href="https://chat.whatsapp.com/Kk66jdyr6RI4zlRhgqcnbe?mode=wwt" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                        >
-                          Join WhatsApp Group
-                        </a>
-                      </Button>
-                    )}
                   </div>
+
                   
                   {/* Decorative gradient */}
                   <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-warm opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-smooth" />
@@ -99,6 +78,24 @@ export const JoinUs = () => {
               );
             })}
           </div>
+
+          {/* WhatsApp CTA */}
+          <div className="text-center">
+            <Button
+              asChild
+              className="bg-green-600 hover:bg-green-700 text-white shadow-warm hover:shadow-glow transition-smooth rounded-full"
+            >
+              <a
+                href="https://chat.whatsapp.com/Kk66jdyr6RI4zlRhgqcnbe?mode=wwt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join WhatsApp Group
+              </a>
+            </Button>
+          </div>
+
+
 
           {/* Important note */}
           <Card className="bg-destructive/10 border-destructive/20 rounded-2xl p-6">
