@@ -5,30 +5,25 @@ import { MessageCircle, Users, FileText, CheckCircle, AlertTriangle } from "luci
 export const JoinUs = () => {
   const steps = [
     {
-      icon: MessageCircle,
-      title: "Join the Waiting Area WhatsApp Group",
-      description: "Connect with us and stay updated about upcoming gatherings",
-      step: "Step 1"
-    },
-    {
       icon: Users,
       title: "Join one of our In-person gathering on Friday",
       description: "Experience the community firsthand at our weekly Friday gatherings",
-      step: "Step 2"
+      step: "Step 1"
     },
     {
       icon: FileText,
       title: "Fill the Airtable form to get featured in directory and website",
       description: "Share your details to become an official member of our community",
-      step: "Step 3"
+      step: "Step 2"
     },
     {
       icon: CheckCircle,
       title: "Welcome to Letz Connect",
       description: "You're now part of the community! Start connecting and growing together",
-      step: "Step 4"
+      step: "Step 3"
     }
   ];
+
 
   return (
     <section id="join" className="py-16 bg-gradient-sunset">
