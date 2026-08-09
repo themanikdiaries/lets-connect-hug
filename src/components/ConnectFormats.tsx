@@ -44,7 +44,7 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
           </div>
 
           {/* Format cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 gap-6 max-w-md mx-auto">
             {formats.map((format, index) => {
               return (
                 <div
