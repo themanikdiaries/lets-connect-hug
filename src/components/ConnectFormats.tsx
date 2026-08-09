@@ -14,19 +14,8 @@ export const ConnectFormats = ({ onJoinClick }: ConnectFormatsProps) => {
       color: "secondary",
       details: "Weekly casual hangouts where we gather, share stories, and connect without pressure or expectations.",
     },
-    {
-      icon: coffeeIcon,
-      title: "Monday Public Speaking Circle",
-      color: "primary",
-      details: "We make you confident, a good speaker, teach you how to speak and turn yourself into a leader.",
-    },
-    {
-      icon: chatIcon,
-      title: "All Girls Meetup on Thursday",
-      color: "accent",
-      details: "A safe and supportive space for the girls of our community to connect, share, and grow together every Thursday.",
-    },
   ];
+
 
   return (
     <section id="formats" className="py-16">
