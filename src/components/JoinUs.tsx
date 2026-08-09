@@ -79,6 +79,24 @@ export const JoinUs = () => {
             })}
           </div>
 
+          {/* WhatsApp CTA */}
+          <div className="text-center">
+            <Button
+              asChild
+              className="bg-green-600 hover:bg-green-700 text-white shadow-warm hover:shadow-glow transition-smooth rounded-full"
+            >
+              <a
+                href="https://chat.whatsapp.com/Kk66jdyr6RI4zlRhgqcnbe?mode=wwt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join WhatsApp Group
+              </a>
+            </Button>
+          </div>
+
+
+
           {/* Important note */}
           <Card className="bg-destructive/10 border-destructive/20 rounded-2xl p-6">
             <div className="flex items-start gap-4">
