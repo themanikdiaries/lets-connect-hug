@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { MessageCircle, Users, FileText, CheckCircle, AlertTriangle } from "lucide-react";
+import { Users, FileText, CheckCircle, AlertTriangle } from "lucide-react";
 
 export const JoinUs = () => {
   const steps = [
